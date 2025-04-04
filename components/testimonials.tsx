@@ -62,7 +62,7 @@ export default function Testimonials() {
   }, [testimonials.length])
 
   return (
-    <div className="container h-auto w-full max mx-auto px-4 py-10 flex flex-col items-center justify-center">
+    <div className="container h-auto w-full max mx-auto px-4 py-16 flex flex-col items-center justify-center">
       <h2 className="text-4xl md:text-5xl lg:text-6xl mb-4 text-center">What Do Our Patients Think?</h2>
       <p className="mb-25 text-center max-w-3xl text-gray-500">
         The real-life patient experiences and reviews demonstrate our dedication to delivering high-quality patient
