@@ -163,7 +163,7 @@ export default function Navbar() {
               Patients Feedback
             </a>
 
-            {/* Dropdown */}
+            {/* Dropdown
             <div className="relative dropdown">
               <button
                 onClick={() => setDropdownOpen(!dropdownOpen)}
@@ -202,7 +202,7 @@ export default function Navbar() {
                   </a>
                 </div>
               )}
-            </div>
+            </div> */}
 
             <a
               href="/contactus"
