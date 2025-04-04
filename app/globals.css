@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import the exact fonts from the public folder */
+@font-face {
+  font-family: 'NewYork';
+  src: url('/nya.otf') format('opentype'); /* Directly in public folder */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('/Nunito-VariableFont_wght.ttf') format('truetype'); /* Directly in public folder */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Base styles */
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+  }
+
+  h1, h2 {
+    font-family: 'NewYork', sans-serif;
+    font-weight: 500;
+    font-size: clamp(40px, 5vw, 55px);
+    line-height: 1.15em;
+  }
+
+  h3, h4, h5, h6 {
+    font-family: 'NewYork', sans-serif;
+    font-weight: 500;
+    line-height: 1.15em;
+  }
+
+  p, div, button {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    color: text-gray-500; /* Tailwind's text-gray-500 */
+    font-size: 17px;
+  }
+}
+
+/* Text balance utility */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
