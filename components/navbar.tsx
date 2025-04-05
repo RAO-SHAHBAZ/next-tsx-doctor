@@ -138,19 +138,19 @@ export default function Navbar() {
                 <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md z-50">
                   <a
                     href="/aboutus/staff"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                   >
                     Staff
                   </a>
                   <a
                     href="/aboutus/blogs"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                   >
                     Blogs
                   </a>
                   <a
                     href="/aboutus/pricing"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                   >
                     Pricing
                   </a>
@@ -179,55 +179,55 @@ export default function Navbar() {
                 <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md z-50">
                   <a
                     href="/cosmeticdentistry/compositebonding"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                   >
                     Composite Bonding
                   </a>
                   <a
                     href="/cosmeticdentistry/porcelainveneers"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                   >
                     Porcelain Veneers
                   </a>
                   <a
                     href="/cosmeticdentistry/bespokesmiledesign"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                   >
                     Bespoke Smile Design
                   </a>
                   <a
                     href="/cosmeticdentistry/cosmeticorthodontics"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                   >
                     Cosmetic Orthodontics
                   </a>
                   <a
                     href="/cosmeticdentistry/teethwhitening"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                   >
                     Teeth Whitening
                   </a>
                   <a
                     href="/cosmeticdentistry/stainremoval"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                   >
                     Stain Removal
                   </a>
                   <a
                     href="/cosmeticdentistry/facialaesthetics"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                   >
                     Facial Aesthetics
                   </a>
                   <a
                     href="/cosmeticdentistry/dermalfillers"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                   >
                     Dermal Fillers
                   </a>
                   <a
                     href="/cosmeticdentistry/invisiblefilling"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                   >
                     Invisible Filling
                   </a>
@@ -256,55 +256,55 @@ export default function Navbar() {
                 <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md z-50">
                   <a
                     href="/generaldentistry/dentalconsultation"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                   >
                     Dental Consultation
                   </a>
                   <a
                     href="/generaldentistry/samedayemergencyappointments"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                   >
                     Same-Day Emergency Appointments
                   </a>
                   <a
                     href="/generaldentistry/hygieneservices"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                   >
                     Hygiene Services
                   </a>
                   <a
                     href="/generaldentistry/implantconsultations"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                   >
                     Implant Consultations
                   </a>
                   <a
                     href="/generaldentistry/wisdomtoothremoval"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                   >
                     Wisdom Tooth Removal
                   </a>
                   <a
                     href="/generaldentistry/childsmile"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                   >
                     Child Smile
                   </a>
                   <a
                     href="/generaldentistry/orthodontics"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                   >
                     Orthodontics
                   </a>
                   <a
                     href="/generaldentistry/endodonticrootcanals"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                   >
                     Endodontic Root Canals
                   </a>
                   <a
                     href="/generaldentistry/dentalbridges"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                   >
                     Dental Bridges
                   </a>
@@ -344,13 +344,13 @@ export default function Navbar() {
                 <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md z-50">
                   <a
                     href="/patientfeedback/testimonials"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                   >
                     Testimonials
                   </a>
                   <a
                     href="/patientfeedback/smilegallery"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                   >
                     Smile Gallery
                   </a>
@@ -421,21 +421,21 @@ export default function Navbar() {
                     <a
                       href="/aboutus/staff"
                       onClick={() => setMobileMenuOpen(false)}
-                      className="block py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      className="block py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                     >
                       Staff
                     </a>
                     <a
                       href="/aboutus/blogs"
                       onClick={() => setMobileMenuOpen(false)}
-                      className="block py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      className="block py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                     >
                       Blogs
                     </a>
                     <a
                       href="/aboutus/pricing"
                       onClick={() => setMobileMenuOpen(false)}
-                      className="block py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      className="block py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                     >
                       Pricing
                     </a>
@@ -461,63 +461,63 @@ export default function Navbar() {
                     <a
                       href="/cosmeticdentistry/compositebonding"
                       onClick={() => setMobileMenuOpen(false)}
-                      className="block py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      className="block py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                     >
                       Composite Bonding
                     </a>
                     <a
                       href="/cosmeticdentistry/porcelainveneers"
                       onClick={() => setMobileMenuOpen(false)}
-                      className="block py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      className="block py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                     >
                       Porcelain Veneers
                     </a>
                     <a
                       href="/cosmeticdentistry/bespokesmiledesign"
                       onClick={() => setMobileMenuOpen(false)}
-                      className="block py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      className="block py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                     >
                       Bespoke Smile Design
                     </a>
                     <a
                       href="/cosmeticdentistry/cosmeticorthodontics"
                       onClick={() => setMobileMenuOpen(false)}
-                      className="block py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      className="block py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                     >
                       Cosmetic Orthodontics
                     </a>
                     <a
                       href="/cosmeticdentistry/teethwhitening"
                       onClick={() => setMobileMenuOpen(false)}
-                      className="block py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      className="block py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                     >
                       Teeth Whitening
                     </a>
                     <a
                       href="/cosmeticdentistry/stainremoval"
                       onClick={() => setMobileMenuOpen(false)}
-                      className="block py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      className="block py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                     >
                       Stain Removal
                     </a>
                     <a
                       href="/cosmeticdentistry/facialaesthetics"
                       onClick={() => setMobileMenuOpen(false)}
-                      className="block py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      className="block py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                     >
                       Facial Aesthetics
                     </a>
                     <a
                       href="/cosmeticdentistry/dermalfillers"
                       onClick={() => setMobileMenuOpen(false)}
-                      className="block py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      className="block py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                     >
                       Dermal Fillers
                     </a>
                     <a
                       href="/cosmeticdentistry/invisiblefilling"
                       onClick={() => setMobileMenuOpen(false)}
-                      className="block py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      className="block py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                     >
                       Invisible Filling
                     </a>
@@ -543,63 +543,63 @@ export default function Navbar() {
                     <a
                       href="/generaldentistry/dentalconsultation"
                       onClick={() => setMobileMenuOpen(false)}
-                      className="block py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      className="block py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                     >
                       Dental Consultation
                     </a>
                     <a
                       href="/generaldentistry/samedayemergencyappointments"
                       onClick={() => setMobileMenuOpen(false)}
-                      className="block py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      className="block py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                     >
                       Same-Day Emergency Appointments
                     </a>
                     <a
                       href="/generaldentistry/hygieneservices"
                       onClick={() => setMobileMenuOpen(false)}
-                      className="block py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      className="block py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                     >
                       Hygiene Services
                     </a>
                     <a
                       href="/generaldentistry/implantconsultations"
                       onClick={() => setMobileMenuOpen(false)}
-                      className="block py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      className="block py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                     >
                       Implant Consultations
                     </a>
                     <a
                       href="/generaldentistry/wisdomtoothremoval"
                       onClick={() => setMobileMenuOpen(false)}
-                      className="block py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      className="block py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                     >
                       Wisdom Tooth Removal
                     </a>
                     <a
                       href="/generaldentistry/childsmile"
                       onClick={() => setMobileMenuOpen(false)}
-                      className="block py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      className="block py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                     >
                       Child Smile
                     </a>
                     <a
                       href="/generaldentistry/orthodontics"
                       onClick={() => setMobileMenuOpen(false)}
-                      className="block py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      className="block py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                     >
                       Orthodontics
                     </a>
                     <a
                       href="/generaldentistry/endodonticrootcanals"
                       onClick={() => setMobileMenuOpen(false)}
-                      className="block py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      className="block py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                     >
                       Endodontic Root Canals
                     </a>
                     <a
                       href="/generaldentistry/dentalbridges"
                       onClick={() => setMobileMenuOpen(false)}
-                      className="block py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      className="block py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                     >
                       Dental Bridges
                     </a>
@@ -637,14 +637,14 @@ export default function Navbar() {
                     <a
                       href="/patientfeedback/testimonials"
                       onClick={() => setMobileMenuOpen(false)}
-                      className="block py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      className="block py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                     >
                       Testimonials
                     </a>
                     <a
                       href="/patientfeedback/smilegallery"
                       onClick={() => setMobileMenuOpen(false)}
-                      className="block py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      className="block py-2 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                     >
                       Smile Gallery
                     </a>
