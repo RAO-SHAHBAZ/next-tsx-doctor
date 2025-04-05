@@ -9,11 +9,11 @@ export default function NOTFOUND() {
     <>
     
     <Navbar/>
-    <section className="w-full relative ">
+    <section className="w-full relative  ">
       <div className="md:col-span-9 relative">
         <div className="absolute inset-0 bg-[#1d5c5c]/80 z-10"></div>
         <div
-          className="w-full h-[200px] md:h-[450px] bg-cover bg-center"
+          className="w-full h-[200px] md:h-[550px] bg-cover bg-center"
           style={{ backgroundImage: `url(/story.jpeg)` }}
         ></div>
 
