@@ -1,4 +1,5 @@
 import { Twitter, Instagram, Facebook, Mail, MapPin, Globe, Phone, ChevronRight } from "lucide-react"
+import Link from "next/link"
 
 export default function Footer() {
   return (
@@ -7,16 +8,16 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
           {/* Logo & Description */}
           <div>
-            <a href="/" className="inline-block mb-6">
+            <Link href="/" className="inline-block mb-6">
               <img src="/Footer-logoo.svg" alt="City Dental Care" className="h-auto w-[140px]" />
-            </a>
+            </Link>
             <p className="mb-6 leading-relaxed">
               At City Dental Clinic, our mission is to enhance your denture experience by providing excellent denture
               care.
             </p>
-            <a href="#" className="flex font-semibold items-center text-sm uppercase hover:underline">
+            <Link href="/" className="flex font-semibold items-center text-sm uppercase hover:underline">
               MORE ABOUT <ChevronRight className="ml-2 h-4 w-4" />
-            </a>
+            </Link>
           </div>
 
           {/* Quick Links */}
@@ -24,29 +25,29 @@ export default function Footer() {
             <h3 className="text-[22px] font-semibold mb-6">Quick Links</h3>
             <ul className="space-y-4">
               <li>
-                <a href="#" className="flex items-center hover:underline transition">
+                <Link href="/" className="flex items-center hover:underline transition">
                   <ChevronRight className="mr-2 h-4 w-4" /> Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="flex items-center hover:underline transition">
+                <Link href="about-us" className="flex items-center hover:underline transition">
                   <ChevronRight className="mr-2 h-4 w-4" /> About
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="flex items-center hover:underline transition">
+                <Link href="#" className="flex items-center hover:underline transition">
                   <ChevronRight className="mr-2 h-4 w-4" /> Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="flex items-center hover:underline transition">
+                <Link href="patient-feedback" className="flex items-center hover:underline transition">
                   <ChevronRight className="mr-2 h-4 w-4" /> For Patients
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="flex items-center hover:underline transition">
+                <Link href="contact-us" className="flex items-center hover:underline transition">
                   <ChevronRight className="mr-2 h-4 w-4" /> Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -67,44 +68,48 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-center space-x-2">
                 <MapPin className="h-5 w-5" />
-                <span>
-                  9 Earl Grey St, <br /> Edinburgh EH3 9BN, United Kingdom
+                <span className="hover:underline">
+                  <Link href="https://maps.app.goo.gl/wtqznxrT44FBifxQ6">
+                  9 Earl Grey St, <br /> Edinburgh EH3 9BN, United Kingdom</Link>
                 </span>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="h-5 w-5" />
-                <span>info@citydentalcare.co.uk</span>
+                <span className="hover:underline"><Link href= "mailto:info@citydentalcare.co.uk">info@citydentalcare.co.uk</Link></span>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="h-5 w-5" />
+                <Link className="hover:underline" href="tel:+921312282442">
                 <span>01312282442</span>
+                </Link>
               </li>
               <li className="flex items-center space-x-2">
                 <Globe className="h-5 w-5" />
-                <span>https://citydentalcare.co.uk/</span>
+                <span className="hover:underline"> 
+                  https://citydentalcare.co.uk/</span>
               </li>
             </ul>
 
             {/* Social Icons */}
             <div className="flex gap-4 mt-8">
-              <a
+              <Link
                 href="#"
                 className="h-10 w-10 flex items-center justify-center rounded-full bg-[#316161] bg-opacity-70 hover:bg-opacity-100 transition"
               >
                 <Facebook className="h-4 w-4" />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="h-10 w-10 flex items-center justify-center rounded-full bg-[#316161] bg-opacity-70 hover:bg-opacity-100 transition"
               >
                 <Twitter className="h-4 w-4" />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="h-10 w-10 flex items-center justify-center rounded-full bg-[#316161] bg-opacity-70 hover:bg-opacity-100 transition"
               >
                 <Instagram className="h-4 w-4" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
