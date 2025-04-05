@@ -344,7 +344,7 @@ export default function Navbar() {
                 </div>
                 <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md z-50 hidden group-hover:block">
                   <Link
-                    href="/patientfeedback/testimonials"
+                    href="/testimonials"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                   >
                     Testimonials
@@ -663,13 +663,13 @@ export default function Navbar() {
                 </div>
                 {mobileDropdownOpen.patientFeedback && (
                   <div className="pl-4">
-                    <a
-                      href="/patientfeedback/testimonials"
+                    <Link
+                      href="/testimonials"
                       onClick={() => setMobileMenuOpen(false)}
                       className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                     >
                       Testimonials
-                    </a>
+                    </Link>
                     <a
                       href="/patientfeedback/smilegallery"
                       onClick={() => setMobileMenuOpen(false)}
