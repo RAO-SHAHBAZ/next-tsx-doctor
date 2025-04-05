@@ -56,7 +56,7 @@ export default function AboutUs() {
                 ))}
               </div>
 
-              <div className="flex gap-4 mt-8 justify-center items-center">
+              <div className="flex gap-4 mt-8 ">
                 {/* Book Now! Button */}
                 <button className="bg-[#1d5c5c] text-white px-4 py-4 text-sm uppercase">
                   Pain-Free Dentistry – Book Now!
