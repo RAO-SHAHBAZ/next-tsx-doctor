@@ -5,7 +5,6 @@ import React from "react";
 
 type BredCrumbProps = {
   title: string;
-  subtitle: string;
 };
 
 export default function BredCrumb({ title }: BredCrumbProps) {

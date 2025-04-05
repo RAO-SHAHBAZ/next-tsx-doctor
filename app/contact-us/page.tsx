@@ -1,5 +1,6 @@
 import BredCrumb from "@/components/BredCrumb"
 import Footer from "@/components/footer"
+import Maps from "@/components/maps";
 import Navbar from "@/components/navbar"
 
 import {
@@ -12,6 +13,7 @@ import {
   Twitter,
   Youtube,
 } from "lucide-react";
+import Image from "next/image";
 
 function ContactUS() {
   return (
@@ -24,7 +26,7 @@ function ContactUS() {
         {/* Left Column */}
         <div>
           <h3 className="text-lg text-[#1D5C5C] ">Contact Us</h3>
-          <h2 className="text-4xl  mt-2 mb-4  text-[#1c1c1c]">Get In Touch</h2>
+          <h2 className="text-4xl md:text-5xl  mt-2 mb-4  text-[#1c1c1c]">Get In Touch</h2>
           <p className="text-gray-600 mb-8">
             Lobortis ut aptent metus hac ad. Risus morbi suspendisse lectus platea nec pretium
             suscipit dolor lorem vivamus. Lorem ipsum dolor sit amet, consectetur.
@@ -126,6 +128,118 @@ function ContactUS() {
         </div>
       </div>
     </section>
+
+    {/* Contact Form */}
+    <section className="w-full py-12 mb-20 bg-white">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col md:flex-row items-center gap-8">
+          {/* Left Side: Image */}
+          <div className="w-full md:w-1/2">
+            <div className="relative">
+              <Image
+                src="/dentally-care-apopintment.png"
+                alt="Dental team working on a patient"
+                width={500}
+                height={500}
+                className="object-cover rounded-[50px] shadow-lg"
+                style={{
+                  clipPath: "url(#organic-shape)",
+                }}
+              />
+              {/* SVG Clip Path for Organic Shape */}
+              <svg width="0" height="0">
+                <defs>
+                  <clipPath id="organic-shape" clipPathUnits="objectBoundingBox">
+                    <path d="M0.5,0 C0.776,0 1,0.224 1,0.5 C1,0.776 0.776,1 0.5,1 C0.224,1 0,0.776 0,0.5 C0,0.224 0.224,0 0.5,0 Z M0.5,0.1 C0.716,0.1 0.9,0.284 0.9,0.5 C0.9,0.716 0.716,0.9 0.5,0.9 C0.284,0.9 0.1,0.716 0.1,0.5 C0.1,0.284 0.284,0.1 0.5,0.1 Z" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>
+
+          {/* Right Side: Contact Form */}
+          <div className="w-full md:w-1/2">
+          <div className="uppercase  text-[#1D5C5C] mb-4 mt-8">Ask Us</div>
+            <h2 className="text-4xl md:text-5xl  text-gray-800 mb-4">
+              Have Other Questions?
+            </h2>
+            <p className="text-gray-500 mb-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus morbi
+              suspendisse lectus platea nec pretium suscipit dolor lorem vivamus.
+              Lorem ipsum dolor sit amet, consectetur.
+            </p>
+            <form className="space-y-4">
+              <div>
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-gray-700 mb-1"
+                >
+                  Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Your Name"
+                  className="w-full px-4 py-3 border  border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#40E0D0] focus:border-transparent"
+                />
+              </div>
+              <div className="flex flex-col md:flex-row gap-4">
+                <div className="w-full md:w-1/2">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Your Email"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#40E0D0] focus:border-transparent"
+                  />
+                </div>
+                <div className="w-full md:w-1/2">
+                  <label
+                    htmlFor="phone"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    Phone
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Your Number"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#40E0D0] focus:border-transparent"
+                  />
+                </div>
+              </div>
+              <div>
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-gray-700 mb-1"
+                >
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  placeholder="Your Message"
+                  rows={4}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#40E0D0] focus:border-transparent"
+                />
+              </div>
+              <button
+                type="submit"
+                className="w-full bg-[#1d5c5c] text-white px-6 py-3 rounded-md hover:bg-[#40E0D0] transition-colors"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <Maps/>
     <Footer/>
 
 
