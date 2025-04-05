@@ -21,7 +21,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="md:ml-[100px]">
-            <h3 className="text-[30px] font-semibold mb-6">Quick Links</h3>
+            <h3 className="text-[22px] font-semibold mb-6">Quick Links</h3>
             <ul className="space-y-4">
               <li>
                 <a href="#" className="flex items-center hover:underline transition">
@@ -53,7 +53,7 @@ export default function Footer() {
 
           {/* Working Hours */}
           <div>
-            <h3 className="text-[30px] font-semibold mb-6">Working Time</h3>
+            <h3 className="text-[22px] font-semibold mb-6">Working Time</h3>
             <ul className="space-y-4">
               <li>Monday-Friday: 8AM-8PM</li>
               <li>Saturday: 9AM-6PM</li>
@@ -63,7 +63,7 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-[30px] font-semibold mb-6">Contact Us</h3>
+            <h3 className="text-[22px] font-semibold mb-6">Contact Us</h3>
             <ul className="space-y-4">
               <li className="flex items-center space-x-2">
                 <MapPin className="h-5 w-5" />
