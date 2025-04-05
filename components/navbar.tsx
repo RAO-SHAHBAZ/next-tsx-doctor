@@ -153,7 +153,7 @@ export default function Navbar() {
                     Staff
                   </Link>
                   <Link
-                    href="/aboutus/blogs"
+                    href="/blogs"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                   >
                     Blogs
@@ -431,7 +431,7 @@ export default function Navbar() {
                       Staff
                     </Link>
                     <Link
-                      href="/aboutus/blogs"
+                      href="/blogs"
                       onClick={() => setMobileMenuOpen(false)}
                       className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                     >
