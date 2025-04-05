@@ -53,13 +53,13 @@ export default function LatestNews() {
                 <div className="p-6">
                   <h4 className="font-light mb-2">{item.title}</h4>
                   <div className="text-sm text-gray-500 mb-2 flex flex-wrap gap-2">
-                    <span>• {item.date}</span>
-                    <span>• {item.comments}</span>
+                    <span className="text-[14px]">• {item.date}</span>
+                    <span className="text-[14px]">• {item.comments}</span>
+                  <div className="text-gray-600 text-[14px] mb-4 ">{item.excerpt}</div>
                   </div>
-                  <p className="text-gray-600 mb-4">{item.excerpt}</p>
   
                   {/* Read More Link */}
-                  <a href="#" className="text-[#1d5c5c] font-semibold flex items-center gap-1">
+                  <a href="#" className="text-[#1d5c5c] text-[16px] font-semibold flex items-center gap-1">
                     Read more
                     <svg
                       className="ml-1"
