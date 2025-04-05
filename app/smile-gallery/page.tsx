@@ -77,7 +77,7 @@ function SmileGallery() {
         <Navbar/>
         <BredCrumb title="Smile Gallery" />
 
- <section className="mt-20 mb-20   bg-white">
+ <section className="mt-20 mb-5   bg-white">
       <div className="container mx-auto px-4">
         {/* Heading Section */}
         <div className="uppercase text-center text-[#1D5C5C] mb-4">SMILE GALLERY</div>
