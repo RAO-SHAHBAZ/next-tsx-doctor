@@ -6,7 +6,7 @@ function PatientFeedback() {
   return (
 <>
     <Navbar/>
-    <BredCrumb title="Patient Feedback" subtitle="Home - Patient Feedback"/>
+    <BredCrumb title="Patient Feedback" />
     <Footer/>
 
 

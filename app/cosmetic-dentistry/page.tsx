@@ -55,7 +55,7 @@ function CosmaticDentistry() {
   return (
 <>
     <Navbar/>
-    <BredCrumb title="Cosmatic Dentistry" subtitle="Home - Cosmatic Dentistry"/>
+    <BredCrumb title="Cosmatic Dentistry" />
     <section className="pb-8 mb-1 md:mb-8 md:py-10">
         <div className="container mx-auto px-4">
           {/* Section Heading */}

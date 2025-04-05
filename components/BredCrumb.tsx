@@ -1,5 +1,6 @@
 // BredCrumb.tsx
 
+import Link from "next/link";
 import React from "react";
 
 type BredCrumbProps = {
@@ -7,7 +8,7 @@ type BredCrumbProps = {
   subtitle: string;
 };
 
-export default function BredCrumb({ title, subtitle }: BredCrumbProps) {
+export default function BredCrumb({ title }: BredCrumbProps) {
   return (
     <section className="w-full relative">
       <div className="md:col-span-9 relative">
@@ -21,7 +22,7 @@ export default function BredCrumb({ title, subtitle }: BredCrumbProps) {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-light mb-6 max-w-4xl">
             {title}
           </h2>
-          <p>{subtitle}</p>
+          <p><Link href="/" className="hover:underline">Home</Link> - {title}</p>
         </div>
       </div>
     </section>

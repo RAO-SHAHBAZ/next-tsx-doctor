@@ -11,7 +11,7 @@ export default function AboutUsPage() {
         
         
         <Navbar/>
-        <BredCrumb  title="About Us" subtitle="Home - About Us"/>
+        <BredCrumb  title="About Us"/>
         <OurTeam/>
         <ContactUs/>
       <Footer/>

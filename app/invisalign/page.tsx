@@ -6,7 +6,7 @@ function Invisalign() {
   return (
 <>
     <Navbar/>
-    <BredCrumb title="Invisalign" subtitle="Home - Invisalign"/>
+    <BredCrumb title="Invisalign"/>
     <Footer/>
 
 

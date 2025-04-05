@@ -8,9 +8,9 @@ function Invisalign() {
   return (
 <>
     <Navbar/>
-    <BredCrumb title="Testimonials" subtitle="Home - Testimonials"/>
+    <BredCrumb title="Testimonials" />
     <Testimonials/>
-    <GoogleReviews />
+    {/* <GoogleReviews /> */}
     <Footer/>
 
 

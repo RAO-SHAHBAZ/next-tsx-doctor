@@ -56,7 +56,7 @@ function OurStaff() {
   return (
     <>
       <Navbar />
-      <BredCrumb  title="Our Staff" subtitle="Home - Our Staff" />
+      <BredCrumb  title="Our Staff"  />
       {/* TEAM SECTION START FROM HERE */}
       <section className="py-5 mb-10 md:py-5 bg-white">
             <div className="container mx-auto px-4">
