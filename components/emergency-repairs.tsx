@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function EmergencyRepairs() {
     return (
       <section className="w-full relative">
@@ -23,9 +25,9 @@ export default function EmergencyRepairs() {
             services. We are available now to assist you in obtaining the gorgeous smile you desire.
           </p>
   
-          <a href="#" className="bg-[#319684] text-[#FFFFFF] px-4 py-4 inline-block uppercase font-medium">
+          <Link href="/" className="bg-[#319684] text-[#FFFFFF] px-4 py-4 inline-block uppercase font-medium">
             Book Your Free Consultation Now
-          </a>
+          </Link>
         </div>
       </section>
     )
