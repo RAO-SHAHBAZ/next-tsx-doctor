@@ -62,7 +62,7 @@ function GeneralDentistry() {
     <section className="pb-8 mb-1 md:mb-8 md:py-10">
         <div className="container mx-auto px-4">
           {/* Section Heading */}
-          <div className="uppercase text-center text-[#1D5C5C] mb-4">DENTAL SERVICE</div>
+          <div className="uppercase text-center text-[#1D5C5C] mb-4 mt-8">DENTAL SERVICE</div>
   
           <div className="flex flex-col items-center justify-center">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-center mb-8 max-w-3xl">

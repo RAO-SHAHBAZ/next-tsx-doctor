@@ -19,7 +19,7 @@ function ContactUS() {
     <Navbar/>
     <BredCrumb title="Contact US" />
 
-    <section className=" py-16 px-6 container  w-full mx-auto">
+    <section className=" py-16 px-5 container  w-full mx-auto">
       <div className=" grid md:grid-cols-2 gap-10">
         {/* Left Column */}
         <div>
