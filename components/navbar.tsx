@@ -15,7 +15,7 @@ export default function Navbar() {
   });
   const [activeMenu, setActiveMenu] = useState("Home");
 
-  // Handle click outside to close the dropdowns
+  // Handle click outside to close the dropdowns in mobile view
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (!(event.target as HTMLElement).closest(".dropdown")) {
@@ -39,6 +39,11 @@ export default function Navbar() {
     }));
   };
 
+  const handleMenuClick = (menu: string) => {
+    setActiveMenu(menu);
+    setMobileMenuOpen(false);
+  };
+
   return (
     <>
       {/* Contact Info Section */}
@@ -50,6 +55,7 @@ export default function Navbar() {
               alt="City Dental Care"
               width={120}
               height={40}
+              priority
             />
           </Link>
           <div className="flex flex-wrap md:flex-row gap-4 md:gap-6 mt-4 md:mt-0">
@@ -85,7 +91,7 @@ export default function Navbar() {
                 <span className="text-[14px] text-gray-500">Location</span>
                 <br />
                 <span className="text-[16px] md:text-sm">
-                  9 Earl Grey St ,United Kingdom
+                  9 Earl Grey St, United Kingdom
                 </span>
               </div>
             </div>
@@ -104,6 +110,7 @@ export default function Navbar() {
                 alt="City Dental Care"
                 width={80}
                 height={30}
+                priority
               />
             </Link>
             <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
@@ -119,18 +126,22 @@ export default function Navbar() {
           <div className="hidden md:flex w-full items-center justify-between">
             <nav className="flex items-center space-x-8 relative">
               {/* Home */}
-              <Link
-                href="/"
-                onClick={() => setActiveMenu("Home")}
-                className={`text-[15px] font-medium pb-1 border-b-2 ${
-                  activeMenu === "Home" ? "border-[#40E0D0]" : "border-transparent"
-                } hover:border-[#40E0D0]`}
-              >
-                Home
-              </Link>
+              <div className="pb-3">
+                <Link
+                  href="/"
+                  onClick={() => setActiveMenu("Home")}
+                  className={`text-[15px] font-medium pb-1 border-b-2 ${
+                    activeMenu === "Home"
+                      ? "border-[#40E0D0]"
+                      : "border-transparent"
+                  } hover:border-[#40E0D0]`}
+                >
+                  Home
+                </Link>
+              </div>
 
               {/* About Us Dropdown */}
-              <div className="relative dropdown group">
+              <div className="relative dropdown group pb-2">
                 <div className="flex items-center gap-1">
                   <Link
                     href="/about-us"
@@ -145,7 +156,7 @@ export default function Navbar() {
                   </Link>
                   <ChevronDown className="h-4 w-4 text-gray-600 transition-transform" />
                 </div>
-                <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md z-50 hidden group-hover:block">
+                <div className="absolute left-0 top-full w-48 bg-white shadow-lg rounded-md z-50 hidden group-hover:block">
                   <Link
                     href="/staff"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
@@ -159,7 +170,7 @@ export default function Navbar() {
                     Blogs
                   </Link>
                   <Link
-                    href="/aboutus/pricing"
+                    href="/about-us/pricing"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                   >
                     Pricing
@@ -168,7 +179,7 @@ export default function Navbar() {
               </div>
 
               {/* Cosmetic Dentistry Dropdown */}
-              <div className="relative dropdown group">
+              <div className="relative dropdown group pb-2">
                 <div className="flex items-center gap-1">
                   <Link
                     href="/cosmetic-dentistry"
@@ -183,57 +194,57 @@ export default function Navbar() {
                   </Link>
                   <ChevronDown className="h-4 w-4 text-gray-600 transition-transform" />
                 </div>
-                <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md z-50 hidden group-hover:block">
+                <div className="absolute left-0 top-full w-48 bg-white shadow-lg rounded-md z-50 hidden group-hover:block">
                   <Link
-                    href="/cosmeticdentistry/compositebonding"
+                    href="/cosmetic-dentistry/composite-bonding"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                   >
                     Composite Bonding
                   </Link>
                   <Link
-                    href="/cosmeticdentistry/porcelainveneers"
+                    href="/cosmetic-dentistry/porcelain-veneers"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                   >
                     Porcelain Veneers
                   </Link>
                   <Link
-                    href="/cosmeticdentistry/bespokesmiledesign"
+                    href="/cosmetic-dentistry/bespoke-smile-design"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                   >
                     Bespoke Smile Design
                   </Link>
                   <Link
-                    href="/cosmeticdentistry/cosmeticorthodontics"
+                    href="/cosmetic-dentistry/cosmetic-orthodontics"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                   >
                     Cosmetic Orthodontics
                   </Link>
                   <Link
-                    href="/cosmeticdentistry/teethwhitening"
+                    href="/cosmetic-dentistry/teeth-whitening"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                   >
                     Teeth Whitening
                   </Link>
                   <Link
-                    href="/cosmeticdentistry/stainremoval"
+                    href="/cosmetic-dentistry/stain-removal"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                   >
                     Stain Removal
                   </Link>
                   <Link
-                    href="/cosmeticdentistry/facialaesthetics"
+                    href="/cosmetic-dentistry/facial-aesthetics"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                   >
                     Facial Aesthetics
                   </Link>
                   <Link
-                    href="/cosmeticdentistry/dermalfillers"
+                    href="/cosmetic-dentistry/dermal-fillers"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                   >
                     Dermal Fillers
                   </Link>
                   <Link
-                    href="/cosmeticdentistry/invisiblefilling"
+                    href="/cosmetic-dentistry/invisible-filling"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                   >
                     Invisible Filling
@@ -242,7 +253,7 @@ export default function Navbar() {
               </div>
 
               {/* General Dentistry Dropdown */}
-              <div className="relative dropdown group">
+              <div className="relative dropdown group pb-2">
                 <div className="flex items-center gap-1">
                   <Link
                     href="/general-dentistry"
@@ -257,57 +268,57 @@ export default function Navbar() {
                   </Link>
                   <ChevronDown className="h-4 w-4 text-gray-600 transition-transform" />
                 </div>
-                <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md z-50 hidden group-hover:block">
+                <div className="absolute left-0 top-full w-48 bg-white shadow-lg rounded-md z-50 hidden group-hover:block">
                   <Link
-                    href="/generaldentistry/dentalconsultation"
+                    href="/general-dentistry/dental-consultation"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                   >
                     Dental Consultation
                   </Link>
                   <Link
-                    href="/generaldentistry/samedayemergencyappointments"
+                    href="/general-dentistry/same-day-emergency-appointments"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                   >
                     Same-Day Emergency Appointments
                   </Link>
                   <Link
-                    href="/generaldentistry/hygieneservices"
+                    href="/general-dentistry/hygiene-services"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                   >
                     Hygiene Services
                   </Link>
                   <Link
-                    href="/generaldentistry/implantconsultations"
+                    href="/general-dentistry/implant-consultations"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                   >
                     Implant Consultations
                   </Link>
                   <Link
-                    href="/generaldentistry/wisdomtoothremoval"
+                    href="/general-dentistry/wisdom-tooth-removal"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                   >
                     Wisdom Tooth Removal
                   </Link>
                   <Link
-                    href="/generaldentistry/childsmile"
+                    href="/general-dentistry/child-smile"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                   >
                     Child Smile
                   </Link>
                   <Link
-                    href="/generaldentistry/orthodontics"
+                    href="/general-dentistry/orthodontics"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                   >
                     Orthodontics
                   </Link>
                   <Link
-                    href="/generaldentistry/endodonticrootcanals"
+                    href="/general-dentistry/endodontic-root-canals"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                   >
                     Endodontic Root Canals
                   </Link>
                   <Link
-                    href="/generaldentistry/dentalbridges"
+                    href="/general-dentistry/dental-bridges"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                   >
                     Dental Bridges
@@ -316,18 +327,22 @@ export default function Navbar() {
               </div>
 
               {/* Invisalign */}
-              <Link
-                href="/invisalign"
-                onClick={() => setActiveMenu("Invisalign")}
-                className={`text-[15px] font-medium pb-1 border-b-2 ${
-                  activeMenu === "Invisalign" ? "border-[#40E0D0]" : "border-transparent"
-                } hover:border-[#40E0D0]`}
-              >
-                Invisalign
-              </Link>
+              <div className="pb-3">
+                <Link
+                  href="/invisalign"
+                  onClick={() => setActiveMenu("Invisalign")}
+                  className={`text-[15px] font-medium pb-1 border-b-2 ${
+                    activeMenu === "Invisalign"
+                      ? "border-[#40E0D0]"
+                      : "border-transparent"
+                  } hover:border-[#40E0D0]`}
+                >
+                  Invisalign
+                </Link>
+              </div>
 
               {/* Patient Feedback Dropdown */}
-              <div className="relative dropdown group">
+              <div className="relative dropdown group pb-2">
                 <div className="flex items-center gap-1">
                   <Link
                     href="/patient-feedback"
@@ -342,7 +357,7 @@ export default function Navbar() {
                   </Link>
                   <ChevronDown className="h-4 w-4 text-gray-600 transition-transform" />
                 </div>
-                <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md z-50 hidden group-hover:block">
+                <div className="absolute left-0 top-full w-48 bg-white shadow-lg rounded-md z-50 hidden group-hover:block">
                   <Link
                     href="/testimonials"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
@@ -359,23 +374,27 @@ export default function Navbar() {
               </div>
 
               {/* Contact Us */}
-              <Link
-                href="/contact-us"
-                onClick={() => setActiveMenu("Contact Us")}
-                className={`text-[15px] font-medium pb-1 border-b-2 ${
-                  activeMenu === "Contact Us" ? "border-[#40E0D0]" : "border-transparent"
-                } hover:border-[#40E0D0]`}
-              >
-                Contact Us
-              </Link>
+              <div className="pb-3">
+                <Link
+                  href="/contact-us"
+                  onClick={() => setActiveMenu("Contact Us")}
+                  className={`text-[15px] font-medium pb-1 border-b-2 ${
+                    activeMenu === "Contact Us"
+                      ? "border-[#40E0D0]"
+                      : "border-transparent"
+                  } hover:border-[#40E0D0]`}
+                >
+                  Contact Us
+                </Link>
+              </div>
             </nav>
 
             {/* Desktop Appointment Button */}
             <Link
-              href="#"
-              className="hidden md:block bg-[#1d5c5c] text-white px-4 py-3 text-sm uppercase text-center"
+              href="/appointment"
+              className="hidden md:block bg-[#1d5c5c] text-white px-4 py-3 text-sm uppercase text-center hover:bg-[#40E0D0] transition-colors"
             >
-              GET APPOINTMENT
+              Get Appointment
             </Link>
           </div>
         </div>
@@ -384,17 +403,14 @@ export default function Navbar() {
         <div
           className={`fixed top-0 right-0 w-3/4 h-full bg-white transform transition-transform ${
             mobileMenuOpen ? "translate-x-0" : "translate-x-full"
-          } shadow-md md:hidden`}
+          } shadow-md md:hidden z-50`}
         >
           <div className="p-4">
             <nav>
               {/* Home */}
               <Link
                 href="/"
-                onClick={() => {
-                  setActiveMenu("Home");
-                  setMobileMenuOpen(false);
-                }}
+                onClick={() => handleMenuClick("Home")}
                 className="block py-3 text-lg font-medium"
               >
                 Home
@@ -405,10 +421,7 @@ export default function Navbar() {
                 <div className="flex items-center justify-between w-full py-3">
                   <Link
                     href="/about-us"
-                    onClick={() => {
-                      setActiveMenu("About Us");
-                      setMobileMenuOpen(false);
-                    }}
+                    onClick={() => handleMenuClick("About Us")}
                     className="text-lg font-medium"
                   >
                     About Us
@@ -438,7 +451,7 @@ export default function Navbar() {
                       Blogs
                     </Link>
                     <Link
-                      href="/aboutus/pricing"
+                      href="/about-us/pricing"
                       onClick={() => setMobileMenuOpen(false)}
                       className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                     >
@@ -453,10 +466,7 @@ export default function Navbar() {
                 <div className="flex items-center justify-between w-full py-3">
                   <Link
                     href="/cosmetic-dentistry"
-                    onClick={() => {  
-                      setActiveMenu("Cosmetic Dentistry");
-                      setMobileMenuOpen(false);
-                    }}
+                    onClick={() => handleMenuClick("Cosmetic Dentistry")}
                     className="text-lg font-medium"
                   >
                     Cosmetic Dentistry
@@ -471,69 +481,69 @@ export default function Navbar() {
                 </div>
                 {mobileDropdownOpen.cosmeticDentistry && (
                   <div className="pl-4">
-                    <a
-                      href="/cosmeticdentistry/compositebonding"
+                    <Link
+                      href="/cosmetic-dentistry/composite-bonding"
                       onClick={() => setMobileMenuOpen(false)}
                       className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                     >
                       Composite Bonding
-                    </a>
-                    <a
-                      href="/cosmeticdentistry/porcelainveneers"
+                    </Link>
+                    <Link
+                      href="/cosmetic-dentistry/porcelain-veneers"
                       onClick={() => setMobileMenuOpen(false)}
                       className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                     >
                       Porcelain Veneers
-                    </a>
-                    <a
-                      href="/cosmeticdentistry/bespokesmiledesign"
+                    </Link>
+                    <Link
+                      href="/cosmetic-dentistry/bespoke-smile-design"
                       onClick={() => setMobileMenuOpen(false)}
                       className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                     >
                       Bespoke Smile Design
-                    </a>
-                    <a
-                      href="/cosmeticdentistry/cosmeticorthodontics"
+                    </Link>
+                    <Link
+                      href="/cosmetic-dentistry/cosmetic-orthodontics"
                       onClick={() => setMobileMenuOpen(false)}
                       className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                     >
                       Cosmetic Orthodontics
-                    </a>
-                    <a
-                      href="/cosmeticdentistry/teethwhitening"
+                    </Link>
+                    <Link
+                      href="/cosmetic-dentistry/teeth-whitening"
                       onClick={() => setMobileMenuOpen(false)}
                       className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                     >
                       Teeth Whitening
-                    </a>
-                    <a
-                      href="/cosmeticdentistry/stainremoval"
+                    </Link>
+                    <Link
+                      href="/cosmetic-dentistry/stain-removal"
                       onClick={() => setMobileMenuOpen(false)}
                       className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                     >
                       Stain Removal
-                    </a>
-                    <a
-                      href="/cosmeticdentistry/facialaesthetics"
+                    </Link>
+                    <Link
+                      href="/cosmetic-dentistry/facial-aesthetics"
                       onClick={() => setMobileMenuOpen(false)}
                       className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                     >
                       Facial Aesthetics
-                    </a>
-                    <a
-                      href="/cosmeticdentistry/dermalfillers"
+                    </Link>
+                    <Link
+                      href="/cosmetic-dentistry/dermal-fillers"
                       onClick={() => setMobileMenuOpen(false)}
                       className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                     >
                       Dermal Fillers
-                    </a>
-                    <a
-                      href="/cosmeticdentistry/invisiblefilling"
+                    </Link>
+                    <Link
+                      href="/cosmetic-dentistry/invisible-filling"
                       onClick={() => setMobileMenuOpen(false)}
                       className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                     >
                       Invisible Filling
-                    </a>
+                    </Link>
                   </div>
                 )}
               </div>
@@ -541,16 +551,13 @@ export default function Navbar() {
               {/* General Dentistry */}
               <div className="dropdown">
                 <div className="flex items-center justify-between w-full py-3">
-                  <a
+                  <Link
                     href="/general-dentistry"
-                    onClick={() => {
-                      setActiveMenu("General Dentistry");
-                      setMobileMenuOpen(false);
-                    }}
+                    onClick={() => handleMenuClick("General Dentistry")}
                     className="text-lg font-medium"
                   >
                     General Dentistry
-                  </a>
+                  </Link>
                   <button onClick={() => toggleDropdown("generalDentistry")}>
                     <ChevronDown
                       className={`h-5 w-5 text-gray-600 transition-transform ${
@@ -561,69 +568,69 @@ export default function Navbar() {
                 </div>
                 {mobileDropdownOpen.generalDentistry && (
                   <div className="pl-4">
-                    <a
-                      href="/generaldentistry/dentalconsultation"
+                    <Link
+                      href="/general-dentistry/dental-consultation"
                       onClick={() => setMobileMenuOpen(false)}
                       className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                     >
                       Dental Consultation
-                    </a>
-                    <a
-                      href="/generaldentistry/samedayemergencyappointments"
+                    </Link>
+                    <Link
+                      href="/general-dentistry/same-day-emergency-appointments"
                       onClick={() => setMobileMenuOpen(false)}
                       className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                     >
                       Same-Day Emergency Appointments
-                    </a>
-                    <a
-                      href="/generaldentistry/hygieneservices"
+                    </Link>
+                    <Link
+                      href="/general-dentistry/hygiene-services"
                       onClick={() => setMobileMenuOpen(false)}
                       className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                     >
                       Hygiene Services
-                    </a>
-                    <a
-                      href="/generaldentistry/implantconsultations"
+                    </Link>
+                    <Link
+                      href="/general-dentistry/implant-consultations"
                       onClick={() => setMobileMenuOpen(false)}
                       className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                     >
                       Implant Consultations
-                    </a>
-                    <a
-                      href="/generaldentistry/wisdomtoothremoval"
+                    </Link>
+                    <Link
+                      href="/general-dentistry/wisdom-tooth-removal"
                       onClick={() => setMobileMenuOpen(false)}
                       className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                     >
                       Wisdom Tooth Removal
-                    </a>
-                    <a
-                      href="/generaldentistry/childsmile"
+                    </Link>
+                    <Link
+                      href="/general-dentistry/child-smile"
                       onClick={() => setMobileMenuOpen(false)}
                       className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                     >
                       Child Smile
-                    </a>
-                    <a
-                      href="/generaldentistry/orthodontics"
+                    </Link>
+                    <Link
+                      href="/general-dentistry/orthodontics"
                       onClick={() => setMobileMenuOpen(false)}
                       className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                     >
                       Orthodontics
-                    </a>
-                    <a
-                      href="/generaldentistry/endodonticrootcanals"
+                    </Link>
+                    <Link
+                      href="/general-dentistry/endodontic-root-canals"
                       onClick={() => setMobileMenuOpen(false)}
                       className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                     >
                       Endodontic Root Canals
-                    </a>
-                    <a
-                      href="/generaldentistry/dentalbridges"
+                    </Link>
+                    <Link
+                      href="/general-dentistry/dental-bridges"
                       onClick={() => setMobileMenuOpen(false)}
                       className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                     >
                       Dental Bridges
-                    </a>
+                    </Link>
                   </div>
                 )}
               </div>
@@ -631,10 +638,7 @@ export default function Navbar() {
               {/* Invisalign */}
               <Link
                 href="/invisalign"
-                onClick={() => {
-                  setActiveMenu("Invisalign");
-                  setMobileMenuOpen(false);
-                }}
+                onClick={() => handleMenuClick("Invisalign")}
                 className="block py-3 text-lg font-medium"
               >
                 Invisalign
@@ -643,16 +647,13 @@ export default function Navbar() {
               {/* Patient Feedback */}
               <div className="dropdown">
                 <div className="flex items-center justify-between w-full py-3">
-                  <a
+                  <Link
                     href="/patient-feedback"
-                    onClick={() => {
-                      setActiveMenu("Patient Feedback");
-                      setMobileMenuOpen(false);
-                    }}
+                    onClick={() => handleMenuClick("Patient Feedback")}
                     className="text-lg font-medium"
                   >
                     Patient Feedback
-                  </a>
+                  </Link>
                   <button onClick={() => toggleDropdown("patientFeedback")}>
                     <ChevronDown
                       className={`h-5 w-5 text-gray-600 transition-transform ${
@@ -682,20 +683,17 @@ export default function Navbar() {
               </div>
 
               {/* Contact Us */}
-              <a
+              <Link
                 href="/contact-us"
-                onClick={() => {
-                  setActiveMenu("Contact Us");
-                  setMobileMenuOpen(false);
-                }}
+                onClick={() => handleMenuClick("Contact Us")}
                 className="block py-3 text-lg font-medium"
               >
                 Contact Us
-              </a>
+              </Link>
             </nav>
           </div>
         </div>
       </div>
     </>
   );
-}
+} 

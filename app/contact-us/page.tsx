@@ -24,7 +24,7 @@ function ContactUS() {
         {/* Left Column */}
         <div>
           <h3 className="text-lg text-[#1D5C5C] ">Contact Us</h3>
-          <h2 className="text-4xl font-bold mt-2 mb-4  text-[#1c1c1c]">Get In Touch</h2>
+          <h2 className="text-4xl  mt-2 mb-4  text-[#1c1c1c]">Get In Touch</h2>
           <p className="text-gray-600 mb-8">
             Lobortis ut aptent metus hac ad. Risus morbi suspendisse lectus platea nec pretium
             suscipit dolor lorem vivamus. Lorem ipsum dolor sit amet, consectetur.
@@ -85,11 +85,11 @@ function ContactUS() {
 
         {/* Right Column – Opening Hours */}
         <div className="bg-[#1D5C5C] rounded-2xl text-white p-8">
-          <h3 className="text-xl font-semibold font-serif">We Encourage You to Schedule a Consultation</h3>
+          <h3 className="text-xl ">We Encourage You to Schedule a Consultation</h3>
 
           <div className="flex items-center gap-2 mt-6 mb-4">
             <CalendarDays size={20} />
-            <h4 className="text-lg font-semibold">Opening Hours</h4>
+            <h4 className="text-lg ">Opening Hours</h4>
           </div>
 
           <div className="space-y-3 border-t border-white/30 pt-4">
@@ -107,8 +107,9 @@ function ContactUS() {
             </div>
           </div>
 
-          <div className="mt-6">
-            <h4 className="mb-2 text-sm">Follow Us :</h4>
+          <div className="mt-6 flex gap-4">
+
+            <h4 className="md:text-lg">Follow Us :</h4>
             <div className="flex gap-4">
               <a href="#" className="bg-white text-[#1D5C5C] p-2 rounded-full">
                 <Facebook size={16} />
