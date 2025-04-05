@@ -141,10 +141,8 @@ function ContactUS() {
                 alt="Dental team working on a patient"
                 width={500}
                 height={500}
-                className="object-cover rounded-[50px] shadow-lg"
-                style={{
-                  clipPath: "url(#organic-shape)",
-                }}
+              
+               
               />
               {/* SVG Clip Path for Organic Shape */}
               <svg width="0" height="0">
