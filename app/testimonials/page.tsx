@@ -10,7 +10,7 @@ function Invisalign() {
     <Navbar/>
     <BredCrumb title="Testimonials" subtitle="Home - Testimonials"/>
     <Testimonials/>
-    <GoogleReviews/>
+    <GoogleReviews />
     <Footer/>
 
 

@@ -350,7 +350,7 @@ export default function Navbar() {
                     Testimonials
                   </Link>
                   <Link
-                    href="/patientfeedback/smilegallery"
+                    href="/smile-gallery"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                   >
                     Smile Gallery
@@ -670,13 +670,13 @@ export default function Navbar() {
                     >
                       Testimonials
                     </Link>
-                    <a
-                      href="/patientfeedback/smilegallery"
+                    <Link
+                      href="/smile-gallery"
                       onClick={() => setMobileMenuOpen(false)}
                       className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                     >
                       Smile Gallery
-                    </a>
+                    </Link>
                   </div>
                 )}
               </div>
