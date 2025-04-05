@@ -68,7 +68,7 @@ function Blogs() {
 <>
     <Navbar/>
     <BredCrumb title="News & Blogs" />
-<section className="py-16 md:py-20 bg-white">
+<section className="py-16  ">
         <div className="container mx-auto px-4 flex items-center justify-center flex-col">
           {/* Heading Section */}
           <h2 className="text-4xl md:text-5xl lg:text-6xl max-w-4xl mb-4">Our Latest News</h2>
