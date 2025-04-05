@@ -404,7 +404,7 @@ export default function Navbar() {
               <div className="dropdown">
                 <div className="flex items-center justify-between w-full py-3">
                   <Link
-                    href="/aboutus"
+                    href="/about-us"
                     onClick={() => {
                       setActiveMenu("About Us");
                       setMobileMenuOpen(false);
@@ -424,7 +424,7 @@ export default function Navbar() {
                 {mobileDropdownOpen.aboutUs && (
                   <div className="pl-4">
                     <Link
-                      href="/aboutus/staff"
+                      href="/staff"
                       onClick={() => setMobileMenuOpen(false)}
                       className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                     >
