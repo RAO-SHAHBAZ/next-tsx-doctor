@@ -171,7 +171,7 @@ export default function Navbar() {
               <div className="relative dropdown group">
                 <div className="flex items-center gap-1">
                   <Link
-                    href="/cosmeticdentistry"
+                    href="/cosmetic-dentistry"
                     onClick={() => setActiveMenu("Cosmetic Dentistry")}
                     className={`text-[15px] font-medium pb-1 border-b-2 ${
                       activeMenu === "Cosmetic Dentistry"
@@ -245,7 +245,7 @@ export default function Navbar() {
               <div className="relative dropdown group">
                 <div className="flex items-center gap-1">
                   <Link
-                    href="/generaldentistry"
+                    href="/general-dentistry"
                     onClick={() => setActiveMenu("General Dentistry")}
                     className={`text-[15px] font-medium pb-1 border-b-2 ${
                       activeMenu === "General Dentistry"
@@ -330,7 +330,7 @@ export default function Navbar() {
               <div className="relative dropdown group">
                 <div className="flex items-center gap-1">
                   <Link
-                    href="/patientfeedback"
+                    href="/patient-feedback"
                     onClick={() => setActiveMenu("Patient Feedback")}
                     className={`text-[15px] font-medium pb-1 border-b-2 ${
                       activeMenu === "Patient Feedback"
@@ -360,7 +360,7 @@ export default function Navbar() {
 
               {/* Contact Us */}
               <Link
-                href="/contactus"
+                href="/contact-us"
                 onClick={() => setActiveMenu("Contact Us")}
                 className={`text-[15px] font-medium pb-1 border-b-2 ${
                   activeMenu === "Contact Us" ? "border-[#40E0D0]" : "border-transparent"
@@ -451,16 +451,16 @@ export default function Navbar() {
               {/* Cosmetic Dentistry */}
               <div className="dropdown">
                 <div className="flex items-center justify-between w-full py-3">
-                  <a
-                    href="/cosmeticdentistry"
-                    onClick={() => {
+                  <Link
+                    href="/cosmetic-dentistry"
+                    onClick={() => {  
                       setActiveMenu("Cosmetic Dentistry");
                       setMobileMenuOpen(false);
                     }}
                     className="text-lg font-medium"
                   >
                     Cosmetic Dentistry
-                  </a>
+                  </Link>
                   <button onClick={() => toggleDropdown("cosmeticDentistry")}>
                     <ChevronDown
                       className={`h-5 w-5 text-gray-600 transition-transform ${
@@ -542,7 +542,7 @@ export default function Navbar() {
               <div className="dropdown">
                 <div className="flex items-center justify-between w-full py-3">
                   <a
-                    href="/generaldentistry"
+                    href="/general-dentistry"
                     onClick={() => {
                       setActiveMenu("General Dentistry");
                       setMobileMenuOpen(false);
@@ -629,7 +629,7 @@ export default function Navbar() {
               </div>
 
               {/* Invisalign */}
-              <a
+              <Link
                 href="/invisalign"
                 onClick={() => {
                   setActiveMenu("Invisalign");
@@ -638,13 +638,13 @@ export default function Navbar() {
                 className="block py-3 text-lg font-medium"
               >
                 Invisalign
-              </a>
+              </Link>
 
               {/* Patient Feedback */}
               <div className="dropdown">
                 <div className="flex items-center justify-between w-full py-3">
                   <a
-                    href="/patientfeedback"
+                    href="/patient-feedback"
                     onClick={() => {
                       setActiveMenu("Patient Feedback");
                       setMobileMenuOpen(false);
@@ -683,7 +683,7 @@ export default function Navbar() {
 
               {/* Contact Us */}
               <a
-                href="/contactus"
+                href="/contact-us"
                 onClick={() => {
                   setActiveMenu("Contact Us");
                   setMobileMenuOpen(false);
