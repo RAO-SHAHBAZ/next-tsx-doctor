@@ -13,7 +13,7 @@ export default function NOTFOUND() {
       <div className="md:col-span-9 relative">
         <div className="absolute inset-0 bg-[#1d5c5c]/80 z-10"></div>
         <div
-          className="w-full h-[200px] md:h-[550px] bg-cover bg-center"
+          className="w-full h-[400px] md:h-[550px] bg-cover bg-center"
           style={{ backgroundImage: `url(/story.jpeg)` }}
         ></div>
 
@@ -25,7 +25,7 @@ export default function NOTFOUND() {
             Sorry The Page You Are Looking For Dosen't Exist.
           </p>
           <br />
-          <Link href="/" className="bg-[#319684] text-[#FFFFFF] px-20 py-4 inline-block uppercase font-medium">
+          <Link href="/" className="bg-[#319684] text-[#FFFFFF] px-20  py-4 inline-block uppercase font-medium">
             Go to Home
           </Link>
           
