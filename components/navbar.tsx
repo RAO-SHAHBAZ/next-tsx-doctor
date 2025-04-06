@@ -392,7 +392,7 @@ export default function Navbar() {
             {/* Desktop Appointment Button */}
             <Link
               href="/appointment"
-              className="hidden md:block bg-[#1d5c5c] text-white px-4 py-3 text-sm uppercase text-center hover:bg-[#40E0D0] transition-colors"
+              className="hidden md:block bg-[#1d5c5c] text-white px-4 py-3 text-sm uppercase text-center"
             >
               Get Appointment
             </Link>
