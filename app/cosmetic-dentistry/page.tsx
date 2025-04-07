@@ -1,6 +1,4 @@
 import BredCrumb from "@/components/BredCrumb"
-import Footer from "@/components/footer"
-import Navbar from "@/components/navbar"  
 import ContactUs from "@/components/contact-us"
 
 function CosmaticDentistry() {
@@ -54,7 +52,6 @@ function CosmaticDentistry() {
   ]
   return (
 <>
-    <Navbar/>
     <BredCrumb title="Cosmatic Dentistry" />
     <section className="pb-8 mb-1 md:mb-8 md:py-10">
         <div className="container mx-auto px-4">
@@ -100,8 +97,6 @@ function CosmaticDentistry() {
         </div>
       </section>
          <ContactUs/>
-    <Footer/>
-
 
 </>
   )

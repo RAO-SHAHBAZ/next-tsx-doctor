@@ -1,7 +1,5 @@
 import Image from "next/image";
 import BredCrumb from "@/components/BredCrumb"
-import Footer from "@/components/footer"
-import Navbar from "@/components/navbar"
 
 
 import smile1 from "@/public/Composite-Bonding.jpg";
@@ -74,7 +72,7 @@ function SmileGallery() {
 
   return (
     <>
-        <Navbar/>
+
         <BredCrumb title="Smile Gallery" />
 
  <section className="mt-20 mb-5   bg-white">
@@ -110,7 +108,7 @@ function SmileGallery() {
 
 
           <ContactUs/>
-        <Footer/>
+
     
     
     </>

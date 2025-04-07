@@ -1,8 +1,5 @@
 import BredCrumb from "@/components/BredCrumb";
 import ContactUs from "@/components/contact-us";
-import Footer from "@/components/footer";
-import Navbar from "@/components/navbar";
-import OurTeam from "@/components/our-team";
 
 
 import Image from "next/image";
@@ -55,7 +52,7 @@ const teamMembers = [
 function OurStaff() {
   return (
     <>
-      <Navbar />
+
       <BredCrumb  title="Our Staff"  />
       {/* TEAM SECTION START FROM HERE */}
       <section className="py-5 mb-10 md:py-5 bg-white">
@@ -97,7 +94,7 @@ function OurStaff() {
       <ContactUs />
 
 
-      <Footer />
+ 
     </>
   );
 }

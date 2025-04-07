@@ -1,7 +1,5 @@
 import BredCrumb from "@/components/BredCrumb"
 import ContactUs from "@/components/contact-us"
-import Footer from "@/components/footer"
-import Navbar from "@/components/navbar"
 
 
   const news = [
@@ -66,7 +64,7 @@ import Navbar from "@/components/navbar"
 function Blogs() {
   return (
 <>
-    <Navbar/>
+
     <BredCrumb title="News & Blogs" />
 <section className="py-10  ">
         <div className="container mx-auto px-4 flex items-center justify-center flex-col">
@@ -122,9 +120,6 @@ function Blogs() {
         </div>
       </section>
     <ContactUs/>
-  
-    <Footer/>
-
 
 </>
   )

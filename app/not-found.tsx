@@ -1,5 +1,4 @@
-import Footer from "@/components/footer";
-import Navbar from "@/components/navbar";
+
 import Link from "next/link";
 
 
@@ -7,8 +6,7 @@ export default function NOTFOUND() {
   return (
 
     <>
-    
-    <Navbar/>
+
     <section className="w-full relative  ">
       <div className="md:col-span-9 relative">
         <div className="absolute inset-0 bg-[#1d5c5c]/80 z-10"></div>
@@ -33,7 +31,6 @@ export default function NOTFOUND() {
       </div>
     </section>
 
-    <Footer/>
     
     </>
   );

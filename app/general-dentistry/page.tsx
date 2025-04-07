@@ -1,8 +1,5 @@
 import BredCrumb from "@/components/BredCrumb"
 import ContactUs from "@/components/contact-us"
-import Footer from "@/components/footer"
-import Navbar from "@/components/navbar"
-
 
 
 
@@ -57,7 +54,6 @@ function GeneralDentistry() {
   ]
   return (
 <>
-    <Navbar/>
     <BredCrumb title="General Dentistry"/>
     <section className="pb-8 mb-1 md:mb-8 md:py-10">
         <div className="container mx-auto px-4">
@@ -105,7 +101,6 @@ function GeneralDentistry() {
       </section>
 
     <ContactUs/>
-    <Footer/>
 
 
 </>

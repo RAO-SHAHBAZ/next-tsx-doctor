@@ -1,7 +1,7 @@
 import BredCrumb from "@/components/BredCrumb"
-import Footer from "@/components/footer"
+
 import Maps from "@/components/maps";
-import Navbar from "@/components/navbar"
+
 
 import {
   Mail,
@@ -18,7 +18,6 @@ import Image from "next/image";
 function ContactUS() {
   return (
 <>
-    <Navbar/>
     <BredCrumb title="Contact US" />
 
     <section className=" py-16 px-5 container  w-full mx-auto">
@@ -238,7 +237,6 @@ function ContactUS() {
     </section>
 
     <Maps/>
-    <Footer/>
 
 
 </>

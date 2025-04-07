@@ -1,6 +1,8 @@
 import type React from "react"
 import "@/app/globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
+import Navbar from "@/components/navbar"
+import Footer from "@/components/footer"
 
 export const metadata = {
   title: "City Dental Care - Edinburgh's Top Dental Clinic",
@@ -18,7 +20,9 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
+          <Navbar/>
           {children}
+                <Footer/>
         </ThemeProvider>
       </body>
     </html>
@@ -28,3 +32,5 @@ export default function RootLayout({
 
 
 import './globals.css'
+
+
