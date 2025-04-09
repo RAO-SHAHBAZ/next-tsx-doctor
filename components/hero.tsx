@@ -10,10 +10,10 @@ export default function Hero() {
       <div className="absolute inset-0">
         <div className="absolute inset-0">
           <Image
-            src="/bg-hero.png" // Path relative to the `public` folder
+            src="/city-dental-care-hero-2.webp" // Path relative to the `public` folder
             alt="Hero Background"
             fill // Replaces `bg-cover` by filling the container
-            className="object-cover object-[60%] md:object-center" // Matches your original positioning
+            className="object-cover object-[90%] md:object-center" // Matches your original positioning
             priority // Optional: Loads this image eagerly since it’s above the fold
           />
           <div className="absolute inset-0 bg-[#0C2F2FCC] opacity-95"></div>
