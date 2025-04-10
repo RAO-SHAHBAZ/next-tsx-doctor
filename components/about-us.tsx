@@ -29,7 +29,7 @@ export default function AboutUs() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             {/* Doctor About Us Section Image */}
             <div className="relative">
-              <img src="/doc-about-us.png" alt="About Us" className="w-full h-auto" />
+              <img src="/about-city-dental-care-edinburgh.webp" alt="About Us" className="w-full h-auto" />
             </div>
 
             <div>
@@ -102,7 +102,7 @@ export default function AboutUs() {
 
               {/* This IS Image */}
               <div className="relative">
-                <img src="/doc-about-us.png" alt="Doctor" className="w-full h-auto" />
+                <img src="/about-city-dental-care-edinburgh.webp" alt="Doctor" className="w-full h-auto" />
               </div>
               {/* BUTTONS */}
               <div className="flex flex-col gap-4 m-8">

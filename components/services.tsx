@@ -1,33 +1,33 @@
 export default function Services() {
     const services = [
       {
-        icon: <img src="/Vector-service-1.png" alt="Dental Consultation" />,
+        icon: <img src="dental-consultation.svg"   alt="Dental Consultation" />,
         title: "Dental Consultation",
         description: "Detailed tests provide your dental wellness outcomes.",
       },
       {
-        icon: <img src="/Facial.png" alt="Same Day Emergency Appointments" />,
+        icon: <img src="same-day-emergency.svg"  alt="Same Day Emergency Appointments" />,
         title: "Same-Day Emergency Appointments",
         description:
           "Need urgent care? Our dental practice provides emergency dental appointments on the same day patients need care.",
       },
       {
-        icon: <img src="/Restorative.png" alt="Hygiene Services" />,
+        icon: <img src="/hygiene-service.svg" alt="Hygiene Services" />,
         title: "Hygiene Services",
         description: "Our services offer routine cleanings that maintain your smile's health and freshness.",
       },
       {
-        icon: <img src="/Dermal.png" alt="Implant Consultations" />,
-        title: "Implant Consultations",
+        icon: <img src="Implant-consultation.svg" alt="Implant Consultations" />,
+        title: "Implant-consultation.svg",
         description: "Take the opportunity to find out about stable alternatives addressing tooth loss.",
       },
       {
-        icon: <img src="/General.png" alt="Wisdom Tooth Removal" />,
+        icon: <img src="wisdom-tooth.svg" alt="Wisdom Tooth Removal" />,
         title: "Wisdom Tooth Removal",
         description: "A gentle, stress-free approach to wisdom tooth extraction.",
       },
       {
-        icon: <img src="/Vector-service-1.png" alt="Child Smile Care" />,
+        icon: <img src="/child-smile.svg" alt="Child Smile Care" />,
         title: "Child Smile Care",
         description: "Children who get early dental visits start their future with strong smiles.",
       },
@@ -56,7 +56,7 @@ export default function Services() {
             {services.map((service, index) => (
               <div key={index} className="group p-8 shadow-2xl rounded-lg">
                 {/* Icon */}
-                <div className="bg-[#225555] p-4 inline-block rounded mb-4">{service.icon}</div>
+                <div className="bg-[#225555] p-4 w-16 rounded mb-4">{service.icon}</div>
                 {/* Title */}
                 <h4 className="text-xl font-light mb-4">{service.title}</h4>
                 {/* Description */}
