@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="absolute inset-0">
         <div className="absolute inset-0">
           <Image
-            src="/bg-hero.png" // Path relative to the `public` folder
+            src="/city-dental-care-hero-2.webp" // Path relative to the `public` folder
             alt="Hero Background"
             fill // Replaces `bg-cover` by filling the container
             className="object-cover object-[60%] md:object-center" // Matches your original positioning
