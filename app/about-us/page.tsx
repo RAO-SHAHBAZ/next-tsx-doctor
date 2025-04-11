@@ -125,7 +125,7 @@ We distinguish ourselves as a modern practice with a friendly approach. Every pa
     
 
       <OurTeam />
-      <br />
+      <br className="hidden md:block" />
       <ContactUs />
     </div>
   );
