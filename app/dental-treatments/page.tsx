@@ -145,7 +145,7 @@ function GeneralDentistry() {
               <div className="space-y-6">
                 {features.map((feature, index) => (
                   <div key={index} className="flex items-start gap-4">
-                    <div className="bg-[#1D5C5C] w-20 h-20 rounded flex items-center justify-center  shrink-0">
+                    <div className="bg-[#1D5C5C] w-20 h-20   rounded flex items-center justify-center  shrink-0">
                       <img
                         src={feature.icon}
                         alt={feature.title}

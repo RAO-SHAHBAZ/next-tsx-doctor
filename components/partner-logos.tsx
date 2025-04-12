@@ -3,16 +3,20 @@
 import { useEffect, useRef, useState } from "react"
 
 export default function PartnerLogos() {
-  const logo1 = "/plogo-1.png"
-  const logo2 = "/p-logo3.png"
-  const logo3 = "/plogo-1.png"
+  const logo1 = "boutique-whitening.jpg"
+  const logo2 = "bioclear.jpg"
+  const logo3 = "straumann.jpg"
+  const logo4 = "nhs-scotland.jpg"
+  const logo5 = "neodent.jpg"
+  const logo6 = "itero.jpg"
+  const logo7 = "dentsply-sirona.jpg"
   const bg = "/bg.png"
 
   // Logos for Mobile
   const logom1 = "/logo-m.png"
   const logom2 = "/logo-m2.png"
 
-  const logos = [logo1, logo2, logo3, logo1, logo2, logo3] // Duplicated for seamless loop
+  const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7] // Duplicated for seamless loop
   const scrollRef = useRef<HTMLDivElement>(null)
   const mobileScrollRef = useRef<HTMLDivElement>(null)
   const [isHovered, setIsHovered] = useState(false)
@@ -99,7 +103,7 @@ export default function PartnerLogos() {
             ref={mobileScrollRef}
             className="flex items-center gap-5 whitespace-nowrap overflow-hidden w-full"
           >
-            {[logo1, logo2, logo1, logo2].map((logo, index) => (
+            {[logo1, logo2, logo3, logo4].map((logo, index) => (
               <img key={index} src={logo || "/placeholder.svg"} alt={`Mobile Partner ${index}`} className="h-15" />
             ))}
           </div>
