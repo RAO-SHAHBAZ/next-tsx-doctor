@@ -50,9 +50,70 @@ function GeneralDentistry() {
         "Our braces and clear aligners suit everyone who wants their teeth aligned to achieve a sound bite.",
     },
   ];
+  const services2 = [
+    {
+      icon: <img src="dental-consultation.svg" alt="Dental Consultation" />,
+      title: "Bespoke Smile Design",
+      description:
+        "Bespoke Smile Planning makes your smile unique according to your face shape and teeth shape to make it look completely believable.",
+    },
+    {
+      icon: (
+        <img
+          src="same-day-emergency.svg"
+          alt="Same Day Emergency Appointments"
+        />
+      ),
+      title: "Invisalign Clear Aligners",
+      description:
+        "Clear braces or Invisalign have a pleasing appearance. They fit your mouth perfectly and increase your self-esteem due to your pretty smile.",
+    },
+    {
+      icon: <img src="/hygiene-service.svg" alt="Hygiene Services" />,
+      title: "Fix Imperfections with Composite Bonding",
+      description:
+        "These fugitive bonding composites are a quick and effective way to fix chips, cracks, or gaps in teeth, bringing an individual's smile to life.",
+    },
+    {
+      icon: <img src="Implant-consultation.svg" alt="Implant Consultations" />,
+      title: "Smiling Transformation Comes With Porcelain Veneers",
+      description:
+        "Porcelain veneers serve as thin covers to conceal various dental issues, including darkened teeth and broken or misaligned teeth, and to create a strong and flawless smile structure.",
+    },
+    {
+      icon: <img src="wisdom-tooth.svg" alt="Wisdom Tooth Removal" />,
+      title: "Luminate Your Teeth With Teeth Whitening",
+      description:
+        "This treatment eliminates stains from food, beverages, and ageing and delivers long-lasting, stunning smile results.",
+    },
+    {
+      icon: <img src="/child-smile.svg" alt="Child Smile Care" />,
+      title: "Dental Implant Consultations",
+      description:
+        "For individuals who need dental implants because they have lost one or more teeth, you must consult on the most suitable procedure to regain your functionality and smile.",
+    },
+    {
+      icon: <img src="Implant-consultation.svg" alt="Orthodontic" />,
+      title: "Cosmetic Orthodontics",
+      description:
+        "In cosmetic orthodontics, we provide clear braces or aligners that fix your teeth's positions while enhancing the mouth's form and function.",
+    },
+    {
+      icon: <img src="/child-smile.svg" alt="Child Smile Care" />,
+      title: "Dermal Fillers for a Youthful Look",
+      description:
+        "We also have dermal fillers, which address fine lines and facial volume loss to improve your smile and grant your face a youthful look.",
+    },
+    {
+      icon: <img src="Implant-consultation.svg" alt="Orthodontic" />,
+      title: "Remove Stains and Revitalize Your Smile",
+      description:
+        "The above-mentioned treatments will help remove stains and make your teeth as bright as possible.",
+    },
+  ];
   const features = [
     {
-      icon: "/our-mission.svg",
+      icon: "book-consultation.svg",
       title: "Consultation",
       description:
         "The most effective step is booking your appointment and letting us know your needs.",
@@ -175,41 +236,37 @@ function GeneralDentistry() {
         </section>
       </div>
 
-      {/* Service  */}
+      {/* Service section 2 */}
       <section className="pb-8 mb-1 md:mb-8 md:py-10">
         <div className="container mx-auto px-4">
           {/* Section Heading */}
-          <div className="uppercase text-center text-[#1D5C5C] mb-4">
-            What Services Do We Offer?
-          </div>
+          <h1 className="uppercase text-center text-[#1D5C5C] mb-4">
+          Cosmetic Services
+          </h1>
 
           <div className="flex flex-col items-center justify-center">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-center mb-8 max-w-4xl">
-              General Dentistry Services at City Dental Care
+            Cosmetic Dentistry Services at City Dental Care
             </h2>
 
             <p className="text-center text-sm text-gray-500 mb-10 max-w-3xl">
-              This contributes to steady teeth and gums, paving the way for a
-              good life at City Dental Care, your dental practitioner in
-              Edinburgh. Whether it is a general checkup, urgent care, complex
-              treatment, or any other medical service offered at our esteemed
-              facility.
+            Our clinic provides a wide range of cosmetic dental solutions, including whitening, veneers, and Invisalign, to help you obtain your ideal smile.
             </p>
           </div>
 
           {/* Services Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {services.map((service, index) => (
+            {services2.map((services2, index) => (
               <div key={index} className="group p-8 shadow-2xl rounded-lg">
                 {/* Icon */}
                 <div className="bg-[#225555] p-4 w-16 rounded mb-4">
-                  {service.icon}
+                  {services2.icon}
                 </div>
                 {/* Title */}
-                <h4 className="text-xl font-light mb-4">{service.title}</h4>
+                <h4 className="text-xl font-light mb-4">{services2.title}</h4>
                 {/* Description */}
                 <p className="text-sm text-gray-600 mb-4">
-                  {service.description}
+                  {services2.description}
                 </p>
 
                 {/* Arrow Link */}

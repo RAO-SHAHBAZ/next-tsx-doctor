@@ -18,8 +18,16 @@ function WhyChooseUs() {
         looks and oral wellness.
       </p>
     </div>
+     {/* Image for Mobile/Tablet Only */}
+     <div className="block lg:hidden mt-10">
+          <img
+            src="/why-us.png"
+            alt="Why Choose Us"
+            className="w-full h-auto object-contain"
+          />
+        </div>
     {/* img section  */}
-    <div className="flex lg:justify-between flex-col gap-20 md-flex-col lg:flex-row py-16 bg-contain bg-center h-100 bg-no-repeat md:mt-16 " style={{ backgroundImage: "url('/why-us.png')" }}>
+    <div className="flex lg:justify-between flex-col gap-20 lg:flex-row py-16 h-100 md:mt-16 lg:bg-[url('/why-us.png')] lg:bg-no-repeat lg:bg-contain lg:bg-center">
       <div className="flex gap-16 flex-col">
         <div className="max-w-2xl">
           <div className="flex items-start  gap-4">
@@ -31,7 +39,9 @@ function WhyChooseUs() {
                 Our professional team has been helping patients for 
                 <strong> 20 years</strong> with all dental treatment options.
               </p>
+              
             </div>
+            
             <div className="bg-[#1D5C5C] w-20 h-20 rounded flex items-center justify-center  shrink-0">
               <img
                 src="experience.svg"
