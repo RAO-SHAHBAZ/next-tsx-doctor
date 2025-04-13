@@ -1,4 +1,5 @@
 import BredCrumb from "@/components/BredCrumb";
+import ContactUs from "@/components/contact-us";
 
 function GeneralDentistry() {
   const services = [
@@ -240,9 +241,9 @@ function GeneralDentistry() {
       <section className="pb-8 mb-1 md:mb-8 md:py-10">
         <div className="container mx-auto px-4">
           {/* Section Heading */}
-          <h1 className="uppercase text-center text-[#1D5C5C] mb-4">
+          <div className="uppercase text-center text-[#1D5C5C] mb-4">
           Cosmetic Services
-          </h1>
+          </div>
 
           <div className="flex flex-col items-center justify-center">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-center mb-8 max-w-4xl">
@@ -278,6 +279,10 @@ function GeneralDentistry() {
           </div>
         </div>
       </section>
+
+
+      {/* COntact US Section */}
+      <ContactUs/>
     </>
   );
 }
