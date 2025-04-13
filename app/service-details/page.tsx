@@ -119,7 +119,7 @@ export default function ServiceDetails() {
 
       {/* Main Section FOr Services */}
 
-      <div className="max-w-7xl mx-auto px-4 py-8 mb-20">
+      <div className="container mx-auto px-4 py-8 mb-20">
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Sidebar */}
           <aside className="w-full lg:w-1/3">
@@ -143,7 +143,7 @@ export default function ServiceDetails() {
             </div>
             {/* Make Appoinment */}
             <br />
-            <div className="bg-[#F5F5F5] rounded shadow-md p-6 max-w-sm text-center mx-auto">
+            <div className="bg-[#F5F5F5] rounded shadow-md p-6  text-center mx-auto">
               <div className="text-[#1D5C5C] text-sm font-medium uppercase mb-2">
                 Online Appointment
               </div>

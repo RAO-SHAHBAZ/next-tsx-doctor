@@ -39,7 +39,7 @@ import {
     return (
       <>
       <BredCrumb title="Single Blog"/>
-      <div className="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 lg:grid-cols-3 gap-10">
+      <div className="container mx-auto px-4 py-10 grid grid-cols-1 lg:grid-cols-3 gap-10">
         {/* Main Blog Post */}
         <main className="lg:col-span-2">
           <article className="">
@@ -73,7 +73,7 @@ import {
         {/* Sidebar */}
         <aside className=" w-full">
             {/* Make Apointment */}
-            <div className="bg-[#F5F5F5] rounded shadow-md p-6 max-w-sm text-center mx-auto">
+            <div className="bg-[#F5F5F5] rounded shadow-md p-6 text-center mx-auto">
               <div className="text-[#1D5C5C] text-sm font-medium uppercase mb-2">
                 Online Appointment
               </div>
