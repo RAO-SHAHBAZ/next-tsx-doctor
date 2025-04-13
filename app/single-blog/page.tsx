@@ -110,14 +110,16 @@ const contentData: ContentData = {
   },
 };
 
-export default function ServiceDetails() {
+export default function SingleBlog() {
   const [activeService, setActiveService] = useState<Service>("Dental Implant");
-
+  
   return (
     <>
-      <BredCrumb title="Service Details" />
+        <BredCrumb title="Single Blog"/>
+        {/* BLog Secion */}
 
-      {/* Main Section FOr Services */}
+
+         {/* Main Section FOr Services */}
 
       <div className="max-w-7xl mx-auto px-4 py-8 mb-20">
         <div className="flex flex-col lg:flex-row gap-8">
@@ -217,9 +219,7 @@ export default function ServiceDetails() {
         </div>
       </div>
 
-{/* Section OF FAQS */}
 
-    <Faqs />
     </>
-  );
+  )
 }
