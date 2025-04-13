@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function Services() {
     const services = [
       {
@@ -73,7 +75,9 @@ export default function Services() {
           {/* Explore City Dental Care Services Today */}
           <div className="mt-20 text-center">
             <button className="bg-[#1d5c5c] text-white px-4 py-4 text-sm uppercase text-center">
+              <Link href="/service-details" >
               Explore City Dental Care Services Today
+              </Link>
             </button>
           </div>
         </div>
