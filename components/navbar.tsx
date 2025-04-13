@@ -48,8 +48,8 @@ export default function Navbar() {
     <>
       {/* Contact Info Section */}
       <div className="w-full border-b border-gray-300 bg-[#f5f5f5]">
-        <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center py-4">
-          <Link href="/" className="hidden md:block">
+        <div className="container mx-auto px-4 flex flex-col lg:flex-row justify-between items-center py-4">
+          <Link href="/" className="hidden lg:block">
             <Image
               src="/City-Dental-Care.svg"
               alt="City Dental Care"
@@ -58,7 +58,7 @@ export default function Navbar() {
               priority
             />
           </Link>
-          <div className="flex flex-wrap md:flex-row gap-4 md:gap-6 mt-4 md:mt-0">
+          <div className="flex flex-wrap lg:flex-row gap-4 md:gap-6 mt-4 md:mt-0">
             <div className="flex items-center gap-2">
               <div className="bg-[#1d5c5c] p-2 rounded">
                 <Clock className="text-white h-3 w-3 md:h-5 md:w-5" />
@@ -83,7 +83,7 @@ export default function Navbar() {
               </div>
             </div>
 
-            <div className="hidden md:flex items-center gap-2">
+            <div className="hidden lg:flex items-center gap-2">
               <div className="bg-[#1d5c5c] p-2 rounded">
                 <MapPin className="text-white h-5 w-5" />
               </div>
@@ -103,7 +103,7 @@ export default function Navbar() {
       <div className="w-full py-3 sticky top-0 z-50 bg-[#f5f5f5] shadow-md">
         <div className="container mx-auto px-4 py-4">
           {/* Mobile Logo and Menu Button */}
-          <div className="flex items-center justify-between md:hidden">
+          <div className="flex items-center justify-between lg:hidden">
             <Link href="/">
               <Image
                 src="/City-Dental-Care.svg"
@@ -123,7 +123,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Navigation and Button */}
-          <div className="hidden md:flex w-full items-center justify-between">
+          <div className="hidden lg:flex w-full items-center justify-between">
             <nav className="flex items-center space-x-8 relative">
               {/* Home */}
               <div className="pb-3">
@@ -392,7 +392,7 @@ export default function Navbar() {
             {/* Desktop Appointment Button */}
             <Link
               href="/appointment"
-              className="hidden md:block bg-[#1d5c5c] text-white px-4 py-3 text-sm uppercase text-center"
+              className="hidden lg:block bg-[#1d5c5c] text-white px-4 py-3 text-sm uppercase text-center"
             >
               Get Appointment
             </Link>
@@ -403,7 +403,7 @@ export default function Navbar() {
         <div
           className={`fixed top-0 right-0 w-3/4 h-full bg-white transform transition-transform ${
             mobileMenuOpen ? "translate-x-0" : "translate-x-full"
-          } shadow-md md:hidden z-50`}
+          } shadow-lg lg:hidden z-50`}
         >
           <div className="p-4">
             <nav>

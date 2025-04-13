@@ -1,8 +1,8 @@
 export default function ContactUs() {
   return (
     <section className="py-1 md:py-16 mt-20 mb-10">
-      <div className="container mx-auto px-4 hidden md:block">
-        <div className="bg-[#E8F4F4] flex flex-col md:flex-row items-center rounded-lg relative">
+      <div className="container mx-auto px-4 hidden lg:block">
+        <div className="bg-[#E8F4F4] flex flex-col lg:flex-row items-center rounded-lg relative">
           {/* Left Content */}
           <div className="p-10 md:p-16 md:w-2/3">
             <div className="uppercase text-[#1D5C5C] font-medium mb-4">CONTACT US</div>
@@ -19,18 +19,18 @@ export default function ContactUs() {
           </div>
 
           {/* Right Image - Doctor Overlapping Properly */}
-          <div className="md:w-1/2">
+          <div className=" lg:w-1/2">
             <img
               src="/contact.png"
               alt="doctor"
-              className="max-h-[400px] md:max-h-[600px] object-cover md:absolute md:bottom-0 md:right-0"
+              className="max-h-[400px]  lg:max-h-[600px] object-cover lg:absolute lg:bottom-0 lg:right-0"
             />
           </div>
         </div>
       </div>
 
       {/* This IS For mobile */}
-      <div className="container mx-auto px-4 md:hidden mb-10">
+      <div className="container mx-auto px-4 lg:hidden mb-10">
         {/* Right Image - Doctor Overlapping Properly */}
         <div className="flex justify-center items-center">
           <img src="/contact.png" alt="doctor" className="max-h-[300px]" />
