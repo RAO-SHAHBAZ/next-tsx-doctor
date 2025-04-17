@@ -1,12 +1,12 @@
 import React from "react";
 
 const galleryImages = [
-  "/A7402951.jpg",
-  "/A7402990.jpg",
-  "/A7402954.jpg",
-  "/A7402973.jpg",
-  "/A7402957.jpg",
-  "/A7402987.jpg",
+  "/Gallery/1-Gallery.webp",
+  "/Gallery/2-Gallery.webp",
+  "/Gallery/6-Gallery.webp",
+  "/Gallery/3-Gallery.webp",
+  "/Gallery/4-Gallery.webp",
+  "/Gallery/5-Gallery.webp",
 ];
 
 export default function GallerySection() {
