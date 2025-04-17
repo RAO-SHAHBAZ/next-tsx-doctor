@@ -136,7 +136,7 @@ function ContactUS() {
           <div className="w-full md:w-1/2">
             <div className="relative">
               <Image
-                src="/dentally-care-apopintment.png"
+                src="/city-dental-care-contact.webp"
                 alt="Dental team working on a patient"
                 width={500}
                 height={500}

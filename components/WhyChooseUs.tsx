@@ -25,7 +25,7 @@ function WhyChooseUs() {
           />
         </div>
         {/* Content Section */}
-        <div className="flex lg:justify-between flex-col gap-20 lg:flex-row lg:gap-64 py-16 h-100 md:mt-16 lg:bg-[url('/why-us.png')] lg:bg-no-repeat lg:bg-contain lg:bg-center">
+        <div className="flex lg:justify-between flex-col gap-20 lg:flex-row lg:gap-64 py-16 h-100 md:mt-16 lg:bg-[url('/why-us.webp')] lg:bg-no-repeat lg:bg-contain lg:bg-center">
           <div className="flex gap-16 flex-col">
             <div className="max-w-2xl">
               <div className="flex md:flex-row flex-row-reverse gap-4">
