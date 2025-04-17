@@ -58,12 +58,12 @@ export default function AboutUsPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
           <div>
-            <h1 className="uppercase text-[#1D5C5C] text-lg mb-4">ABOUT US</h1>
-            <h2 className="text-3xl md:text-5xl  mb-6">
+            <h1 className="uppercase text-[#1D5C5C] text-lg mb-4 lg:text-left text-center ">ABOUT US</h1>
+            <h2 className="text-3xl md:text-5xl lg:text-left text-center  mb-6">
               Welcome to City Dental Care – Your Trusted Dental Clinic in
               Edinburgh
             </h2>
-            <p className="text-gray-600 mb-8">
+            <p className=" mb-8">
               City Dental Care offers high-level dental healthcare through
               modern technology and individualised treatments. Our practice
               handles every dental service in downtown Edinburgh, including
@@ -85,7 +85,7 @@ export default function AboutUsPage() {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl mb-2 font-extrabold">
+                    <h3 className="text-2xl mb-2 ">
                       {feature.title}
                     </h3>
                     <p>{feature.description}</p>

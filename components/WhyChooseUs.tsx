@@ -4,7 +4,7 @@ function WhyChooseUs() {
       <div className="py-16 md:py-24 px-4 container mx-auto">
         {/* Heading Section */}
         <div className="flex justify-center flex-col items-center">
-          <h2 className="uppercase text-[#1D5C5C] text-lg mb-4">
+          <h2 className="uppercase text-[#1D5C5C] text-lg  mb-4">
             Why Choose Us
           </h2>
           <h3 className="text-4xl md:text-5xl mb-6 max-w-4xl">
