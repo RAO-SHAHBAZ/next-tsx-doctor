@@ -285,7 +285,7 @@ export default function PorcelainVeneers() {
 
       <FaqSection
         faqs={faqs}
-        imageSrc="/Faq's.png" // Update with the actual image source path
+        imageSrc="/Faq's.webp" // Update with the actual image source path
       />
     </>
   );

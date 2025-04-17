@@ -104,7 +104,7 @@ export default function AboutUsPage() {
               </span>
             </span>
             <img
-              src="/about-us.png"
+              src="/about-us.webp"
               alt="About Us"
               className="w-full h-auto max-h-[800px] rounded-2xl object-cover object-center"
             />
@@ -118,7 +118,7 @@ export default function AboutUsPage() {
      {/* FAQS */}
      <FaqSection
       faqs={faqs}
-      imageSrc="/Faq's.png" // Update with the actual image source path
+      imageSrc="/Faq's.webp" // Update with the actual image source path
     />
      {/* Our Approch Section */}
            <section className="w-full relative">

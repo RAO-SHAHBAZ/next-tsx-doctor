@@ -19,7 +19,7 @@ function WhyChooseUs() {
         {/* Image for Mobile/Tablet Only */}
         <div className="block lg:hidden mt-10">
           <img
-            src="/why-us.png"
+            src="/why-us.webp"
             alt="Why Choose Us"
             className="w-full h-auto object-contain"
           />
