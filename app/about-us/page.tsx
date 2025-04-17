@@ -116,6 +116,7 @@ export default function AboutUsPage() {
 
      <WhyChooseUs/>
      {/* FAQS */}
+     <br />
      <FaqSection
       faqs={faqs}
       imageSrc="/Faq's.webp" // Update with the actual image source path

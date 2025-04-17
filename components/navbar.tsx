@@ -419,12 +419,12 @@ export default function Navbar() {
           } shadow-lg lg:hidden z-50`}
         >
           <div className="p-4">
-            <nav>
+            <nav >
               {/* Home */}
               <Link
                 href="/"
                 onClick={() => handleMenuClick("Home")}
-                className="block py-3 text-lg font-medium"
+                className="block py-3 "
               >
                 Home
               </Link>
@@ -435,7 +435,7 @@ export default function Navbar() {
                   <Link
                     href="/about-us"
                     onClick={() => handleMenuClick("About Us")}
-                    className="text-lg font-medium"
+                  
                   >
                     About Us
                   </Link>
@@ -480,7 +480,7 @@ export default function Navbar() {
                   <Link
                     href="/cosmetic-dentistry"
                     onClick={() => handleMenuClick("Cosmetic Dentistry")}
-                    className="text-lg font-medium"
+                    
                   >
                     Cosmetic Dentistry
                   </Link>
@@ -567,7 +567,7 @@ export default function Navbar() {
                   <Link
                     href="/general-dentistry"
                     onClick={() => handleMenuClick("General Dentistry")}
-                    className="text-lg font-medium"
+                  
                   >
                     General Dentistry
                   </Link>
@@ -652,7 +652,7 @@ export default function Navbar() {
               <Link
                 href="/invisalign"
                 onClick={() => handleMenuClick("Invisalign")}
-                className="block py-3 text-lg font-medium"
+                className="block py-3 "
               >
                 Invisalign
               </Link>
@@ -663,7 +663,7 @@ export default function Navbar() {
                   <Link
                     href="/patient-feedback"
                     onClick={() => handleMenuClick("Patient Feedback")}
-                    className="text-lg font-medium"
+                    
                   >
                     Patient Feedback
                   </Link>
@@ -699,7 +699,7 @@ export default function Navbar() {
               <Link
                 href="/contact-us"
                 onClick={() => handleMenuClick("Contact Us")}
-                className="block py-3 text-lg font-medium"
+                className="block py-3 "
               >
                 Contact Us
               </Link>
