@@ -63,7 +63,7 @@
                   "Invisible Filling",
                   "Composite Bonding",
                   "Porcelain Veneers",
-                  "Bespoke Smile Design",
+                  "Teeth Whitening",
         ].map((service, i) => {
          const serviceSlug = service
           .toLowerCase()

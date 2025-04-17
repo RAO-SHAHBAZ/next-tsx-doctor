@@ -21,10 +21,10 @@ const FaqSection: React.FC<FaqSectionProps> = ({ faqs, imageSrc }) => {
   };
 
   return (
-    <section className="container mx-auto px-4 mb-20">
-      <div className="flex justify-center flex-col items-center mb-5">
-        <h1 className="uppercase text-[#1D5C5C] text-lg mb-4">FAQs</h1>
-        <h2 className="text-4xl md:text-5xl mb-6 max-w-4xl">Frequently Asked Questions</h2>
+    <section className="container mx-auto px-4 mb-20 mt-10">
+      <div className="flex  flex-col justify-center items-center mb-5">
+        <h1 className="uppercase text-[#1D5C5C] text-lg text-center mb-4">FAQs</h1>
+        <h2 className="text-4xl md:text-5xl text-center mb-6 max-w-4xl">Frequently Asked Questions</h2>
       </div>
 
       <div className="flex flex-col md:flex-row items-center gap-12">
