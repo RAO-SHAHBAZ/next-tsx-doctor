@@ -1,7 +1,7 @@
 "use client";
 
 import { Clock, Phone, MapPin, Menu, ChevronDown, X } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -14,23 +14,35 @@ export default function Navbar() {
     patientFeedback: false,
   });
   const [activeMenu, setActiveMenu] = useState("Home");
+  const mobileMenuRef = useRef<HTMLDivElement>(null); // Ref for mobile menu
 
-  // Handle click outside to close the dropdowns in mobile view
+  // Handle click outside to close dropdowns and mobile menu
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
+      // Close dropdowns if click is outside .dropdown elements
       if (!(event.target as HTMLElement).closest(".dropdown")) {
-        setMobileDropdownOpen((prev) => ({
-          ...prev,
+        setMobileDropdownOpen({
           aboutUs: false,
           cosmeticDentistry: false,
           generalDentistry: false,
           patientFeedback: false,
-        }));
+        });
+      }
+
+      // Close mobile menu if click is outside the mobile menu and menu is open
+      if (
+        mobileMenuOpen &&
+        mobileMenuRef.current &&
+        !mobileMenuRef.current.contains(event.target as Node) &&
+        !(event.target as HTMLElement).closest("button") // Prevent closing when clicking the menu toggle button
+      ) {
+        setMobileMenuOpen(false);
       }
     };
+
     document.addEventListener("click", handleClickOutside);
     return () => document.removeEventListener("click", handleClickOutside);
-  }, []);
+  }, [mobileMenuOpen]);
 
   const toggleDropdown = (menu: string) => {
     setMobileDropdownOpen((prev) => ({
@@ -401,6 +413,7 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         <div
+          ref={mobileMenuRef}
           className={`fixed top-0 right-0 w-3/4 h-full bg-white transform transition-transform ${
             mobileMenuOpen ? "translate-x-0" : "translate-x-full"
           } shadow-lg lg:hidden z-50`}
@@ -696,4 +709,4 @@ export default function Navbar() {
       </div>
     </>
   );
-} 
+}
