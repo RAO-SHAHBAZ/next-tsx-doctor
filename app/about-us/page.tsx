@@ -1,11 +1,39 @@
+
+"use client";
 import OurTeam from "@/components/our-team";
 import ContactUs from "@/components/contact-us";
 import BredCrumb from "@/components/BredCrumb";
 import WhyChooseUs from "@/components/WhyChooseUs";
-import Faqs from "@/components/faqs";
 import GallerySection from "@/components/our-gallery";
+import FaqSection from "@/components/faqs";
 
 export default function AboutUsPage() {
+  const faqs = [
+    {
+      question: "How many months will I need to use the clear aligner device?",
+      answer: "Invisalign needs different treatment lengths for each patient, averaging between 6 and 18 months.",
+    },
+    {
+      question: "What arrangements does the clinic offer for paying cosmetic dental care?",
+      answer: "The clinic provides cheap payment methods plus free financing for its dental cosmetics and Invisalign services.",
+    },
+    {
+      question: "How will patients discover their first visit to City Dental Care?",
+      answer: "When you visit City Dental Care for the first time, they will perform extensive consultations and examine your dental health to discuss your treatment plan.",
+    },
+    {
+      question: "How would I learn if teeth veneers are essential for me?",
+      answer: "Our team will inspect the patient's teeth during this appointment to determine the correct action plan.",
+    },
+    {
+      question: "How simple are teeth whitening solutions for people to afford?",
+      answer: "Our professional teeth whitening prices are easy to accept, and we check your needs during a free consultation to provide the appropriate treatment.",
+    },
+    {
+      question: "What arrangements do you have for treating urgent dental issues?",
+      answer: "Our dental clinic accepts patients for urgent care through emergency appointments.",
+    },
+  ];
   const features = [
     {
       icon: "/our-mission.svg",
@@ -88,7 +116,10 @@ export default function AboutUsPage() {
 
      <WhyChooseUs/>
      {/* FAQS */}
-     <Faqs/>
+     <FaqSection
+      faqs={faqs}
+      imageSrc="/Faq's.png" // Update with the actual image source path
+    />
      {/* Our Approch Section */}
            <section className="w-full relative">
         <div className="md:col-span-9 relative">
