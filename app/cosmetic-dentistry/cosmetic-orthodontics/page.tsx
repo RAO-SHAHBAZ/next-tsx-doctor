@@ -61,12 +61,12 @@ export default function CosmeticOrthodontics() {
               <h2 className="text-lg mb-4">Other Services</h2>
               <div className="flex flex-col gap-3">
                 {[
-                  "Braces & Aligners",
-                  "Teeth Whitening",
-                  "Dental Implant",
-                  "Dental Floss",
-                  "Wisdom Teeth",
-                  "Molar Crown",
+                  "Stain Removal",
+                  "Facial Aesthetics",
+                  "Dermal Fillers",
+                  "Invisible Filling",
+                  "Composite Bonding",
+                  "Porcelain Veneers",
                 ].map((service, i) => {
                   const serviceSlug = service
                     .toLowerCase()

@@ -56,12 +56,12 @@
        <h2 className="text-lg mb-4">Other Services</h2>
        <div className="flex flex-col gap-3">
         {[
-         "Braces & Aligners",
-         "Teeth Whitening",
-         "Dental Implant",
-         "Dental Floss",
-         "Wisdom Teeth",
-         "Molar Crown",
+                  "Dermal Fillers",
+                  "Invisible Filling",
+                  "Composite Bonding",
+                  "Porcelain Veneers",
+                  "Bespoke Smile Design",
+                  "Cosmetic Orthodontics",
         ].map((service, i) => {
          const serviceSlug = service
           .toLowerCase()
