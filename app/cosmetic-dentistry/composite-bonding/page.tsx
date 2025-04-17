@@ -8,8 +8,8 @@ import {
   Youtube,
 } from "lucide-react";
 import Link from "next/link";
-import BredCrumb from "@/components/BredCrumb";
 import FaqSection from "@/components/faqs";
+import BredCrumbServices from "@/components/BreadCrumbServices";
 
 export default function ServicePage() {
     const faqs = [
@@ -42,7 +42,12 @@ export default function ServicePage() {
 
   return (
     <>
-      <BredCrumb title="Service Details" />
+      <BredCrumbServices title="Composite Bonding"   subtitle={
+    <span>
+      <Link className="hover:underline" href="/cosmetic-dentistry">Cosmetic Dentistry</Link> -{' '}
+      <span>Composite Bonding</span>
+    </span>
+  } />
 
       <div className="container mx-auto px-4 py-8 mb-20">
         <div className="flex flex-col-reverse lg:flex-row gap-8">
@@ -103,11 +108,11 @@ export default function ServicePage() {
             <img
               src="/A7402954.jpg"
               alt="Composite Bonding"
-              className="rounded-2xl w-full max-h-[400px] object-cover"
+              className="rounded-2xl w-full max-h-[500px] object-cover"
             />
 
             <div>
-              <h1 className="text-4xl lg:text-5xl  mb-3 text-center">
+              <h1 className="text-4xl lg:text-5xl text-center mb-3 lg:text-left">
                 Cosmetic Dentistry Services at City Dental Care
               </h1>
               <p className=" leading-relaxed">
@@ -122,10 +127,10 @@ export default function ServicePage() {
             </div>
 
             <div>
-              <h2 className="text-2xl text-center mb-2">
+              <h2 className="text-2xl lg:text-left text-center mb-2">
                 Composite Bonding for a Perfect Smile in Edinburgh
               </h2>
-              <h3 className="text-xl text-center mb-1">
+              <h3 className="text-xl lg:text-left text-center mb-1">
                 Achieve Your Dream Smile with Composite Bonding
               </h3>
               <p >
@@ -140,7 +145,7 @@ export default function ServicePage() {
             </div>
 
             <div>
-              <h3 className="text-xl text-center  mt-4 mb-1">
+              <h3 className="text-xl lg:text-left text-center mt-4 mb-1">
                 What is Composite Bonding?
               </h3>
               <p >
@@ -153,7 +158,7 @@ export default function ServicePage() {
             </div>
 
             <div>
-              <h2 className="text-2xl text-center mt-6 mb-2">
+              <h2 className="text-2xl lg:text-left text-center mt-6 mb-2">
                 Why Choose Composite Bonding?
               </h2>
 
@@ -176,14 +181,14 @@ export default function ServicePage() {
                 },
               ].map((item, index) => (
                 <div key={index} className="mb-3">
-                  <h3 className="text-lg ">{item.title}</h3>
+                  <h3 className="text-lg text-center lg:text-left ">{item.title}</h3>
                   <p >{item.desc}</p>
                 </div>
               ))}
             </div>
 
             <div>
-              <h2 className="text-2xl text-center mb-2">
+              <h2 className="text-2xl lg:text-left text-center mb-2">
                 How Does Composite Bonding Work?
               </h2>
               {[
@@ -205,14 +210,14 @@ export default function ServicePage() {
                 },
               ].map((step, index) => (
                 <div key={index} className="mb-3">
-                  <h3 className="text-lg ">{step.title}</h3>
+                  <h3 className="text-lg lg:text-left text-center ">{step.title}</h3>
                   <p>{step.desc}</p>
                 </div>
               ))}
             </div>
 
             <div>
-              <h3 className="text-xl text-center mb-2">
+              <h3 className="text-xl lg:text-left text-center mb-2">
                 Who Is an Ideal Patient for Composite Bonding?
               </h3>
               <p className=" mb-2">
@@ -232,7 +237,7 @@ export default function ServicePage() {
             </div>
 
             <div>
-              <h2 className="text-2xl text-center mb-2">
+              <h2 className="text-2xl lg:text-left text-center mb-2">
                 Benefits of Choosing City Dental Care for Composite Bonding
               </h2>
               {[
@@ -254,14 +259,14 @@ export default function ServicePage() {
                 },
               ].map((item, index) => (
                 <div key={index} className="mb-3">
-                  <h3 className="text-lg ">{item.title}</h3>
+                  <h3 className="text-lg text-center lg:text-left">{item.title}</h3>
                   <p >{item.desc}</p>
                 </div>
               ))}
             </div>
 
             <div>
-              <h2 className="text-2xl text-center mb-2">
+              <h2 className="text-2xl lg:text-left text-center mb-2">
                 Why Choose Composite Bonding instead of Other Treatments?
               </h2>
               {[
@@ -279,14 +284,14 @@ export default function ServicePage() {
                 },
               ].map((item, index) => (
                 <div key={index} className="mb-3">
-                  <h3 className="text-lg ">{item.title}</h3>
+                  <h3 className="text-lg lg:text-left text-center ">{item.title}</h3>
                   <p className="">{item.desc}</p>
                 </div>
               ))}
             </div>
 
             <div className="flex justify-center flex-col items-center">
-              <h2 className="text-2xl text-center  mb-2">
+              <h2 className="text-2xl lg:text-left text-center mb-2">
                 Get a Composite Bonding appointment today!
               </h2>
               <p >
