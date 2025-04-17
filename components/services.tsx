@@ -6,32 +6,38 @@ export default function Services() {
         icon: <img src="dental-consultation.svg"   alt="Dental Consultation" />,
         title: "Dental Consultation",
         description: "Detailed tests provide your dental wellness outcomes.",
+        link: "/dental-consultation"
       },
       {
         icon: <img src="same-day-emergency.svg"  alt="Same Day Emergency Appointments" />,
         title: "Same-Day Emergency Appointments",
         description:
           "Need urgent care? Our dental practice provides emergency dental appointments on the same day patients need care.",
+          link: "/dental-consultation"
       },
       {
         icon: <img src="/hygiene-service.svg" alt="Hygiene Services" />,
         title: "Hygiene Services",
         description: "Our services offer routine cleanings that maintain your smile's health and freshness.",
+        link: "/dental-consultation"
       },
       {
         icon: <img src="Implant-consultation.svg" alt="Implant Consultations" />,
         title: "Implant-consultation.svg",
         description: "Take the opportunity to find out about stable alternatives addressing tooth loss.",
+        link: "/dental-consultation"
       },
       {
         icon: <img src="wisdom-tooth.svg" alt="Wisdom Tooth Removal" />,
         title: "Wisdom Tooth Removal",
         description: "A gentle, stress-free approach to wisdom tooth extraction.",
+        link: "/dental-consultation"
       },
       {
         icon: <img src="/child-smile.svg" alt="Child Smile Care" />,
         title: "Child Smile Care",
         description: "Children who get early dental visits start their future with strong smiles.",
+        link: "/dental-consultation"
       },
     ]
   
@@ -46,7 +52,7 @@ export default function Services() {
               Trusted <span className="text-[#1d5c5c]">Dental Services</span> Tailored to Enhance Your Smile
             </h2>
   
-            <p className="text-center text-sm text-gray-500 mb-10 max-w-3xl">
+            <p className="text-center   mb-10 max-w-3xl">
               We provide all professional cosmetic and general services to improve your smile. Invisalign functions as an
               aligner that makes it easy to fix the teeth' misalignment without the need for braces, and the teeth
               whitening services help make smiles healthier and more appealing.
@@ -65,9 +71,9 @@ export default function Services() {
                 <p className="text-sm text-gray-600 mb-4">{service.description}</p>
   
                 {/* Arrow Link */}
-                <a href="#" className="inline-flex items-center">
+                <Link href={service.link} className="inline-flex items-center">
                   <img src="/Arrow.png" alt="arrow" />
-                </a>
+                </Link>
               </div>
             ))}
           </div>
