@@ -290,8 +290,8 @@ export default function ServicePage() {
               ))}
             </div>
 
-            <div className="flex justify-center flex-col items-center">
-              <h2 className="text-2xl lg:text-left text-center mb-2">
+            <div className="flex  flex-col items-center">
+              <h2 className="text-2xl text-center lg:text-left  mb-2">
                 Get a Composite Bonding appointment today!
               </h2>
               <p >
