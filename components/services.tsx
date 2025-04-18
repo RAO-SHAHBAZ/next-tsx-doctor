@@ -52,7 +52,7 @@ export default function Services() {
               Trusted <span className="text-[#1d5c5c]">Dental Services</span> Tailored to Enhance Your Smile
             </h2>
   
-            <p className="text-center   mb-10 max-w-3xl">
+            <p className="text-center  mb-10 max-w-3xl">
               We provide all professional cosmetic and general services to improve your smile. Invisalign functions as an
               aligner that makes it easy to fix the teeth' misalignment without the need for braces, and the teeth
               whitening services help make smiles healthier and more appealing.

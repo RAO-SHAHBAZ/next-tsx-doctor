@@ -85,19 +85,24 @@
        <div className="text-[#1D5C5C] text-sm f uppercase mb-2">
         Online Appointment
        </div>
-       <h2 className="text-xl mb-2 leading-snug">
+       <h2 className="text-xl mb-3">
         Enhance Your Smile with <br className="hidden sm:block" />
-        Professional Whitening
+        Professional Care
        </h2>
+       <h3 className="mb-2">
+       Transform your oral health with top-tier dental services
+       </h3>
+       
        <p className="text-gray-600 text-sm mb-4">
-        Lobortis ut aptent metus hac ad. Risus morbi ut tellus
-        suspendisse lectus platea.
+       Turn to the premier dental clinics for professional dental services. Our services range from general check-ups and cleaning services to other standard aesthetic procedures that people seek. Can't visit in person? Get an online appointment for emergency services!
+       Book Your Appointment Today!
        </p>
+       
        <button
-        className="bg-[#1D5C5C] text-white px-5 py-2 rounded font-medium hover:bg-[#174a4a] transition"
+        className="bg-[#1D5C5C] text-white px-5 py-2 rounded "
         onClick={() => console.log("Make Appointment Clicked")}
        >
-        Make Appointment
+        Book Your Appointment Today
        </button>
       </div>
      </aside>
