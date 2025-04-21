@@ -24,11 +24,14 @@ function ContactUS() {
       <div className=" grid md:grid-cols-2 gap-10">
         {/* Left Column */}
         <div>
-          <h3 className="text-lg text-[#1D5C5C] ">Contact Us</h3>
-          <h2 className="text-4xl md:text-5xl  mt-2 mb-4  text-[#1c1c1c]">Get In Touch</h2>
+          <h1 className="text-lg text-[#1D5C5C] ">Contact Us</h1>
+          <h2 className="text-4xl md:text-5xl  mt-2 mb-4  ">Get in Touch with City Dental Care</h2>
+          <h3 className="text-xl">
+          Your Journey to a Healthier Smile Starts Here!
+          </h3>
+          <br />
           <p className="text-gray-600 mb-8">
-            Lobortis ut aptent metus hac ad. Risus morbi suspendisse lectus platea nec pretium
-            suscipit dolor lorem vivamus. Lorem ipsum dolor sit amet, consectetur.
+          At City Dental Care, we go out of our way to serve all our patients to the best of our ability in dental care. We have an expert team ready to help, whether you need their services for a routine check-up or an emergency, cosmetic dentistry, or other purposes. Feel free to call us or make an appointment online so that a professional can attend to your individual needs.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6">
@@ -136,7 +139,7 @@ function ContactUS() {
           <div className="w-full md:w-1/2">
             <div className="relative">
               <Image
-                src="/dentally-care-apopintment.png"
+                src="/city-dental-care-contact.webp"
                 alt="Dental team working on a patient"
                 width={500}
                 height={500}
@@ -156,14 +159,16 @@ function ContactUS() {
 
           {/* Right Side: Contact Form */}
           <div className="w-full md:w-1/2">
-          <div className="uppercase  text-[#1D5C5C] mb-4 mt-8">Ask Us</div>
-            <h2 className="text-4xl md:text-5xl  text-gray-800 mb-4">
+          <div className="uppercase  text-[#1D5C5C] mb-4 mt-8">Ask Us Anything</div>
+            <h2 className="text-4xl md:text-5xl   mb-4">
               Have Other Questions?
             </h2>
+            <h3 className="text-xl">
+            We're Here to Help – Ask Your Questions Anytime!
+            </h3>
+            <br />
             <p className="text-gray-500 mb-6">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus morbi
-              suspendisse lectus platea nec pretium suscipit dolor lorem vivamus.
-              Lorem ipsum dolor sit amet, consectetur.
+            We present the possibility of making dental care as accessible and convenient as possible for you. For any further inquiries or issues related to our clinic services or to book an appointment, don't hesitate to contact us using the information provided. Our friendly customer support team is always ready to help and assist with your needs. Have a question? To get an answer, please fill out the form below, and we will respond as soon as possible.
             </p>
             <form className="space-y-4">
               <div>
@@ -221,14 +226,14 @@ function ContactUS() {
                   id="message"
                   placeholder="Your Message"
                   rows={4}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#40E0D0] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-md "
                 />
               </div>
               <button
                 type="submit"
-                className="w-full bg-[#1d5c5c] text-white px-6 py-3 rounded-md hover:bg-[#40E0D0] transition-colors"
+                className="w-full bg-[#1d5c5c] text-white px-6 py-3 rounded-md"
               >
-                Send Message
+                Get in Touch Now
               </button>
             </form>
           </div>

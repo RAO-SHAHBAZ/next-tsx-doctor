@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function LatestNews() {
     const news = [
       {
@@ -59,7 +61,7 @@ export default function LatestNews() {
                   </div>
   
                   {/* Read More Link */}
-                  <a href="#" className="text-[#1d5c5c] text-[16px] font-semibold flex items-center gap-1">
+                  <Link href="/single-blog" className="text-[#1d5c5c] text-[16px] font-semibold flex items-center gap-1">
                     Read more
                     <svg
                       className="ml-1"
@@ -77,7 +79,7 @@ export default function LatestNews() {
                         strokeLinejoin="round"
                       />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             ))}

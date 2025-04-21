@@ -1,7 +1,7 @@
 "use client";
 
 import { Clock, Phone, MapPin, Menu, ChevronDown, X } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -14,23 +14,35 @@ export default function Navbar() {
     patientFeedback: false,
   });
   const [activeMenu, setActiveMenu] = useState("Home");
+  const mobileMenuRef = useRef<HTMLDivElement>(null); // Ref for mobile menu
 
-  // Handle click outside to close the dropdowns in mobile view
+  // Handle click outside to close dropdowns and mobile menu
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
+      // Close dropdowns if click is outside .dropdown elements
       if (!(event.target as HTMLElement).closest(".dropdown")) {
-        setMobileDropdownOpen((prev) => ({
-          ...prev,
+        setMobileDropdownOpen({
           aboutUs: false,
           cosmeticDentistry: false,
           generalDentistry: false,
           patientFeedback: false,
-        }));
+        });
+      }
+
+      // Close mobile menu if click is outside the mobile menu and menu is open
+      if (
+        mobileMenuOpen &&
+        mobileMenuRef.current &&
+        !mobileMenuRef.current.contains(event.target as Node) &&
+        !(event.target as HTMLElement).closest("button") // Prevent closing when clicking the menu toggle button
+      ) {
+        setMobileMenuOpen(false);
       }
     };
+
     document.addEventListener("click", handleClickOutside);
     return () => document.removeEventListener("click", handleClickOutside);
-  }, []);
+  }, [mobileMenuOpen]);
 
   const toggleDropdown = (menu: string) => {
     setMobileDropdownOpen((prev) => ({
@@ -48,8 +60,8 @@ export default function Navbar() {
     <>
       {/* Contact Info Section */}
       <div className="w-full border-b border-gray-300 bg-[#f5f5f5]">
-        <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center py-4">
-          <Link href="/" className="hidden md:block">
+        <div className="container mx-auto px-4 flex flex-col lg:flex-row justify-between items-center py-4">
+          <Link href="/" className="hidden lg:block">
             <Image
               src="/City-Dental-Care.svg"
               alt="City Dental Care"
@@ -58,7 +70,7 @@ export default function Navbar() {
               priority
             />
           </Link>
-          <div className="flex flex-wrap md:flex-row gap-4 md:gap-6 mt-4 md:mt-0">
+          <div className="flex flex-wrap lg:flex-row gap-4 md:gap-6 mt-4 md:mt-0">
             <div className="flex items-center gap-2">
               <div className="bg-[#1d5c5c] p-2 rounded">
                 <Clock className="text-white h-3 w-3 md:h-5 md:w-5" />
@@ -83,7 +95,7 @@ export default function Navbar() {
               </div>
             </div>
 
-            <div className="hidden md:flex items-center gap-2">
+            <div className="hidden lg:flex items-center gap-2">
               <div className="bg-[#1d5c5c] p-2 rounded">
                 <MapPin className="text-white h-5 w-5" />
               </div>
@@ -103,7 +115,7 @@ export default function Navbar() {
       <div className="w-full py-3 sticky top-0 z-50 bg-[#f5f5f5] shadow-md">
         <div className="container mx-auto px-4 py-4">
           {/* Mobile Logo and Menu Button */}
-          <div className="flex items-center justify-between md:hidden">
+          <div className="flex items-center justify-between lg:hidden">
             <Link href="/">
               <Image
                 src="/City-Dental-Care.svg"
@@ -123,7 +135,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Navigation and Button */}
-          <div className="hidden md:flex w-full items-center justify-between">
+          <div className="hidden lg:flex w-full items-center justify-between">
             <nav className="flex items-center space-x-8 relative">
               {/* Home */}
               <div className="pb-3">
@@ -270,7 +282,7 @@ export default function Navbar() {
                 </div>
                 <div className="absolute left-0 top-full w-48 bg-white shadow-lg rounded-md z-50 hidden group-hover:block">
                   <Link
-                    href="/general-dentistry/dental-consultation"
+                    href="/dental-treatments"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                   >
                     Dental Consultation
@@ -392,7 +404,7 @@ export default function Navbar() {
             {/* Desktop Appointment Button */}
             <Link
               href="/appointment"
-              className="hidden md:block bg-[#1d5c5c] text-white px-4 py-3 text-sm uppercase text-center"
+              className="hidden lg:block bg-[#1d5c5c] text-white px-4 py-3 text-sm uppercase text-center"
             >
               Get Appointment
             </Link>
@@ -401,17 +413,18 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         <div
+          ref={mobileMenuRef}
           className={`fixed top-0 right-0 w-3/4 h-full bg-white transform transition-transform ${
             mobileMenuOpen ? "translate-x-0" : "translate-x-full"
-          } shadow-md md:hidden z-50`}
+          } shadow-lg lg:hidden z-50`}
         >
           <div className="p-4">
-            <nav>
+            <nav >
               {/* Home */}
               <Link
                 href="/"
                 onClick={() => handleMenuClick("Home")}
-                className="block py-3 text-lg font-medium"
+                className="block py-3 "
               >
                 Home
               </Link>
@@ -422,7 +435,7 @@ export default function Navbar() {
                   <Link
                     href="/about-us"
                     onClick={() => handleMenuClick("About Us")}
-                    className="text-lg font-medium"
+                  
                   >
                     About Us
                   </Link>
@@ -467,7 +480,7 @@ export default function Navbar() {
                   <Link
                     href="/cosmetic-dentistry"
                     onClick={() => handleMenuClick("Cosmetic Dentistry")}
-                    className="text-lg font-medium"
+                    
                   >
                     Cosmetic Dentistry
                   </Link>
@@ -554,7 +567,7 @@ export default function Navbar() {
                   <Link
                     href="/general-dentistry"
                     onClick={() => handleMenuClick("General Dentistry")}
-                    className="text-lg font-medium"
+                  
                   >
                     General Dentistry
                   </Link>
@@ -569,7 +582,7 @@ export default function Navbar() {
                 {mobileDropdownOpen.generalDentistry && (
                   <div className="pl-4">
                     <Link
-                      href="/general-dentistry/dental-consultation"
+                      href="/dental-treatments"
                       onClick={() => setMobileMenuOpen(false)}
                       className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                     >
@@ -639,7 +652,7 @@ export default function Navbar() {
               <Link
                 href="/invisalign"
                 onClick={() => handleMenuClick("Invisalign")}
-                className="block py-3 text-lg font-medium"
+                className="block py-3 "
               >
                 Invisalign
               </Link>
@@ -650,7 +663,7 @@ export default function Navbar() {
                   <Link
                     href="/patient-feedback"
                     onClick={() => handleMenuClick("Patient Feedback")}
-                    className="text-lg font-medium"
+                    
                   >
                     Patient Feedback
                   </Link>
@@ -686,7 +699,7 @@ export default function Navbar() {
               <Link
                 href="/contact-us"
                 onClick={() => handleMenuClick("Contact Us")}
-                className="block py-3 text-lg font-medium"
+                className="block py-3 "
               >
                 Contact Us
               </Link>
@@ -696,4 +709,4 @@ export default function Navbar() {
       </div>
     </>
   );
-} 
+}

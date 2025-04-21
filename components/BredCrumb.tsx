@@ -14,11 +14,11 @@ export default function BredCrumb({ title }: BredCrumbProps) {
         <div className="absolute inset-0 bg-[#1d5c5c]/80 z-10"></div>
         <div
           className="w-full h-[200px] md:h-[450px] bg-cover bg-center"
-          style={{ backgroundImage: `url(/story.jpeg)` }}
+          style={{ backgroundImage: `url(/city-dental-care-hero-2.webp)` }}
         ></div>
 
         <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-white text-center px-4">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-light mb-6 max-w-4xl">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-light lg:mb-4 mb-2 max-w-4xl">
             {title}
           </h2>
           <p><Link href="/" className="hover:underline">Home</Link> - {title}</p>
