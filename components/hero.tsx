@@ -1,23 +1,25 @@
 "use client";
 
 import { Star, CalendarCheck, Clock1 } from "lucide-react";
-import Image from "next/image"; // Import the Image component
+import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="relative w-full min-h-[800px] flex flex-col justify-center items-center">
-      {/* Background Image with Dark Overlay */}
-      <div className="absolute inset-0">
-        <div className="absolute inset-0">
-          <Image
-            src="/city-dental-care-hero-2.webp" // Path relative to the `public` folder
-            alt="Hero Background"
-            fill // Replaces `bg-cover` by filling the container
-            className="object-cover object-[60%] md:object-center" // Matches your original positioning
-            priority // Optional: Loads this image eagerly since it’s above the fold
-          />
-          <div className="absolute inset-0 bg-[#0C2F2FCC] opacity-95"></div>
-        </div>
+    <div className="relative w-full min-h-[800px] flex flex-col justify-center items-center overflow-hidden">
+      {/* Background Video with Dark Overlay */}
+      <div className="absolute inset-0 z-0">
+        <video
+          className="w-full h-full object-cover"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source src="DOC_BG_VIDEO.mp4" type="video/mp4" />
+          {/* You can add other formats for better browser support */}
+          Your browser does not support the video tag.
+        </video>
+        <div className="absolute inset-0 bg-[#0C2F2FCC] opacity-95"></div>
       </div>
 
       {/* Content Wrapper */}
@@ -29,7 +31,7 @@ export default function Hero() {
           </h1>
 
           {/* Subtitle */}
-          <p className=" mb-10 max-w-2xl font-Nova">
+          <p className="mb-10 max-w-2xl font-Nova">
             Welcome to City Dental Care Clinic in Edinburgh, which is fully equipped with state-of-the-art machines for
             patient comfort. We offer Invisalign treatment, teeth whitening, and smile makeovers to boost confidence and
             durability.
@@ -50,7 +52,6 @@ export default function Hero() {
 
           {/* Reviews Section */}
           <div className="flex items-center gap-4">
-            {/* Profiles For Reviews */}
             <div className="flex -space-x-5">
               <Image
                 src="/profile1.png"
