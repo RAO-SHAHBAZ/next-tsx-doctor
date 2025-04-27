@@ -256,10 +256,10 @@ export default function Navbar() {
                     Dermal Fillers
                   </Link>
                   <Link
-                    href="/cosmetic-dentistry/invisible-filling"
+                    href="/cosmetic-dentistry/invisible-fillings"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                   >
-                    Invisible Filling
+                    Invisible Fillings
                   </Link>
                 </div>
               </div>
@@ -551,7 +551,7 @@ export default function Navbar() {
                       Dermal Fillers
                     </Link>
                     <Link
-                      href="/cosmetic-dentistry/invisible-filling"
+                      href="/cosmetic-dentistry/invisible-fillings"
                       onClick={() => setMobileMenuOpen(false)}
                       className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                     >

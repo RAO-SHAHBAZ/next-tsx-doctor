@@ -59,10 +59,12 @@ export default function PorcelainVeneers() {
                 {[
                   "Bespoke Smile Design",
                   "Cosmetic Orthodontics",
+                  "Teeth Whitening",
                   "Stain Removal",
                   "Facial Aesthetics",
                   "Dermal Fillers",
-                  "Invisible Filling",
+                  "Invisible Fillings",
+                  "Composite Bonding",
                 ].map((service, i) => {
                   const serviceSlug = service
                     .toLowerCase()

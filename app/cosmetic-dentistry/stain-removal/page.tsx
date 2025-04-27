@@ -60,9 +60,11 @@
         {[
                   "Facial Aesthetics",
                   "Dermal Fillers",
-                  "Invisible Filling",
+                  "Invisible Fillings",
                   "Composite Bonding",
                   "Porcelain Veneers",
+                  "Bespoke Smile Design",
+                  "Cosmetic Orthodontics",
                   "Teeth Whitening",
         ].map((service, i) => {
          const serviceSlug = service

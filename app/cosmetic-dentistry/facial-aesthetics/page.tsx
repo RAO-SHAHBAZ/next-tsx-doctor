@@ -57,11 +57,13 @@
        <div className="flex flex-col gap-3">
         {[
                   "Dermal Fillers",
-                  "Invisible Filling",
+                  "Invisible Fillings",
                   "Composite Bonding",
                   "Porcelain Veneers",
                   "Bespoke Smile Design",
                   "Cosmetic Orthodontics",
+                  "Teeth Whitening",
+                  "Stain Removal",
         ].map((service, i) => {
          const serviceSlug = service
           .toLowerCase()

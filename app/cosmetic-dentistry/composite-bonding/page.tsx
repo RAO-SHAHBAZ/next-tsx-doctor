@@ -60,9 +60,11 @@ export default function ServicePage() {
                   "Porcelain Veneers",
                   "Bespoke Smile Design",
                   "Cosmetic Orthodontics",
+                  "Teeth Whitening",
                   "Stain Removal",
                   "Facial Aesthetics",
                   "Dermal Fillers",
+                  "Invisible Fillings",
                 ].map((service, i) => {
                   const serviceSlug = service
                     .toLowerCase()

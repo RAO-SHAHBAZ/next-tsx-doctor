@@ -54,12 +54,14 @@
        <h2 className="text-lg mb-4">Other Services</h2>
        <div className="flex flex-col gap-3">
         {[
-         "Facial Aesthetics",
+         "Stain Removal",
+                  "Facial Aesthetics",
                   "Dermal Fillers",
-                  "Invisible Filling",
+                  "Invisible Fillings",
                   "Composite Bonding",
                   "Porcelain Veneers",
                   "Bespoke Smile Design",
+                  "Cosmetic Orthodontics",
         ].map((service, i) => {
          const serviceSlug = service
           .toLowerCase()

@@ -66,8 +66,10 @@
                   "Porcelain Veneers",
                   "Bespoke Smile Design",
                   "Cosmetic Orthodontics",
+                  "Teeth Whitening",
                   "Stain Removal",
                   "Facial Aesthetics",
+                  "Dermal Fillers"
         ].map((service, i) => {
          const serviceSlug = service
           .toLowerCase()
