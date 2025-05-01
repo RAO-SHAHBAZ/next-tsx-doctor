@@ -81,32 +81,33 @@
        </div>
       </div>
 
-      <br />
+      <div className="md:mx-auto md:sticky md:top-24 md:z-10">
+              <br />
+              <div className="bg-[#F5F5F5] rounded shadow-md p-6 text-center mx-auto">
+                <div className="text-[#1D5C5C] text-sm f uppercase mb-2">
+                  Online Appointment
+                </div>
+                <h2 className="text-xl mb-3">
+                  Enhance Your Smile with <br className="hidden sm:block" />
+                  Professional Care
+                </h2>
 
-      <div className="bg-[#F5F5F5] rounded shadow-md p-6 text-center mx-auto">
-       <div className="text-[#1D5C5C] text-sm f uppercase mb-2">
-        Online Appointment
-       </div>
-       <h2 className="text-xl mb-3">
-        Enhance Your Smile with <br className="hidden sm:block" />
-        Professional Care
-       </h2>
-       <h3 className="mb-2">
-       Transform your oral health with top-tier dental services
-       </h3>
-       
-       <p className="text-gray-600 text-sm mb-4">
-       Turn to the premier dental clinics for professional dental services. Our services range from general check-ups and cleaning services to other standard aesthetic procedures that people seek. Can't visit in person? Get an online appointment for emergency services!
-       Book Your Appointment Today!
-       </p>
-       
-       <button
-        className="bg-[#1D5C5C] text-white px-5 py-2 rounded "
-        onClick={() => console.log("Make Appointment Clicked")}
-       >
-        Book Your Appointment Today
-       </button>
-      </div>
+                <p className="text-gray-600 text-sm mb-4">
+                  Turn to the premier dental clinics for professional dental
+                  services. Our services range from general check-ups and
+                  cleaning services to other standard aesthetic procedures that
+                  people seek. Can't visit in person? Get an online appointment
+                  for emergency services! Book Your Appointment Today!
+                </p>
+
+                <button
+                  className="bg-[#1D5C5C] text-white px-5 py-2 rounded "
+                  onClick={() => console.log("Make Appointment Clicked")}
+                >
+                  Book Your Appointment Today
+                </button>
+              </div>
+            </div>
      </aside>
 
      {/* Main Content */}
@@ -266,7 +267,7 @@
        ))}
       </div>
 
-      <div className="flex  flex-col items-center">
+    
        <h2 className="text-2xl text-center lg:text-left  mb-2">
         Ready for a Beautiful, Refreshed Smile?
        </h2>
@@ -275,6 +276,7 @@
         City Dental Care enables patients to receive customised facial aesthetic treatments for improving fine lines, enhancing volume, and defining their jawlines to achieve youthful facial effects.
         Secure your appointment for a consultation, which will lead you to a confident smile with enhanced radiance.
        </p>
+       <div className="flex justify-center md:justify-start">
        <button className="mt-4 bg-[#1D5C5C] text-white px-6 py-2 rounded  ">
         Book Your Facial Aesthetic Consultation Today!
        </button>
