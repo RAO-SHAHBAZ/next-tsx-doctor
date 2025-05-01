@@ -73,7 +73,8 @@ function WhyChooseUs() {
                     Comprehensive Dental Solutions
                   </h4>
                   <p className="max-w-[450px] text-left  md:text-right">
-                    Our services entail preventive care, simple checkups, fillings, crowns, bridges, Invisalign, veneers, and teeth whitening.
+                  Our services entail preventive care, checkups, fillings, crowns, Invisalign, and teeth whitening.
+
                   </p>
                 </div>
                 <div className="bg-[#1D5C5C] w-20 h-20 rounded flex items-center justify-center shrink-0">
@@ -101,7 +102,7 @@ function WhyChooseUs() {
                     Patient-Centered Care
                   </h4>
                   <p className="max-w-[450px] text-left">
-                    Treatment is individualised, considering the client's comfort and creating a positive experience during the appointment.
+                  Treatment is individualised, considering comfort and creating a positive experience.
                   </p>
                 </div>
               </div>
@@ -120,7 +121,8 @@ function WhyChooseUs() {
                     Affordable Payment Plans
                   </h4>
                   <p className="max-w-[450px] text-left">
-                    Our dental practice provides various financing structures with 0% interest, so you can get the professional dental care you need.
+                  Our practice offers financing with 0% interest, so you can get the dental care you need.
+
                   </p>
                 </div>
               </div>
@@ -139,7 +141,7 @@ function WhyChooseUs() {
                     Emergency Services
                   </h4>
                   <p className="max-w-[450px] text-left">
-                    Need urgent care? Our clinic offers same-day emergency dental services, so you will never experience discomfort before receiving care.
+                  Need urgent care? Our clinic offers same-day services, so you’ll never experience discomfort.
                   </p>
                 </div>
               </div>
