@@ -87,9 +87,11 @@
        </div>
       </div>
 
-      <br />
+     
 
-      <div className="bg-[#F5F5F5] rounded shadow-md p-6 text-center mx-auto">
+ <div className="md:mx-auto md:sticky md:top-24 md:z-10">
+  <br />
+ <div className="bg-[#F5F5F5] rounded shadow-md p-6 text-center mx-auto">
        <div className="text-[#1D5C5C] text-sm f uppercase mb-2">
         Online Appointment
        </div>
@@ -97,9 +99,6 @@
         Enhance Your Smile with <br className="hidden sm:block" />
         Professional Care
        </h2>
-       <h3 className="mb-2">
-       Transform your oral health with top-tier dental services
-       </h3>
        
        <p className="text-gray-600 text-sm mb-4">
        Turn to the premier dental clinics for professional dental services. Our services range from general check-ups and cleaning services to other standard aesthetic procedures that people seek. Can't visit in person? Get an online appointment for emergency services!
@@ -113,6 +112,7 @@
         Book Your Appointment Today
        </button>
       </div>
+ </div>
      </aside>
 
      {/* Main Content */}

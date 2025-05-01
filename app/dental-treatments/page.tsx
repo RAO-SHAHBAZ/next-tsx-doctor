@@ -50,6 +50,20 @@ function GeneralDentistry() {
       description:
         "Our braces and clear aligners suit everyone who wants their teeth aligned to achieve a sound bite.",
     },
+    
+    {
+      icon: <img src="/child-smile.svg" alt="Child Smile Care" />,
+      title: "Endodontic Root Canals: Save Your Tooth",
+      description:
+        "Our root canal therapy removes infected pulp to save your tooth and prevent it from decay. We have specialists who provide fast, pain-free procedures to achieve results.",
+    },
+    {
+      icon: <img src="Implant-consultation.svg" alt="Orthodontic" />,
+      title: "Dental Bridges: Restore Your Smile",
+      description:
+        "Our dental bridges service works to fill the gap left by missing teeth, restoring better chewing function and facial appearance.",
+    },
+    
   ];
   const services2 = [
     {
@@ -137,6 +151,7 @@ function GeneralDentistry() {
       description:
         "We ensure the treatment process is going well without any problems or hindrances.",
     },
+   
   ];
   return (
     <>
@@ -148,7 +163,7 @@ function GeneralDentistry() {
         <div className="container mx-auto px-4">
           {/* Section Heading */}
           <div className="uppercase text-center text-[#1D5C5C] mb-4">
-            What Services Do We Offer?
+              Dental Services
           </div>
 
           <div className="flex flex-col items-center justify-center">
@@ -215,7 +230,7 @@ function GeneralDentistry() {
                       />
                     </div>
                     <div>
-                      <h3 className="text-xl mb-2 font-extrabold">
+                      <h3 className="text-2xl mb-2 ">
                         {feature.title}
                       </h3>
                       <p>{feature.description}</p>

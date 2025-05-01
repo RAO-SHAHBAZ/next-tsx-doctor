@@ -1,4 +1,3 @@
-
 "use client";
 import OurTeam from "@/components/our-team";
 import ContactUs from "@/components/contact-us";
@@ -11,27 +10,37 @@ export default function AboutUsPage() {
   const faqs = [
     {
       question: "How many months will I need to use the clear aligner device?",
-      answer: "Invisalign needs different treatment lengths for each patient, averaging between 6 and 18 months.",
+      answer:
+        "Invisalign needs different treatment lengths for each patient, averaging between 6 and 18 months.",
     },
     {
-      question: "What arrangements does the clinic offer for paying cosmetic dental care?",
-      answer: "The clinic provides cheap payment methods plus free financing for its dental cosmetics and Invisalign services.",
+      question:
+        "What arrangements does the clinic offer for paying cosmetic dental care?",
+      answer:
+        "The clinic provides cheap payment methods plus free financing for its dental cosmetics and Invisalign services.",
     },
     {
-      question: "How will patients discover their first visit to City Dental Care?",
-      answer: "When you visit City Dental Care for the first time, they will perform extensive consultations and examine your dental health to discuss your treatment plan.",
+      question:
+        "How will patients discover their first visit to City Dental Care?",
+      answer:
+        "When you visit City Dental Care for the first time, they will perform extensive consultations and examine your dental health to discuss your treatment plan.",
     },
     {
       question: "How would I learn if teeth veneers are essential for me?",
-      answer: "Our team will inspect the patient's teeth during this appointment to determine the correct action plan.",
+      answer:
+        "Our team will inspect the patient's teeth during this appointment to determine the correct action plan.",
     },
     {
-      question: "How simple are teeth whitening solutions for people to afford?",
-      answer: "Our professional teeth whitening prices are easy to accept, and we check your needs during a free consultation to provide the appropriate treatment.",
+      question:
+        "How simple are teeth whitening solutions for people to afford?",
+      answer:
+        "Our professional teeth whitening prices are easy to accept, and we check your needs during a free consultation to provide the appropriate treatment.",
     },
     {
-      question: "What arrangements do you have for treating urgent dental issues?",
-      answer: "Our dental clinic accepts patients for urgent care through emergency appointments.",
+      question:
+        "What arrangements do you have for treating urgent dental issues?",
+      answer:
+        "Our dental clinic accepts patients for urgent care through emergency appointments.",
     },
   ];
   const features = [
@@ -39,13 +48,13 @@ export default function AboutUsPage() {
       icon: "/our-mission.svg",
       title: "Our Mission",
       description:
-        "At City Dental Care, patients can get good dental care at budget prices with custom treatments that include modern dental technology.",
+        "At City Dental Care, patients can get dental care at budget prices with custom treatments that include modern technology.",
     },
     {
       icon: "/our-vision.svg",
       title: "Our Vision",
       description:
-        "Our vision is to become the best dental clinic in Edinburgh to provide quality treatment and care that will improve the appearance of our clients' teeth and confidence.",
+        "Our vision is to become Edinburgh’s leading clinic, providing treatment that improves clients' smiles and confidence.",
     },
   ];
 
@@ -58,7 +67,9 @@ export default function AboutUsPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
           <div>
-            <h1 className="uppercase text-[#1D5C5C] text-lg mb-4 lg:text-left text-center ">ABOUT US</h1>
+            <h1 className="uppercase text-[#1D5C5C] text-lg mb-4 lg:text-left text-center ">
+              ABOUT US
+            </h1>
             <h2 className="text-3xl md:text-5xl lg:text-left text-center  mb-6">
               Welcome to City Dental Care – Your Trusted Dental Clinic in
               Edinburgh
@@ -85,9 +96,7 @@ export default function AboutUsPage() {
                     />
                   </div>
                   <div>
-                    <h3 className="text-2xl mb-2 ">
-                      {feature.title}
-                    </h3>
+                    <h3 className="text-2xl mb-2 ">{feature.title}</h3>
                     <p>{feature.description}</p>
                   </div>
                 </div>
@@ -114,47 +123,50 @@ export default function AboutUsPage() {
 
       {/* Why Choose Us Section */}
 
-     <WhyChooseUs/>
-     {/* FAQS */}
-     <br />
-     <FaqSection
-      faqs={faqs}
-      imageSrc="/Faq's.webp" // Update with the actual image source path
-    />
-     {/* Our Approch Section */}
-           <section className="w-full relative">
+      <WhyChooseUs />
+      {/* FAQS */}
+      <br />
+      <FaqSection
+        faqs={faqs}
+        imageSrc="/Faq's.webp" // Update with the actual image source path
+      />
+      {/* Our Approch Section */}
+      <section className="w-full relative">
         <div className="md:col-span-9 relative">
           <div className="absolute inset-0 bg-[#1d5c5c]/80 z-10"></div>
           <div
             className="w-full h-[900px] md:h-[750px] bg-cover bg-center"
             style={{ backgroundImage: `url(/ourapproch.jpg)` }}
           ></div>
-  
+
           <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-white text-center px-4">
-            <h2 className="uppercase text-lg mb-4">
-            Our Approach
-            </h2>
-  
+            <h2 className="uppercase text-lg mb-4">Our Approach</h2>
+
             <h3 className="text-4xl md:text-5xl lg:text-6xl font-light mb-6 max-w-4xl">
-            Expert Care, Personalised Service at City Dental Care in Edinburgh
+              Expert Care, Personalised Service at City Dental Care in Edinburgh
             </h3>
             <p className="text-lg mb-8 max-w-3xl">
-            Our dental practice at City Dental Care works to ease patient anxiety during dental visits. We create an easygoing and compassionate method to provide our patients with the best dental care without anxiety. Our commitment is to deliver first-rate dental healthcare and make our clinic a comfortable atmosphere where patients can feel at ease. <br /> <br />
-We distinguish ourselves as a modern practice with a friendly approach. Every patient gets a unique care plan. Let us give you the feeling of the best dental healthcare services without passing through stressful moments.
-
+              Our dental practice at City Dental Care works to ease patient
+              anxiety during dental visits. We create an easygoing and
+              compassionate method to provide our patients with the best dental
+              care without anxiety. Our commitment is to deliver first-rate
+              dental healthcare and make our clinic a comfortable atmosphere
+              where patients can feel at ease. <br /> <br />
+              We distinguish ourselves as a modern practice with a friendly
+              approach. Every patient gets a unique care plan. Let us give you
+              the feeling of the best dental healthcare services without passing
+              through stressful moments.
             </p>
             <button className="border border-white text-white text-sm px-4 py-4 inline-block uppercase hover:bg-white hover:text-[#1d5c5c] transition-colors">
-            Discover Our Expertise and Compassion
+              Discover Our Expertise and Compassion
             </button>
           </div>
         </div>
       </section>
 
-
       {/* OUr Gallery Section */}
 
-      <GallerySection/>
-    
+      <GallerySection />
 
       <OurTeam />
       <br className="hidden md:block" />
