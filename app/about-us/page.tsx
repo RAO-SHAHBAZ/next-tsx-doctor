@@ -64,59 +64,104 @@ export default function AboutUsPage() {
       {/* About Us Hero Section */}
 
       <section className="py-16 md:py-24 px-4 container mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          {/* Left Content */}
-          <div>
-            <h1 className="uppercase text-[#1D5C5C] text-lg mb-4 lg:text-left text-center ">
-              ABOUT US
-            </h1>
-            <h2 className="text-3xl md:text-5xl lg:text-left text-center  mb-6">
-              Welcome to City Dental Care – Your Trusted Dental Clinic in
-              Edinburgh
-            </h2>
-            <p className=" mb-8">
-              City Dental Care offers high-level dental healthcare through
-              modern technology and individualised treatments. Our practice
-              handles every dental service in downtown Edinburgh, including
-              cosmetic procedures, basic dentistry with Invisalign braces, and
-              smile improvement treatments. For <strong>20 years</strong>, City
-              Dental Care’s top dental team has delivered painless dental care,
-              resulting in bigger smiles.
-            </p>
+          <div className="flex flex-col lg:grid lg:grid-cols-2 gap-16 items-center">
+            {/* Image - On top for mobile, right for desktop */}
+            <div className="relative w-full lg:order-last">
+              <span className="bg-[#1D5C5C] flex space-x-2 text-white px-6 py-4 absolute top-44 right-4 rounded-2xl shadow-lg z-10">
+                <img src="/contct-us.svg" alt="Phone SVG" className="w-12 h-12" />
+                <span>
+                  Contact Us <br /> 0761-8523-398
+                </span>
+              </span>
+              <img
+                src="/about-us.webp"
+                alt="About Us"
+                className="w-full h-auto max-h-[800px] rounded-2xl object-cover object-center"
+              />
+            </div>
 
-            {/* Features */}
-            <div className="space-y-6">
-              {features.map((feature, index) => (
-                <div key={index} className="flex items-start gap-4">
-                  <div className="bg-[#1D5C5C] w-20 h-20 rounded flex items-center justify-center  shrink-0">
-                    <img
-                      src={feature.icon}
-                      alt={feature.title}
-                      className="w-10 h-10 object-contain"
-                    />
+            {/* Content - Below for mobile, left for desktop */}
+            <div className="lg:order-first">
+              <h1 className="uppercase text-[#1D5C5C] text-lg mb-4 lg:text-left text-center">
+                ABOUT US
+              </h1>
+              <h2 className="text-3xl md:text-5xl lg:text-left text-center mb-6">
+                Welcome to City Dental Care – Your Trusted Dental Clinic in Edinburgh
+              </h2>
+              <p className="mb-8">
+                City Dental Care offers high-level dental healthcare through modern technology and individualised treatments. Our practice handles every dental service in downtown Edinburgh, including cosmetic procedures, basic dentistry with Invisalign braces, and smile improvement treatments. For <strong>20 years</strong>, City Dental Care’s top dental team has delivered painless dental care, resulting in bigger smiles.
+              </p>
+
+              {/* Features */}
+              <div className="space-y-6">
+                {features.map((feature, index) => (
+                  <div key={index} className="flex items-start gap-4">
+                    <div className="bg-[#1D5C5C] w-20 h-20 rounded flex items-center justify-center shrink-0">
+                      <img
+                        src={feature.icon}
+                        alt={feature.title}
+                        className="w-10 h-10 object-contain"
+                      />
+                    </div>
+                    <div>
+                      <h3 className="text-2xl mb-2">{feature.title}</h3>
+                      <p>{feature.description}</p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="text-2xl mb-2 ">{feature.title}</h3>
-                    <p>{feature.description}</p>
-                  </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
-
-          {/* Right Image */}
+        </section>
+      {/* our-story section  */}
+      <section className="py-16 md:py-24 px-4 container mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          {/* Left Image */}
           <div className="relative w-full">
-            <span className="bg-[#1D5C5C] flex space-x-2 text-white px-6 py-4 absolute top-44 right-4 rounded-2xl shadow-lg z-10">
-              <img src="/contct-us.svg" alt="Phone SVG" className="w-12 h-12" />
-              <span>
-                Contact Us <br /> 0761-8523-398
-              </span>
-            </span>
             <img
-              src="/about-us.webp"
+              src="/our-story.webp"
               alt="About Us"
               className="w-full h-auto max-h-[800px] rounded-2xl object-cover object-center"
             />
+          </div>
+
+          {/* Right Content */}
+          <div>
+            <div className="uppercase text-[#1D5C5C] text-lg mb-4 lg:text-left text-center">
+              Our Story: Passion-Led Care in Edinburgh
+            </div>
+            <h2 className="text-3xl md:text-5xl lg:text-left text-center mb-6">
+              How City Dental Care in Edinburgh Was Born from a Passion for
+              Better Dentistry
+            </h2>
+            <p className="mb-8">
+              City Dental Care in the heart of Edinburgh has reimagined what a
+              dental practice can be. Advanced dental treatments in this
+              state-of-the-art environment, with personalised care, make you
+              feel at home at every step.
+            </p>
+            <p className="mb-8">
+              <strong>Dr Hamza Alhaddad</strong>, our founder, has over a decade
+              of experience in dental practice across some of the UK’s most
+              established institutions, which are dedicated to raising the
+              standard of care in Edinburgh. Dr. Alhaddad was frustrated with
+              the rushed and impersonal services. In this practice, they would
+              listen and make patients feel heard, supported, and confident in
+              their treatment journey.
+            </p>
+            <p className="mb-8">
+              Whether you need a routine dental checkup, a smile makeover, or
+              orthodontics, our team is first-class in orthodontics, dental
+              implants, cosmetic dentistry, hygiene services, and oral surgery.
+              Along with clinical excellence, we dedicate ourselves to patient
+              comfort, trust, and the approach we are compassionate about.
+            </p>
+            <div className="flex justify-center lg:justify-start">
+              {" "}
+              <button className="bg-[#1d5c5c] text-white px-4 py-4 text-sm uppercase text-center">
+                Book Your Appointment Today!
+              </button>
+            </div>
           </div>
         </div>
       </section>
