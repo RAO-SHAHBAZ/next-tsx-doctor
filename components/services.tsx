@@ -64,7 +64,7 @@ export default function Services() {
             {services.map((service, index) => (
               <div key={index} className="group p-8 shadow-2xl rounded-lg">
                 {/* Icon */}
-                <div className="bg-[#225555] p-4 w-16 rounded mb-4">{service.icon}</div>
+                <div className="bg-[#225555] p-4 w-16 h-16 rounded mb-4">{service.icon}</div>
                 {/* Title */}
                 <h4 className="text-xl font-light mb-4">{service.title}</h4>
                 {/* Description */}
