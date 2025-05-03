@@ -1,55 +1,65 @@
 import BredCrumb from "@/components/BredCrumb"
 import ContactUs from "@/components/contact-us"
+import Link from "next/link"
 
 
 
 function GeneralDentistry() {
   const services = [
     {
-      icon: <img src="/Vector-service-1.png" alt="Dental Consultation" />,
+      icon: <img src="/general-dentistry/dental-consultation.svg" alt="Dental Consultation" />,
       title: "Dental Consultation",
-      description: "Detailed tests provide your dental wellness outcomes.",
+      description: "Regular appointments include checkups, which are essential for detecting cavities, gum disease, and other oral health problems, and for avoiding severe health complications.",
+     link: "/general-dentistry/bespoke-smile-design"
     },
     {
-      icon: <img src="/Facial.png" alt="Same Day Emergency Appointments" />,
-      title: "Same-Day Emergency Appointments",
+      icon: <img src="/general-dentistry/same-day-emergency.svg" alt="Same Day Emergency Appointments" />,
+      title: "Same-Day Emergency Care",
       description:
-        "Need urgent care? Our dental practice provides emergency dental appointments on the same day patients need care.",
+        "Dental problems are unpredictable. We treat problems like toothaches and chipped teeth quickly, even without an appointment.",
+        link: "/general-dentistry/facial-aesthetics"
     },
     {
-      icon: <img src="/Restorative.png" alt="Hygiene Services" />,
+      icon: <img src="/general-dentistry/hygiene-service.svg" alt="Hygiene Services" />,
       title: "Hygiene Services",
-      description: "Our services offer routine cleanings that maintain your smile's health and freshness.",
+      description: "Your teeth and gums are clean with our hygiene service because it helps remove plaque and tartar buildup that can lead to gum disease.",
+      link: "/general-dentistry/invisible-fillings"
     },
     {
-      icon: <img src="/Dermal.png" alt="Implant Consultations" />,
-      title: "Implant Consultations",
-      description: "Take the opportunity to find out about stable alternatives addressing tooth loss.",
-    },
-    {
-      icon: <img src="/General.png" alt="Wisdom Tooth Removal" />,
+      icon: <img src="/general-dentistry/wisdom-tooth.svg" alt="Implant Consultations" />,
       title: "Wisdom Tooth Removal",
-      description: "A gentle, stress-free approach to wisdom tooth extraction.",
+      description: "Wisdom teeth cause discomfort and problems for us. If you're facing these, we'll work gently and effectively to remove them for a smooth recovery.",
+      link: "/general-dentistry/composite-bonding"
     },
     {
-      icon: <img src="/Vector-service-1.png" alt="Child Smile Care" />,
-      title: "Child Smile Care",
-      description: "Children who get early dental visits start their future with strong smiles.",
+      icon: <img src="/general-dentistry/child-smile.svg" alt="Wisdom Tooth Removal" />,
+      title: "Child Smiles",
+      description: "Our child's dental care is safe, comfortable, and fun, helping to establish good oral habits from an early age.",
+      link: "/general-dentistry/porcelain-veneers"
     },
     {
-      icon: <img src="/Dermal.png" alt="Implant Consultations" />,
+      icon: <img src="/general-dentistry/Implant-consultation.svg" alt="Child Smile Care" />,
       title: "Implant Consultations",
-      description: "Take the opportunity to find out about stable alternatives addressing tooth loss.",
+      description: "For individuals who need dental implants because they have lost one or more teeth, you should consult to determine the most suitable procedure to regain your functionality and smile.",
+      link: "/general-dentistry/teeth-whitening"
     },
     {
-      icon: <img src="/General.png" alt="Wisdom Tooth Removal" />,
-      title: "Wisdom Tooth Removal",
-      description: "A gentle, stress-free approach to wisdom tooth extraction.",
+      icon: <img src="/general-dentistry/orthodontics.svg" alt="Implant Consultations" />,
+      title: "Orthodontics",
+      description: "Our braces and clear aligners suit everyone who wants to align their teeth to achieve a perfect smile.",
+      link: "/general-dentistry/cosmetic-orthodontics"
     },
     {
-      icon: <img src="/Vector-service-1.png" alt="Child Smile Care" />,
-      title: "Child Smile Care",
-      description: "Children who get early dental visits start their future with strong smiles.",
+      icon: <img src="/general-dentistry/root-canals.svg" alt="Wisdom Tooth Removal" />,
+      title: "Endodontic Root Canals",
+      description: "Our root canal therapy removes infected pulp to save your tooth and prevent it from decay. We have specialists who give a fast, pain-free procedure for achieving results.",
+      link: "/general-dentistry/dermal-fillers"
+    },
+    {
+      icon: <img src="/general-dentistry/dental-bridges.svg" alt="Child Smile Care" />,
+      title: "Dental Bridges",
+      description: "Our dental bridge service fills the gap left by missing teeth, restoring better chewing function and facial appearance.",
+      link: "/general-dentistry/stain-removal"
     },
   ]
   return (
@@ -58,17 +68,15 @@ function GeneralDentistry() {
     <section className="pb-8 mb-1 md:mb-8 md:py-10">
         <div className="container mx-auto px-4">
           {/* Section Heading */}
-          <div className="uppercase text-center text-[#1D5C5C] mb-4 mt-8">DENTAL SERVICE</div>
+          <div className="uppercase text-center text-[#1D5C5C] mb-4 mt-8">DENTAL SERVICES</div>
   
           <div className="flex flex-col items-center justify-center">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-center mb-8 max-w-3xl">
-              Your <span className="text-[#1d5c5c]">Family's Partner </span> in General Dentistry
+            Expert General Dentistry at Your Trusted Dental Clinic in Edinburgh
             </h2>
   
             <p className="text-center text-sm text-gray-500 mb-10 max-w-3xl">
-              We provide all professional cosmetic and general services to improve your smile. Invisalign functions as an
-              aligner that makes it easy to fix the teeth' misalignment without the need for braces, and the teeth
-              whitening services help make smiles healthier and more appealing.
+            At City Dental Care, we focus on keeping your smile healthy and confident. Our general dentistry services combine preventative dental care and restorative dental solutions tailored to your needs. We welcome new patients seeking top-quality dental services in Edinburgh with a personal touch.
             </p>
           </div>
   
@@ -77,16 +85,16 @@ function GeneralDentistry() {
             {services.map((service, index) => (
               <div key={index} className="group p-8 shadow-2xl rounded-lg">
                 {/* Icon */}
-                <div className="bg-[#225555] p-4 inline-block rounded mb-4">{service.icon}</div>
+                <div className="bg-[#225555] p-4 w-16 h-16 rounded mb-4">{service.icon}</div>
                 {/* Title */}
                 <h4 className="text-xl font-light mb-4">{service.title}</h4>
                 {/* Description */}
                 <p className="text-sm text-gray-600 mb-4">{service.description}</p>
   
                 {/* Arrow Link */}
-                <a href="#" className="inline-flex items-center">
+                <Link href={service.link} className="inline-flex items-center">
                   <img src="/Arrow.png" alt="arrow" />
-                </a>
+                </Link>
               </div>
             ))}
           </div>
