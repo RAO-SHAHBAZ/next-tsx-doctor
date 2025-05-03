@@ -288,10 +288,10 @@ export default function Navbar() {
                     Dental Consultation
                   </Link>
                   <Link
-                    href="/general-dentistry/same-day-emergency-appointments"
+                    href="/general-dentistry/same-day-emergency"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                   >
-                    Same-Day Emergency Appointments
+                    Same Day Emergency Appointments
                   </Link>
                   <Link
                     href="/general-dentistry/hygiene-services"
@@ -589,11 +589,11 @@ export default function Navbar() {
                       Dental Consultation
                     </Link>
                     <Link
-                      href="/general-dentistry/same-day-emergency-appointments"
+                      href="/general-dentistry/same-day-emergency"
                       onClick={() => setMobileMenuOpen(false)}
                       className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                     >
-                      Same-Day Emergency Appointments
+                      Same Day Emergency Appointments
                     </Link>
                     <Link
                       href="/general-dentistry/hygiene-services"
