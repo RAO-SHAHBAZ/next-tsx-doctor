@@ -47,13 +47,13 @@ export default function ChildSmile() {
               <h2 className="text-lg mb-4">Other Services</h2>
               <div className="flex flex-col gap-3">
                 {[
-                  "Dental Checkups",
-                  "Teeth Cleaning",
-                  "Dental Fillings",
-                  "Tooth Extractions",
-                  "Gum Disease Treatment",
-                  "Orthodontics", // Added Orthodontics as it's relevant for children
-                  // Add other general dentistry services here
+                  "Orthodontics",
+                 "Endodontic Root Canals",
+                 "Dental Bridges",
+                 "Same Day Emergency",
+                 "Hygiene Services",
+                 "Implant Consultations",
+                 "Wisdom Tooth Removal",
                 ].map((service, i) => {
                   const serviceSlug = service
                     .toLowerCase()

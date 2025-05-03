@@ -46,11 +46,14 @@ export default function HygieneServices() {
               <h2 className="text-lg mb-4">Other Services</h2>
               <div className="flex flex-col gap-3">
                 {[
-                  "Dental Checkups",
-                  "Teeth Cleaning",
-                  "Gum Disease Treatment",
-                  "Fluoride Treatment",
-                  "Dental Sealants",
+      
+                   "Implant Consultations",
+                   "Wisdom Tooth Removal",
+                   "Child Smile",
+                   "Orthodontics",
+                   "Endodontic Root Canals",
+                   "Dental Bridges",
+                   "Same Day Emergency",
                   // Add other preventive dentistry services here
                 ].map((service, i) => {
                   const serviceSlug = service
@@ -59,7 +62,7 @@ export default function HygieneServices() {
                   return (
                     <Link
                       key={i}
-                      href={`/preventive-dentistry/${serviceSlug}`} // Assuming these are under a preventive dentistry category
+                      href={`/general-dentistry/${serviceSlug}`} // Assuming these are under a preventive dentistry category
                       className="text-left px-4 py-2 rounded-xl border text-[#1D5C5C] border-[#1D5C5C] hover:bg-[#f0fdfa] transition"
                     >
                       {service}

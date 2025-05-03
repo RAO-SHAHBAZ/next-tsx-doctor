@@ -47,10 +47,14 @@ export default function ImplantConsultations() {
               <h2 className="text-lg mb-4">Other Services</h2>
               <div className="flex flex-col gap-3">
                 {[
-                  "Dental Implants",
-                  "All-on-4 Implants",
-                  "Single Tooth Implants",
-                  "Multiple Teeth Implants",
+                 
+                 "Wisdom Tooth Removal",
+                 "Child Smile",
+                 "Orthodontics",
+                 "Endodontic Root Canals",
+                 "Dental Bridges",
+                 "Same Day Emergency",
+                 "Hygiene Services",
                   // Add other dental implant related services here
                 ].map((service, i) => {
                   const serviceSlug = service
@@ -59,7 +63,7 @@ export default function ImplantConsultations() {
                   return (
                     <Link
                       key={i}
-                      href={`/dental-implants/${serviceSlug}`} // Assuming these are under a dental implants category
+                      href={`/general-dentistry/${serviceSlug}`} // Assuming these are under a dental implants category
                       className="text-left px-4 py-2 rounded-xl border text-[#1D5C5C] border-[#1D5C5C] hover:bg-[#f0fdfa] transition"
                     >
                       {service}

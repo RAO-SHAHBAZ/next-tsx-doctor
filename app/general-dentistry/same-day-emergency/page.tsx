@@ -47,15 +47,13 @@ export default function SameDayEmergency() {
               <h2 className="text-lg mb-4">Other Services</h2>
               <div className="flex flex-col gap-3">
                 {[
-                  "Cosmetic Orthodontics",
-                  "Teeth Whitening",
-                  "Stain Removal",
-                  "Facial Aesthetics",
-                  "Dermal Fillers",
-                  "Invisible Fillings",
-                  "Composite Bonding",
-                  "Porcelain Veneers",
-                  "Bespoke Smile Design", // Added Bespoke Smile Design here
+                  "Hygiene Services",
+                  "Implant Consultations",
+                  "Wisdom Tooth Removal",
+                  "Child Smile",
+                  "Orthodontics",
+                  "Endodontic Root Canals",
+                  "Dental Bridges",
                 ].map((service, i) => {
                   const serviceSlug = service
                     .toLowerCase()
@@ -63,7 +61,7 @@ export default function SameDayEmergency() {
                   return (
                     <Link
                       key={i}
-                      href={`/cosmetic-dentistry/${serviceSlug}`} // Assuming these are under a cosmetic dentistry category
+                      href={`/general-dentistry/${serviceSlug}`} // Assuming these are under a cosmetic dentistry category
                       className="text-left px-4 py-2 rounded-xl border text-[#1D5C5C] border-[#1D5C5C] hover:bg-[#f0fdfa] transition"
                     >
                       {service}

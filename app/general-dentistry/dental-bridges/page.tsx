@@ -47,11 +47,13 @@ export default function DentalBridges() {
               <h2 className="text-lg mb-4">Other Services</h2>
               <div className="flex flex-col gap-3">
                 {[
-                  "Dental Implants",
-                  "Dentures",
-                  "Crowns",
-                  "Root Canal Treatment",
-                  "Fillings",
+                  "Same Day Emergency",
+                  "Hygiene Services",
+                  "Implant Consultations",
+                  "Wisdom Tooth Removal",
+                  "Child Smile",
+                  "Orthodontics",
+                  "Endodontic Root Canals",
                   // Add other restorative dentistry services here
                 ].map((service, i) => {
                   const serviceSlug = service

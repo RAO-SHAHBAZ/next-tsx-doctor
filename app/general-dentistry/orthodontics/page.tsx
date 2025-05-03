@@ -48,14 +48,13 @@ export default function Orthodontics() {
               <h2 className="text-lg mb-4">Other Services</h2>
               <div className="flex flex-col gap-3">
                 {[
-                  "Teeth Whitening",
-                  "Stain Removal",
-                  "Invisible Fillings",
-                  "Composite Bonding",
-                  "Porcelain Veneers",
-                  "Bespoke Smile Design",
-                  "Facial Aesthetics",
-                  "Dermal Fillers",
+                     "Endodontic Root Canals",
+                     "Dental Bridges",
+                     "Same Day Emergency",
+                     "Hygiene Services",
+                     "Implant Consultations",
+                     "Wisdom Tooth Removal",
+                     "Child Smile",
                   // Add other cosmetic dentistry services here
                 ].map((service, i) => {
                   const serviceSlug = service

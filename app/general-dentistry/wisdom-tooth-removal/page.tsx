@@ -48,11 +48,13 @@ export default function WisdomToothRemoval() {
               <h2 className="text-lg mb-4">Other Services</h2>
               <div className="flex flex-col gap-3">
                 {[
-                  "Dental Checkups",
-                  "Teeth Cleaning",
-                  "Dental Fillings",
-                  "Tooth Extractions",
-                  "Gum Disease Treatment",
+                 "Child Smile",
+                 "Orthodontics",
+                 "Endodontic Root Canals",
+                 "Dental Bridges",
+                 "Same Day Emergency",
+                 "Hygiene Services",
+                 "Implant Consultations",
                   // Add other general dentistry services here
                 ].map((service, i) => {
                   const serviceSlug = service

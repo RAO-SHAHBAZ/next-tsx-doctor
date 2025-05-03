@@ -48,11 +48,13 @@ export default function RootCanalTreatment() {
               <h2 className="text-lg mb-4">Other Services</h2>
               <div className="flex flex-col gap-3">
                 {[
-                  "Dental Checkups",
-                  "Teeth Cleaning",
-                  "Dental Fillings",
-                  "Tooth Extractions",
-                  "Gum Disease Treatment",
+                  "Dental Bridges",
+                     "Same Day Emergency",
+                     "Hygiene Services",
+                     "Implant Consultations",
+                     "Wisdom Tooth Removal",
+                     "Child Smile",
+                     "Orthodontics",
                   // Add other general dentistry services here
                 ].map((service, i) => {
                   const serviceSlug = service
