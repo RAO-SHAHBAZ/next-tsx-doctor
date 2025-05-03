@@ -52,15 +52,32 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Working Hours */}
-          <div>
-            <h3 className="text-[22px] font-semibold mb-6">Working Time</h3>
+          <div className="md:ml-[20px]">
+            <h3 className="text-[22px] font-semibold mb-6">Policy Pages</h3>
             <ul className="space-y-4">
-              <li>Monday-Friday: 8AM-8PM</li>
-              <li>Saturday: 9AM-6PM</li>
-              <li>Sunday: Closed</li>
+              <li>
+                <Link href="/privacy-policy" className="flex items-center hover:underline transition">
+                  <ChevronRight className="mr-2 h-4 w-4" /> Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="/terms-&-conditions" className="flex items-center hover:underline transition">
+                  <ChevronRight className="mr-2 h-4 w-4" /> Terms & Conditions
+                </Link>
+              </li>
+              <li>
+                <Link href="/returns-&-refunds-policy" className="flex items-center hover:underline transition">
+                  <ChevronRight className="mr-2 h-4 w-4" /> Return And Refund Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="/feedback-&-complaints" className="flex items-center hover:underline transition">
+                  <ChevronRight className="mr-2 h-4 w-4" /> Feedback & Complaints
+                </Link>
+              </li>
             </ul>
           </div>
+
 
           {/* Contact Info */}
           <div>
