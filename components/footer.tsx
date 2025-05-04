@@ -110,7 +110,7 @@ export default function Footer() {
             {/* Social Icons */}
             <div className="flex gap-4 mt-8">
               <Link
-                href="#"
+                href="https://www.facebook.com/citydentalcareedinburgh" target="blank"
                 className="h-10 w-10 flex items-center justify-center rounded-full bg-[#316161] bg-opacity-70 hover:bg-opacity-100 transition"
               >
                 <Facebook className="h-4 w-4" />
@@ -122,7 +122,7 @@ export default function Footer() {
                 <Twitter className="h-4 w-4" />
               </Link>
               <Link
-                href="#"
+                href="https://www.instagram.com/citydentalcare.edin/" target="blank"
                 className="h-10 w-10 flex items-center justify-center rounded-full bg-[#316161] bg-opacity-70 hover:bg-opacity-100 transition"
               >
                 <Instagram className="h-4 w-4" />

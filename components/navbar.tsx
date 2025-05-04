@@ -282,7 +282,7 @@ export default function Navbar() {
                 </div>
                 <div className="absolute left-0 top-full w-48 bg-white shadow-lg rounded-md z-50 hidden group-hover:block">
                   <Link
-                    href="/dental-consultaion"
+                    href="/general-dentistry/dental-consultaion"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                   >
                     Dental Consultation
@@ -582,7 +582,7 @@ export default function Navbar() {
                 {mobileDropdownOpen.generalDentistry && (
                   <div className="pl-4">
                     <Link
-                      href="/dental-consultaion"
+                      href="/general-dentistry/dental-consultaion"
                       onClick={() => setMobileMenuOpen(false)}
                       className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                     >
