@@ -32,8 +32,8 @@ export default function Orthodontics() {
         title="Orthodontics"
         subtitle={
           <span>
-            <Link className="hover:underline" href="/cosmetic-dentistry">
-              Cosmetic Dentistry
+            <Link className="hover:underline" href="/general-dentistry">
+              General Dentistry
             </Link>{" "}
             - <span>Orthodontics</span>
           </span>
@@ -63,7 +63,7 @@ export default function Orthodontics() {
                   return (
                     <Link
                       key={i}
-                      href={`/cosmetic-dentistry/${serviceSlug}`} // Assuming these are under a cosmetic dentistry category
+                      href={`/general-dentistry/${serviceSlug}`} // Assuming these are under a cosmetic dentistry category
                       className="text-left px-4 py-2 rounded-xl border text-[#1D5C5C] border-[#1D5C5C] hover:bg-[#f0fdfa] transition"
                     >
                       {service}

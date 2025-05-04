@@ -31,8 +31,8 @@ export default function DentalBridges() {
         title="Dental Bridges"
         subtitle={
           <span>
-            <Link className="hover:underline" href="/restorative-dentistry">
-              Restorative Dentistry
+            <Link className="hover:underline" href="/general-dentistry">
+              General Dentistry
             </Link>{" "}
             - <span>Dental Bridges</span>
           </span>
@@ -62,7 +62,7 @@ export default function DentalBridges() {
                   return (
                     <Link
                       key={i}
-                      href={`/restorative-dentistry/${serviceSlug}`} // Assuming these are under a restorative dentistry category
+                      href={`/general-dentistry/${serviceSlug}`} // Assuming these are under a restorative dentistry category
                       className="text-left px-4 py-2 rounded-xl border text-[#1D5C5C] border-[#1D5C5C] hover:bg-[#f0fdfa] transition"
                     >
                       {service}

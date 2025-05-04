@@ -10,56 +10,56 @@ function GeneralDentistry() {
       icon: <img src="/general-dentistry/dental-consultation.svg" alt="Dental Consultation" />,
       title: "Dental Consultation",
       description: "Regular appointments include checkups, which are essential for detecting cavities, gum disease, and other oral health problems, and for avoiding severe health complications.",
-     link: "/general-dentistry/bespoke-smile-design"
+     link: "/general-dentistry/Dental-Consultation"
     },
     {
       icon: <img src="/general-dentistry/same-day-emergency.svg" alt="Same Day Emergency Appointments" />,
       title: "Same-Day Emergency Care",
       description:
         "Dental problems are unpredictable. We treat problems like toothaches and chipped teeth quickly, even without an appointment.",
-        link: "/general-dentistry/facial-aesthetics"
+        link: "/general-dentistry/same-day-emergency"
     },
     {
       icon: <img src="/general-dentistry/hygiene-service.svg" alt="Hygiene Services" />,
       title: "Hygiene Services",
       description: "Your teeth and gums are clean with our hygiene service because it helps remove plaque and tartar buildup that can lead to gum disease.",
-      link: "/general-dentistry/invisible-fillings"
+      link: "/general-dentistry/hygiene-services"
     },
     {
       icon: <img src="/general-dentistry/wisdom-tooth.svg" alt="Implant Consultations" />,
       title: "Wisdom Tooth Removal",
       description: "Wisdom teeth cause discomfort and problems for us. If you're facing these, we'll work gently and effectively to remove them for a smooth recovery.",
-      link: "/general-dentistry/composite-bonding"
+      link: "/general-dentistry/wisdom-tooth-removal"
     },
     {
       icon: <img src="/general-dentistry/child-smile.svg" alt="Wisdom Tooth Removal" />,
       title: "Child Smiles",
       description: "Our child's dental care is safe, comfortable, and fun, helping to establish good oral habits from an early age.",
-      link: "/general-dentistry/porcelain-veneers"
+      link: "/general-dentistry/child-smile"
     },
     {
       icon: <img src="/general-dentistry/Implant-consultation.svg" alt="Child Smile Care" />,
       title: "Implant Consultations",
       description: "For individuals who need dental implants because they have lost one or more teeth, you should consult to determine the most suitable procedure to regain your functionality and smile.",
-      link: "/general-dentistry/teeth-whitening"
+      link: "/general-dentistry/implant-consultations"
     },
     {
       icon: <img src="/general-dentistry/orthodontics.svg" alt="Implant Consultations" />,
       title: "Orthodontics",
       description: "Our braces and clear aligners suit everyone who wants to align their teeth to achieve a perfect smile.",
-      link: "/general-dentistry/cosmetic-orthodontics"
+      link: "/general-dentistry/orthodontics"
     },
     {
       icon: <img src="/general-dentistry/root-canals.svg" alt="Wisdom Tooth Removal" />,
       title: "Endodontic Root Canals",
       description: "Our root canal therapy removes infected pulp to save your tooth and prevent it from decay. We have specialists who give a fast, pain-free procedure for achieving results.",
-      link: "/general-dentistry/dermal-fillers"
+      link: "/general-dentistry/endodontic-root-canals"
     },
     {
       icon: <img src="/general-dentistry/dental-bridges.svg" alt="Child Smile Care" />,
       title: "Dental Bridges",
       description: "Our dental bridge service fills the gap left by missing teeth, restoring better chewing function and facial appearance.",
-      link: "/general-dentistry/stain-removal"
+      link: "/general-dentistry/dental-bridges"
     },
   ]
   return (

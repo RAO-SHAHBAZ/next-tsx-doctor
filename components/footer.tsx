@@ -53,7 +53,7 @@ export default function Footer() {
           </div>
 
           <div className="md:ml-[20px]">
-            <h3 className="text-[22px] font-semibold mb-6">Policy Pages</h3>
+            <h3 className="text-[22px] font-semibold mb-6">Help & Policies</h3>
             <ul className="space-y-4">
               <li>
                 <Link href="/privacy-policy" className="flex items-center hover:underline transition">

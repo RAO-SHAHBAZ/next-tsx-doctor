@@ -1,131 +1,122 @@
 import BredCrumb from "@/components/BredCrumb";
 import ContactUs from "@/components/contact-us";
+import Link from "next/link";
 
 function AllServices() {
   const services = [
     {
-      icon: <img src="dental-consultation.svg" alt="Dental Consultation" />,
-      title: "Why Do Routine Dental Checkups Matter?",
-      description:
-        "Regular appointments include checkups, which are essential to detect cavities, gum disease, or any other mouth problems and avoid causing severe health complications.",
+      icon: <img src="/general-dentistry/dental-consultation.svg" alt="Dental Consultation" />,
+      title: "Dental Consultation",
+      description: "Regular appointments include checkups, which are essential for detecting cavities, gum disease, and other oral health problems, and for avoiding severe health complications.",
+     link: "/general-dentistry/Dental-Consultation"
     },
     {
-      icon: (
-        <img
-          src="same-day-emergency.svg"
-          alt="Same Day Emergency Appointments"
-        />
-      ),
-      title: "Fast, Same-Day Emergency Care ",
+      icon: <img src="/general-dentistry/same-day-emergency.svg" alt="Same Day Emergency Appointments" />,
+      title: "Same-Day Emergency Care",
       description:
-        "Dental problems are unpredictable. We treat problems such as toothaches and chipped teeth fast without an appointment.",
+        "Dental problems are unpredictable. We treat problems like toothaches and chipped teeth quickly, even without an appointment.",
+        link: "/general-dentistry/same-day-emergency"
     },
     {
-      icon: <img src="/hygiene-service.svg" alt="Hygiene Services" />,
-      title: "Professional Hygiene Services",
-      description:
-        "Your teeth and gums are clean with our hygiene service because our service helps remove plaque and tartar buildup that leads to gum disease.",
+      icon: <img src="/general-dentistry/hygiene-service.svg" alt="Hygiene Services" />,
+      title: "Hygiene Services",
+      description: "Your teeth and gums are clean with our hygiene service because it helps remove plaque and tartar buildup that can lead to gum disease.",
+      link: "/general-dentistry/hygiene-services"
     },
     {
-      icon: <img src="Implant-consultation.svg" alt="Implant Consultations" />,
-      title: "Wisdom Tooth Removal is Gentle and Effective",
-      description:
-        "Wisdom teeth cause discomfort and problems for us. If you're facing these, we'll work gently and effectively to remove them for a smooth recovery.",
+      icon: <img src="/general-dentistry/wisdom-tooth.svg" alt="Implant Consultations" />,
+      title: "Wisdom Tooth Removal",
+      description: "Wisdom teeth cause discomfort and problems for us. If you're facing these, we'll work gently and effectively to remove them for a smooth recovery.",
+      link: "/general-dentistry/wisdom-tooth-removal"
     },
     {
-      icon: <img src="wisdom-tooth.svg" alt="Wisdom Tooth Removal" />,
-      title: "Child-Friendly Dentistry for Healthy Smiles",
-      description:
-        "Our child's dental care is safe, comfortable, and fun, helping to reinforce good oral habits early.",
+      icon: <img src="/general-dentistry/child-smile.svg" alt="Wisdom Tooth Removal" />,
+      title: "Child Smiles",
+      description: "Our child's dental care is safe, comfortable, and fun, helping to establish good oral habits from an early age.",
+      link: "/general-dentistry/child-smile"
     },
     {
-      icon: <img src="/child-smile.svg" alt="Child Smile Care" />,
-      title: "Dental Implant Consultations",
-      description:
-        "For individuals who need dental implants because they have lost one or more teeth, you must consult on the most suitable procedure to regain your functionality and smile.",
+      icon: <img src="/general-dentistry/Implant-consultation.svg" alt="Child Smile Care" />,
+      title: "Implant Consultations",
+      description: "For individuals who need dental implants because they have lost one or more teeth, you should consult to determine the most suitable procedure to regain your functionality and smile.",
+      link: "/general-dentistry/implant-consultations"
     },
     {
-      icon: <img src="Implant-consultation.svg" alt="Orthodontic" />,
-      title: "Straighten Your Smile with Orthodontics",
-      description:
-        "Our braces and clear aligners suit everyone who wants their teeth aligned to achieve a sound bite.",
-    },
-    
-    {
-      icon: <img src="/child-smile.svg" alt="Child Smile Care" />,
-      title: "Endodontic Root Canals: Save Your Tooth",
-      description:
-        "Our root canal therapy removes infected pulp to save your tooth and prevent it from decay. We have specialists who provide fast, pain-free procedures to achieve results.",
+      icon: <img src="/general-dentistry/orthodontics.svg" alt="Implant Consultations" />,
+      title: "Orthodontics",
+      description: "Our braces and clear aligners suit everyone who wants to align their teeth to achieve a perfect smile.",
+      link: "/general-dentistry/orthodontics"
     },
     {
-      icon: <img src="Implant-consultation.svg" alt="Orthodontic" />,
-      title: "Dental Bridges: Restore Your Smile",
-      description:
-        "Our dental bridges service works to fill the gap left by missing teeth, restoring better chewing function and facial appearance.",
+      icon: <img src="/general-dentistry/root-canals.svg" alt="Wisdom Tooth Removal" />,
+      title: "Endodontic Root Canals",
+      description: "Our root canal therapy removes infected pulp to save your tooth and prevent it from decay. We have specialists who give a fast, pain-free procedure for achieving results.",
+      link: "/general-dentistry/endodontic-root-canals"
     },
-    
-  ];
+    {
+      icon: <img src="/general-dentistry/dental-bridges.svg" alt="Child Smile Care" />,
+      title: "Dental Bridges",
+      description: "Our dental bridge service fills the gap left by missing teeth, restoring better chewing function and facial appearance.",
+      link: "/general-dentistry/dental-bridges"
+    },
+  ]
   const services2 = [
     {
-      icon: <img src="dental-consultation.svg" alt="Dental Consultation" />,
+      icon: <img src="/cosmetic-dentistry/bespoke-smile.svg" alt="Dental Consultation" />,
       title: "Bespoke Smile Design",
-      description:
-        "Bespoke Smile Planning makes your smile unique according to your face shape and teeth shape to make it look completely believable.",
+      description: "Bespoke Smile Planning makes your smile unique, tailored to your face shape and tooth shape, to make it look completely natural.",
+     link: "/cosmetic-dentistry/bespoke-smile-design"
     },
     {
-      icon: (
-        <img
-          src="same-day-emergency.svg"
-          alt="Same Day Emergency Appointments"
-        />
-      ),
-      title: "Invisalign Clear Aligners",
+      icon: <img src="/cosmetic-dentistry/facial-esthetics.svg" alt="Same Day Emergency Appointments" />,
+      title: "Facial Aesthetics",
       description:
-        "Clear braces or Invisalign have a pleasing appearance. They fit your mouth perfectly and increase your self-esteem due to your pretty smile.",
+        "Facial aesthetics offers many benefits, including smoothing wrinkles and improving the contours of the face.",
+        link: "/cosmetic-dentistry/facial-aesthetics"
     },
     {
-      icon: <img src="/hygiene-service.svg" alt="Hygiene Services" />,
+      icon: <img src="/cosmetic-dentistry/invisible-fillings.svg" alt="Hygiene Services" />,
+      title: "Invisible Fillings",
+      description: "Invisible or composite fillings have been designed to match their colour of the teeth's natural appearance.",
+      link: "/cosmetic-dentistry/invisible-fillings"
+    },
+    {
+      icon: <img src="/cosmetic-dentistry/composite-bonding.svg" alt="Implant Consultations" />,
       title: "Fix Imperfections with Composite Bonding",
-      description:
-        "These fugitive bonding composites are a quick and effective way to fix chips, cracks, or gaps in teeth, bringing an individual's smile to life.",
+      description: "These fugitive bonding composites are a quick and effective way to fix chips, cracks, or gaps in teeth, bringing an individual's smile to life.",
+      link: "/cosmetic-dentistry/composite-bonding"
     },
     {
-      icon: <img src="Implant-consultation.svg" alt="Implant Consultations" />,
+      icon: <img src="/cosmetic-dentistry/proclein-veeners.svg" alt="Wisdom Tooth Removal" />,
       title: "Smiling Transformation Comes With Porcelain Veneers",
-      description:
-        "Porcelain veneers serve as thin covers to conceal various dental issues, including darkened teeth and broken or misaligned teeth, and to create a strong and flawless smile structure.",
+      description: "Porcelain veneers serve as thin covers to conceal various dental issues, including discoloured teeth, broken or misaligned teeth, and to create a strong and flawless smile structure.",
+      link: "/cosmetic-dentistry/porcelain-veneers"
     },
     {
-      icon: <img src="wisdom-tooth.svg" alt="Wisdom Tooth Removal" />,
+      icon: <img src="/cosmetic-dentistry/teeth-whitening.svg" alt="Child Smile Care" />,
       title: "Luminate Your Teeth With Teeth Whitening",
-      description:
-        "This treatment eliminates stains from food, beverages, and ageing and delivers long-lasting, stunning smile results.",
+      description: "This treatment eliminates stains from food, beverages, and ageing and delivers long-lasting, stunning smile results.",
+      link: "/cosmetic-dentistry/teeth-whitening"
     },
     {
-      icon: <img src="/child-smile.svg" alt="Child Smile Care" />,
-      title: "Dental Implant Consultations",
-      description:
-        "For individuals who need dental implants because they have lost one or more teeth, you must consult on the most suitable procedure to regain your functionality and smile.",
-    },
-    {
-      icon: <img src="Implant-consultation.svg" alt="Orthodontic" />,
+      icon: <img src="/cosmetic-dentistry/cosmetic-orthodontics.svg" alt="Implant Consultations" />,
       title: "Cosmetic Orthodontics",
-      description:
-        "In cosmetic orthodontics, we provide clear braces or aligners that fix your teeth's positions while enhancing the mouth's form and function.",
+      description: "In cosmetic orthodontics, we provide clear braces or aligners that correct your teeth's positions while enhancing the shape of your mouth and its function.",
+      link: "/cosmetic-dentistry/cosmetic-orthodontics"
     },
     {
-      icon: <img src="/child-smile.svg" alt="Child Smile Care" />,
+      icon: <img src="/cosmetic-dentistry/dermal-fillers.svg" alt="Wisdom Tooth Removal" />,
       title: "Dermal Fillers for a Youthful Look",
-      description:
-        "We also have dermal fillers, which address fine lines and facial volume loss to improve your smile and grant your face a youthful look.",
+      description: "We also offer dermal fillers, which help address fine lines and facial volume loss to improve your smile and give your face a youthful look.",
+      link: "/cosmetic-dentistry/dermal-fillers"
     },
     {
-      icon: <img src="Implant-consultation.svg" alt="Orthodontic" />,
-      title: "Remove Stains and Revitalize Your Smile",
-      description:
-        "The above-mentioned treatments will help remove stains and make your teeth as bright as possible.",
+      icon: <img src="/cosmetic-dentistry/stain-removal.svg" alt="Child Smile Care" />,
+      title: "Remove Stains and Revitalise Your Smile",
+      description: "The treatments mentioned above will help remove stains and make your teeth as bright as possible.",
+      link: "/cosmetic-dentistry/stain-removal"
     },
-  ];
+  ]
   const features = [
     {
       icon: "book-consultation.svg",
@@ -158,7 +149,7 @@ function AllServices() {
       <BredCrumb title="Services" />
       <br />
 
-      {/* DENTAL SERVICE */}
+      {/* DENTAL or Genraral Dentistry SERVICE */}
       <section className="pb-8 mb-1 md:mb-8 md:py-10">
         <div className="container mx-auto px-4">
           {/* Section Heading */}
@@ -185,20 +176,16 @@ function AllServices() {
             {services.map((service, index) => (
               <div key={index} className="group p-8 shadow-2xl rounded-lg">
                 {/* Icon */}
-                <div className="bg-[#225555] p-4 w-16 rounded mb-4">
-                  {service.icon}
-                </div>
+                <div className="bg-[#225555] p-4 w-16 h-16 rounded mb-4">{service.icon}</div>
                 {/* Title */}
                 <h4 className="text-xl font-light mb-4">{service.title}</h4>
                 {/* Description */}
-                <p className="text-sm text-gray-600 mb-4">
-                  {service.description}
-                </p>
-
+                <p className="text-sm text-gray-600 mb-4">{service.description}</p>
+  
                 {/* Arrow Link */}
-                <a href="#" className="inline-flex items-center">
+                <Link href={service.link} className="inline-flex items-center">
                   <img src="/Arrow.png" alt="arrow" />
-                </a>
+                </Link>
               </div>
             ))}
           </div>
@@ -275,20 +262,16 @@ function AllServices() {
             {services2.map((services2, index) => (
               <div key={index} className="group p-8 shadow-2xl rounded-lg">
                 {/* Icon */}
-                <div className="bg-[#225555] p-4 w-16 rounded mb-4">
-                  {services2.icon}
-                </div>
+                <div className="bg-[#225555] p-4 w-16 h-16 rounded mb-4">{services2.icon}</div>
                 {/* Title */}
                 <h4 className="text-xl font-light mb-4">{services2.title}</h4>
                 {/* Description */}
-                <p className="text-sm text-gray-600 mb-4">
-                  {services2.description}
-                </p>
-
+                <p className="text-sm text-gray-600 mb-4">{services2.description}</p>
+  
                 {/* Arrow Link */}
-                <a href="#" className="inline-flex items-center">
+                <Link href={services2 .link} className="inline-flex items-center">
                   <img src="/Arrow.png" alt="arrow" />
-                </a>
+                </Link>
               </div>
             ))}
           </div>

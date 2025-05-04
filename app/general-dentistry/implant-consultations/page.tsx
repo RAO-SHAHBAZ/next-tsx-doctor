@@ -31,8 +31,8 @@ export default function ImplantConsultations() {
         title="Implant Consultations"
         subtitle={
           <span>
-            <Link className="hover:underline" href="/dental-implants">
-              Dental Implants
+           <Link className="hover:underline" href="/general-dentistry">
+              General Dentistry
             </Link>{" "}
             - <span>Implant Consultations</span>
           </span>

@@ -31,8 +31,8 @@ export default function SameDayEmergency() {
         title="Same Day Emergency Appointments"
         subtitle={
           <span>
-            <Link className="hover:underline" href="/general-dentistry">
-              General-Dentistry
+              <Link className="hover:underline" href="/general-dentistry">
+              General Dentistry
             </Link>{" "}
             - <span>Same Day Emergency Appointments</span>
           </span>

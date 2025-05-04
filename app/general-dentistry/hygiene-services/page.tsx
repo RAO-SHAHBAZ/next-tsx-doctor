@@ -30,8 +30,8 @@ export default function HygieneServices() {
         title="Hygiene Services"
         subtitle={
           <span>
-            <Link className="hover:underline" href="/preventive-dentistry">
-              Preventive Dentistry
+             <Link className="hover:underline" href="/general-dentistry">
+              General Dentistry
             </Link>{" "}
             - <span>Hygiene Services</span>
           </span>
