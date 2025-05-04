@@ -35,7 +35,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/dental-treatments" className="flex items-center hover:underline transition">
+                <Link href="/all-services" className="flex items-center hover:underline transition">
                   <ChevronRight className="mr-2 h-4 w-4" /> Services
                 </Link>
               </li>

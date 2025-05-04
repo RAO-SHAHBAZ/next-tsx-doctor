@@ -1,7 +1,7 @@
 import BredCrumb from "@/components/BredCrumb";
 import ContactUs from "@/components/contact-us";
 
-function GeneralDentistry() {
+function AllServices() {
   const services = [
     {
       icon: <img src="dental-consultation.svg" alt="Dental Consultation" />,
@@ -155,7 +155,7 @@ function GeneralDentistry() {
   ];
   return (
     <>
-      <BredCrumb title="Dental Treatments" />
+      <BredCrumb title="Services" />
       <br />
 
       {/* DENTAL SERVICE */}
@@ -302,4 +302,4 @@ function GeneralDentistry() {
   );
 }
 
-export default GeneralDentistry;
+export default AllServices;
