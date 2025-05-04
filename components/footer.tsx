@@ -15,7 +15,7 @@ export default function Footer() {
               At City Dental Clinic, our mission is to enhance your denture experience by providing excellent denture
               care.
             </p>
-            <Link href="/" className="flex font-semibold items-center text-sm uppercase hover:underline">
+            <Link href="/about-us" className="flex font-semibold items-center text-sm uppercase hover:underline">
               MORE ABOUT <ChevronRight className="ml-2 h-4 w-4" />
             </Link>
           </div>

@@ -126,7 +126,7 @@ export default function Invisalign() {
             </div>
 
             <div>
-              <h2 className="text-xl lg:text-left text-center mt-4 mb-1">
+              <h2 className="text-2xl lg:text-left text-center mt-4 mb-1">
                 What is Invisalign?
               </h2>
               <p>
