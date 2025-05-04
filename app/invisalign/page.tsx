@@ -11,6 +11,7 @@ import {
 import Link from "next/link";
 import FaqSection from "@/components/faqs";
 import BredCrumb from "@/components/BredCrumb";
+import Image from "next/image";
 
 export default function Invisalign() {
   const faqs = [
@@ -200,9 +201,15 @@ export default function Invisalign() {
               </p>
             </div>
             <div>
-              <h3 className="text-xl lg:text-left text-center mt-4 mb-1 flex gap-2  ">
-                <ChevronRight />
-                <span>Invisible Appearance</span>
+              <h3 className="text-xl lg:text-left text-center mt-4 mb-1 inline-flex items-center gap-2">
+                <Image
+                  src="/forward-icon.webp"
+                  alt="Forward Icon"
+                  width={15}
+                  height={15}
+                  className="w-[15px] h-[15px]"
+                />
+                Invisible Appearance
               </h3>
               <p>
                 Clear aligners are clear, so they are almost invisible, allowing
@@ -210,9 +217,15 @@ export default function Invisalign() {
               </p>
             </div>
             <div>
-              <h3 className="text-xl lg:text-left text-center mt-4 mb-1 flex gap-2  ">
-                <ChevronRight />
-                <span>Comfort</span>
+            <h3 className="text-xl lg:text-left text-center mt-4 mb-1 inline-flex items-center gap-2">
+                <Image
+                  src="/forward-icon.webp"
+                  alt="Forward Icon"
+                  width={15}
+                  height={15}
+                  className="w-[15px] h-[15px]"
+                />
+                Comfort
               </h3>
               <p>
                 Invisalign aligners are made of smooth plastic, are much more
@@ -221,20 +234,34 @@ export default function Invisalign() {
               </p>
             </div>
             <div>
-              <h3 className="text-xl lg:text-left text-center mt-4 mb-1 flex gap-2  ">
-                <ChevronRight />
-                <span>Convenience</span>
+            <h3 className="text-xl lg:text-left text-center mt-4 mb-1 inline-flex items-center gap-2">
+                <Image
+                  src="/forward-icon.webp"
+                  alt="Forward Icon"
+                  width={15}
+                  height={15}
+                  className="w-[15px] h-[15px]"
+                />
+                Convenience
               </h3>
+                
               <p>
                 By being removable, the aligners allow you to eat, drink, brush,
                 and floss as usual.
               </p>
             </div>
             <div>
-              <h3 className="text-xl lg:text-left text-center mt-4 mb-1 flex gap-2  ">
-                <ChevronRight />
-                <span> Faster Treatment</span>
+            <h3 className="text-xl lg:text-left text-center mt-4 mb-1 inline-flex items-center gap-2">
+                <Image
+                  src="/forward-icon.webp"
+                  alt="Forward Icon"
+                  width={15}
+                  height={15}
+                  className="w-[15px] h-[15px]"
+                />
+                 Faster Treatment
               </h3>
+             
               <p>
                 As a rule, Invisalign treatment takes less time than braces, and
                 most patients complete treatment within{" "}
@@ -254,9 +281,15 @@ export default function Invisalign() {
             </div>
 
             <div>
-              <h3 className="text-xl lg:text-left text-center mt-4 mb-1 flex gap-2  ">
-                <ChevronRight />
-                <span> Experienced Team</span>
+            <h3 className="text-xl lg:text-left text-center mt-4 mb-1 inline-flex items-center gap-2">
+                <Image
+                  src="/forward-icon.webp"
+                  alt="Forward Icon"
+                  width={15}
+                  height={15}
+                  className="w-[15px] h-[15px]"
+                />
+                Experienced Team
               </h3>
               <p>
                 Our dentists are well-versed in Invisalign and have helped many
@@ -264,9 +297,15 @@ export default function Invisalign() {
               </p>
             </div>
             <div>
-              <h3 className="text-xl lg:text-left text-center mt-4 mb-1 flex gap-2  ">
-                <ChevronRight />
-                <span> State-of-the-Art Technology</span>
+            <h3 className="text-xl lg:text-left text-center mt-4 mb-1 inline-flex items-center gap-2">
+                <Image
+                  src="/forward-icon.webp"
+                  alt="Forward Icon"
+                  width={15}
+                  height={15}
+                  className="w-[15px] h-[15px]"
+                />
+                 State-of-the-Art Technology
               </h3>
               <p>
                 We employ the most modern approach to mapping and designing
@@ -274,9 +313,15 @@ export default function Invisalign() {
               </p>
             </div>
             <div>
-              <h3 className="text-xl lg:text-left text-center mt-4 mb-1 flex gap-2  ">
-                <ChevronRight />
-                <span> Personalised Care</span>
+            <h3 className="text-xl lg:text-left text-center mt-4 mb-1 inline-flex items-center gap-2">
+                <Image
+                  src="/forward-icon.webp"
+                  alt="Forward Icon"
+                  width={15}
+                  height={15}
+                  className="w-[15px] h-[15px]"
+                />
+                 Personalised Care
               </h3>
               <p>
                 We tailor Invisalign treatment specifically for each person to
@@ -333,53 +378,64 @@ export default function Invisalign() {
                   Invisalign instead of standard braces.
                 </p>
               </div>
-             
             </div>
             <div>
-            <h3 className="text-xl lg:text-left text-center mt-4 mb-1 flex gap-2  ">
-                <ChevronRight />
-                <span>    View Patient Outcomes That Show Actual Results</span>
-                 
-                 
-                </h3>
-                <p>
-                  Review our patient photos to understand how we help people in
-                  Edinburgh achieve better smiles. Through Invisalign treatment,
-                  we have made numerous people in Edinburgh happier about their
-                  smiles instantly.
-                </p>
-              </div>
-              <div>
-              <h3 className="text-xl lg:text-left text-center mt-4 mb-1 flex gap-2  ">
-                <ChevronRight />
-                <span>  Get professional Invisalign treatment at budget-friendly
-                rates in Edinburgh.</span>
-                
-                    
-                  
-                </h3>
-                <p>
-                  Concerned about the cost? Our clinic offers patients the
-                  option to pay for dental services without interest as part of
-                  our flexible payment choices. You can receive Invisalign
-                  treatment at <b>£5</b> per week to obtain your dream smile
-                  while staying within budget.
-                </p>
-              </div>
-              <div>
-              <h3 className="text-xl lg:text-left text-center mt-4 mb-1 flex gap-2  ">
-                <ChevronRight />
-                <span>  Is Invisalign Right for You?</span>
-                  
-                </h3>
-                <p>
-                  City Dental Care is ready to assist you if you are ready to
-                  change your smile. During the consultation, we assess your
-                  needs and decide whether Invisalign is the right option.
-                  Invisalign may be the ideal treatment for a patient interested
-                  in effectively and discreetly straightening their teeth.
-                </p>
-              </div>
+            <h3 className="text-xl lg:text-left text-center mt-4 mb-1 inline-flex items-center gap-2">
+                <Image
+                  src="/forward-icon.webp"
+                  alt="Forward Icon"
+                  width={15}
+                  height={15}
+                  className="w-[15px] h-[15px]"
+                />
+                 View Patient Outcomes That Show Actual Results
+              </h3> 
+              <p>
+                Review our patient photos to understand how we help people in
+                Edinburgh achieve better smiles. Through Invisalign treatment,
+                we have made numerous people in Edinburgh happier about their
+                smiles instantly.
+              </p>
+            </div>
+            <div>
+            <h3 className="text-xl lg:text-left text-center mt-4 mb-1 inline-flex items-center gap-2">
+                <Image
+                  src="/forward-icon.webp"
+                  alt="Forward Icon"
+                  width={15}
+                  height={15}
+                  className="w-[15px] h-[15px]"
+                />
+                Get professional Invisalign treatment at budget-friendly rates
+                in Edinburgh.
+              </h3> 
+              <p>
+                Concerned about the cost? Our clinic offers patients the option
+                to pay for dental services without interest as part of our
+                flexible payment choices. You can receive Invisalign treatment
+                at <b>£5</b> per week to obtain your dream smile while staying
+                within budget.
+              </p>
+            </div>
+            <div>
+            <h3 className="text-xl lg:text-left text-center mt-4 mb-1 inline-flex items-center gap-2">
+                <Image
+                  src="/forward-icon.webp"
+                  alt="Forward Icon"
+                  width={15}
+                  height={15}
+                  className="w-[15px] h-[15px]"
+                />
+            Is Invisalign Right for You?
+              </h3> 
+              <p>
+                City Dental Care is ready to assist you if you are ready to
+                change your smile. During the consultation, we assess your needs
+                and decide whether Invisalign is the right option. Invisalign
+                may be the ideal treatment for a patient interested in
+                effectively and discreetly straightening their teeth.
+              </p>
+            </div>
 
             <div>
               <h2 className="text-2xl lg:text-left text-center mt-6 mb-2">

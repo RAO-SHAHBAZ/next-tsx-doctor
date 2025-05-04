@@ -1,10 +1,10 @@
-import BredCrumb from "@/components/BredCrumb";
+
 import ContactUs from "@/components/contact-us";
-
-
 import Image from "next/image";
 import doc1 from "@/public/doc1.png";
 import doc2 from "@/public/doc2.png";
+import BredCrumbServices from "@/components/BreadCrumbServices";
+import Link from "next/link";
 
 const teamMembers = [
   {
@@ -53,7 +53,17 @@ function OurStaff() {
   return (
     <>
 
-      <BredCrumb  title="Our Staff"  />
+<BredCrumbServices
+        title="Our Staff"
+        subtitle={
+          <span>
+            <Link className="hover:underline" href="/about-us">
+              About Us
+            </Link>{" "}
+            - <span>Our Staff</span>
+          </span>
+        }
+      />
       {/* TEAM SECTION START FROM HERE */}
       <section className="py-5 mb-10 md:py-5 bg-white">
             <div className="container mx-auto px-4">

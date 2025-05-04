@@ -170,7 +170,7 @@ export default function Navbar() {
                 </div>
                 <div className="absolute left-0 top-full w-48 bg-white shadow-lg rounded-md z-50 hidden group-hover:block">
                   <Link
-                    href="/staff"
+                    href="/about-us/staff"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                   >
                     Staff
