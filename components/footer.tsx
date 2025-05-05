@@ -116,10 +116,10 @@ export default function Footer() {
                 <Facebook className="h-4 w-4" />
               </Link>
               <Link
-                href="#"
+                href="mailto:info@citydentalcare.co.uk"
                 className="h-10 w-10 flex items-center justify-center rounded-full bg-[#316161] bg-opacity-70 hover:bg-opacity-100 transition"
               >
-                <Twitter className="h-4 w-4" />
+                 <Mail className="h-4 w-4" /> 
               </Link>
               <Link
                 href="https://www.instagram.com/citydentalcare.edin/" target="blank"
