@@ -48,8 +48,8 @@ const page = () => {
         <table className="w-full text-left border-collapse">
           <thead>
             <tr className="bg-gray-100 text-[#1D5C5C] text-sm uppercase">
-              <th className="p-4 text-lg">Appointment Type</th>
-              <th className="p-4 text-lg text-right">Price</th>
+              <th className="p-4 text-2xl"><h3>Appointment Type</h3></th>
+              <th className="p-4 text-2xl text-right"><h3>Price</h3></th>
             </tr>
           </thead>
           <tbody>
