@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Facebook, Instagram, MoveRight, Twitter, Youtube } from "lucide-react";
+import { Facebook, Instagram, Mail, MoveRight, Twitter, Youtube } from "lucide-react";
 import Link from "next/link";
 import FaqSection from "@/components/faqs";
 import BredCrumbServices from "@/components/BreadCrumbServices";
@@ -213,9 +213,9 @@ export default function SameDayEmergency() {
             <div className="mt-6">
               <p className="mb-2">Follow Us:</p>
               <div className="flex gap-4 text-[#1D5C5C]">
-                <Facebook className=" cursor-pointer w-5 h-5" />
-                <Twitter className=" cursor-pointer w-5 h-5" />
-                <Instagram className=" cursor-pointer w-5 h-5" />
+              <Link href='https://www.facebook.com/citydentalcareedinburgh' target="blank"><Facebook className=" cursor-pointer w-5 h-5" /></Link>
+                <Link href='mailto:info@citydentalcare.co.uk' target="blank"><Mail className=" cursor-pointer w-5 h-5" /></Link>
+                <Link href='https://www.instagram.com/citydentalcare.edin/' target="blank"><Instagram className=" cursor-pointer w-5 h-5" /></Link>
                 {/* <Youtube className=" cursor-pointer w-5 h-5" /> */}
               </div>
             </div>
