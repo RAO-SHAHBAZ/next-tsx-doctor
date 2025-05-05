@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import { Facebook, Instagram, MoveRight, Twitter, Youtube } from "lucide-react";
 import Link from "next/link";
 import FaqSection from "@/components/faqs";
 import BredCrumbServices from "@/components/BreadCrumbServices";
@@ -162,10 +162,11 @@ export default function SameDayEmergency() {
               </p>
             </div>
 
-            <div>
+            <div className="bg-[#F5F5F5] p-10">
               <h2 className="text-2xl lg:text-left text-center mt-6 mb-2">
               Benefits of Choosing Us
               </h2>
+
               {[
                 {
                   title: "Fast Relief:",
@@ -185,8 +186,8 @@ export default function SameDayEmergency() {
                 },
               ].map((item, index) => (
                 <div key={index} className="mb-3">
-                  <h3 className="text-lg text-center lg:text-left ">
-                    {item.title}
+                  <h3 className="text-lg text-center lg:text-left inline-flex gap-2 ">
+                  <MoveRight /> {item.title}
                   </h3>
                   <p>{item.desc}</p>
                 </div>
@@ -215,7 +216,7 @@ export default function SameDayEmergency() {
                 <Facebook className=" cursor-pointer w-5 h-5" />
                 <Twitter className=" cursor-pointer w-5 h-5" />
                 <Instagram className=" cursor-pointer w-5 h-5" />
-                <Youtube className=" cursor-pointer w-5 h-5" />
+                {/* <Youtube className=" cursor-pointer w-5 h-5" /> */}
               </div>
             </div>
           </main>
