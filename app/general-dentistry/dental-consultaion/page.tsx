@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import {
-  ChevronRight,
   Facebook,
   Instagram,
   MoveRight,
@@ -16,25 +15,21 @@ import BredCrumbServices from "@/components/BreadCrumbServices";
 export default function DentalConsultation() {
   const faqs = [
     {
-      question: "How much time will Invisalign treatment take?",
+      question: "How often should I have a dental consultation?",
       answer:
-        "Invisalign can treat a range of cases, changing how each is treated based on its complexity, and it typically takes around 6 to 18 months.",
+        "We recommend a consultation every 6-12 months for routine check-ups and preventive care.",
     },
     {
-      question: "Is Invisalign Painful?",
+      question: "Do I need to prepare for my consultation?",
       answer:
-        "Unlike traditional braces, you should find Invisalign to be more comfortable and experience less pain.",
+        "No special preparation is needed. Please bring any questions you have about your dental health.",
     },
     {
-      question: "How Much Does Invisalign Cost?",
+      question: "Will I need treatment during my consultation?",
       answer:
-        "The expenses for Invisalign therapy depend on the specific treatment design. City Dental Care offers lower prices for patients who need flexible payment options. You can learn about our 0% interest financing choices by visiting us during your meeting.",
+        "Treatment may be recommended based on your examination results. We’ll discuss all available options with you.",
     },
-    {
-      question: "How Do I Get Started with Invisalign?",
-      answer:
-        "Visitors can book their consultation by visiting our website, while our experts will assist them throughout the process.",
-    },
+  
     // You can add more FAQs specific to child dental care here
   ];
 
@@ -248,13 +243,21 @@ export default function DentalConsultation() {
               At City Dental Care, we prioritize your comfort and care. Our team listens to your concerns and provides a thorough examination. We explain all available treatment options to help you make informed decisions about your <b>dental health</b>.
               </p>
             </div>
+            <div>
+              <h2 className="text-2xl lg:text-left text-center mt-6 mb-2">
+              Book Your Dental Consultation Today!
+              </h2>
+              <p>
+              ASchedule your consultation now and take the first step toward optimal oral health. Our expert team in <b>Edinburgh</b> is ready to assist you.
+              </p>
+            </div>
 
             <div className="flex justify-center md:justify-start">
               <button
                 className="mt-4 bg-[#1D5C5C] text-white px-6 py-2 rounded "
                 onClick={() => console.log("Book Child Dental Appointment")}
               >
-                Book Your Consultation Now!
+                Book Your Consultation Today
               </button>
             </div>
 
