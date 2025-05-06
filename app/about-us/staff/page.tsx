@@ -1,8 +1,13 @@
 
 import ContactUs from "@/components/contact-us";
 import Image from "next/image";
-import doc1 from "@/public/doc1.png";
-import doc2 from "@/public/doc2.png";
+import doc1 from "@/public/staff/chris.jpg";
+import doc2 from "@/public/staff/dentist.jpg";
+import doc3 from "@/public/staff/feras.jpg";
+import doc4 from "@/public/staff/hamza-alhadad.jpg";
+import doc5 from "@/public/staff/sanja.jpg";
+import doc6 from "@/public/staff/uzaire.jpg";
+import doc7 from "@/public/staff/zoe.jpg";
 import BredCrumbServices from "@/components/BreadCrumbServices";
 import Link from "next/link";
 
@@ -20,33 +25,33 @@ const teamMembers = [
   {
     name: "Alyssa Finkelstein",
     role: "Registered Mental Health",
-    image: doc1,
+    image: doc3,
   },
   {
     name: "Alyssa Finkelstein",
     role: "Registered Mental Health",
-    image: doc2,
+    image: doc4,
   },
   {
     name: "Stacia McCahan",
     role: "Registered Mental Health",
-    image: doc1,
+    image: doc5,
   },
   {
     name: "Katie Stuart",
     role: "LMHC",
-    image: doc2,
+    image: doc6,
   },
   {
     name: "Alyssa Finkelstein",
     role: "Registered Mental Health",
-    image: doc1,
+    image: doc7,
   },
-  {
-    name: "Alyssa Finkelstein",
-    role: "Registered Mental Health",
-    image: doc2,
-  },
+  // {
+  //   name: "Alyssa Finkelstein",
+  //   role: "Registered Mental Health",
+  //   image: doc2,
+  // },
 ];
 
 function OurStaff() {
