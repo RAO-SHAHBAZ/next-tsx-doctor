@@ -112,7 +112,7 @@ export default function SameDayEmergency() {
             <div>
               <h1 className="text-4xl lg:text-5xl text-center mb-3 lg:text-left">
                 Same-Day Emergency Appointments in Edinburgh
-              </h1>
+              </h1><br />
               <h2 className="text-2xl lg:text-left text-center mb-2">
                 Same-Day Emergency Dental Care in Edinburgh
               </h2>

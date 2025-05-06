@@ -122,7 +122,7 @@ export default function DentalConsultation() {
             <div>
               <h1 className="text-4xl lg:text-5xl text-center mb-3 lg:text-left">
               Professional Dental Consultation in Edinburgh
-              </h1>
+              </h1><br />
               <p className="leading-relaxed">
               Take the first step toward a healthier smile with a <strong>dental consultation in Edinburgh</strong> at City Dental Care. Our expert team offers comprehensive assessments to ensure you receive the best care tailored to your needs.
               </p>

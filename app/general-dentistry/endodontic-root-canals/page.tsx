@@ -114,7 +114,7 @@ export default function RootCanalTreatment() {
             <div>
               <h1 className="text-4xl lg:text-5xl text-center mb-3 lg:text-left">
                 Endodontic Root Canals in Edinburgh
-              </h1>
+              </h1><br />
               <h2 className="text-2xl lg:text-left text-center mb-2">
                 Expert Root Canal Treatment in Edinburgh
               </h2>

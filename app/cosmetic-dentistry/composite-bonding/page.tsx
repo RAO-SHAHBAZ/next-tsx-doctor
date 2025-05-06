@@ -126,7 +126,7 @@ export default function ServicePage() {
             <div>
               <h1 className="text-4xl lg:text-5xl text-center mb-3 lg:text-left">
                 Cosmetic Dentistry Services at City Dental Care
-              </h1>
+              </h1><br />
               <p className=" leading-relaxed">
                 Enjoy a beautiful smile transformation through our high-end
                 cosmetic dentistry at City Dental Care in Edinburgh. Our

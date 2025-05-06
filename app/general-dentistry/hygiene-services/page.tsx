@@ -113,7 +113,7 @@ export default function HygieneServices() {
             <div>
               <h1 className="text-4xl lg:text-5xl text-center mb-3 lg:text-left ">
                 Hygiene Services in Edinburgh
-              </h1>
+              </h1><br />
               <h2 className="text-2xl lg:text-left text-center ">
                 Professional Hygiene Services in Edinburgh
               </h2>
