@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import { Facebook, Instagram, Mail, Twitter, Youtube } from "lucide-react";
 import Link from "next/link";
 import BredCrumbServices from "@/components/BreadCrumbServices";
 
@@ -20,7 +20,7 @@ export default function PrivacyPolicy() {
       <div className="container mx-auto px-4 py-8 mb-20">
         <div className="flex flex-col gap-6">
           <main className="w-full">
-            <h1 className="text-4xl lg:text-5xl text-center mb-6 lg:text-left">
+            <h1 className="text-4xl lg:text-5xl text-center mt-3 mb-6 lg:text-left">
               Privacy Policy – Protecting Your Data at City Dental Care
             </h1>
             <p className="leading-relaxed mb-4">
@@ -108,10 +108,9 @@ export default function PrivacyPolicy() {
             <div className="mt-6">
               <p className="mb-2">Follow Us:</p>
               <div className="flex gap-4 text-[#1D5C5C]">
-                <Facebook className=" cursor-pointer w-5 h-5" />
-                <Twitter className=" cursor-pointer w-5 h-5" />
-                <Instagram className=" cursor-pointer w-5 h-5" />
-                <Youtube className=" cursor-pointer w-5 h-5" />
+              <Link href='https://www.facebook.com/citydentalcareedinburgh'><Facebook className=" cursor-pointer w-5 h-5" /></Link>
+                <Link href='mailto:info@citydentalcare.co.uk'><Mail className=" cursor-pointer w-5 h-5" /></Link>
+                <Link href='https://www.instagram.com/citydentalcare.edin/'><Instagram className=" cursor-pointer w-5 h-5" /></Link>
               </div>
             </div>
           </main>

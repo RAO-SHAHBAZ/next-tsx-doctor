@@ -4,6 +4,7 @@ import {
   ChevronRight,
   Facebook,
   Instagram,
+  Mail,
   MoveRight,
   Twitter,
   Youtube,
@@ -463,11 +464,9 @@ export default function Invisalign() {
             <div className="mt-6 md:flex md:gap-4">
               <p className="mb-2">Follow Us :</p>
               <div className="flex gap-4 text-[#1D5C5C]">
-                <Link href='https://www.facebook.com/citydentalcareedinburgh' target="blank">
-                <Facebook className=" cursor-pointer w-5 h-5" /></Link>
-                <Twitter className=" cursor-pointer w-5 h-5" />
-               <Link href='https://www.instagram.com/citydentalcare.edin/' target="blank">
-               <Instagram className=" cursor-pointer w-5 h-5" /></Link>
+              <Link href='https://www.facebook.com/citydentalcareedinburgh'><Facebook className=" cursor-pointer w-5 h-5" /></Link>
+                <Link href='mailto:info@citydentalcare.co.uk'><Mail className=" cursor-pointer w-5 h-5" /></Link>
+                <Link href='https://www.instagram.com/citydentalcare.edin/'><Instagram className=" cursor-pointer w-5 h-5" /></Link>
                 {/* <Youtube className=" cursor-pointer w-5 h-5" /> */}
               </div>
             </div>

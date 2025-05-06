@@ -1,10 +1,11 @@
 "use client";
 
 import React from "react";
-import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import { Facebook, Instagram, Mail, MoveRight, Twitter, Youtube } from "lucide-react";
 import Link from "next/link";
 import FaqSection from "@/components/faqs";
 import BredCrumbServices from "@/components/BreadCrumbServices";
+import Image from "next/image";
 
 export default function BespokeSmileDesign() {
   const faqs = [
@@ -159,7 +160,7 @@ export default function BespokeSmileDesign() {
               </p>
             </div>
 
-            <div>
+            <div className="bg-[#F5F5F5] p-10">
               <h2 className="text-2xl lg:text-left text-center mt-6 mb-2">
                 How does Bespoke Smile Design benefit its customers?
               </h2>
@@ -183,13 +184,20 @@ export default function BespokeSmileDesign() {
                 },
               ].map((item, index) => (
                 <div key={index} className="mb-3">
-                  <h3 className="text-lg text-center lg:text-left ">
-                    {item.title}
+                  <h3 className="text-lg text-center lg:text-left inline-flex gap-2  ">
+                  <MoveRight />
+                  {item.title}
                   </h3>
                   <p>{item.desc}</p>
                 </div>
               ))}
             </div>
+
+            <img
+              src="/A7402954.jpg"
+              alt="Bespoke Smile Design"
+              className="rounded-2xl w-full max-h-[500px] object-cover"
+            />
 
             <div>
               <h2 className="text-2xl lg:text-left text-center mt-6 mb-2">
@@ -200,6 +208,7 @@ export default function BespokeSmileDesign() {
                 step-by-step process from the moment you see your perfect smile
                 for the first time. Here's what you can expect:
               </p>
+              <br />
               {[
                 {
                   title: "Digital Smile Imaging",
@@ -223,15 +232,21 @@ export default function BespokeSmileDesign() {
                 },
               ].map((step, index) => (
                 <div key={index} className="mb-3">
-                  <h3 className="text-lg lg:text-left text-center ">
-                    {step.title}
+                  <h3 className="text-lg lg:text-left text-center inline-flex gap-2 items-center justify-center">
+                    <Image
+                                      src="/forward-icon.webp"
+                                      alt="Forward Icon"
+                                      width={15}
+                                      height={15}
+                                      className="w-[15px] h-[15px]"
+                                    /> {step.title}
                   </h3>
                   <p>{step.desc}</p>
                 </div>
               ))}
             </div>
 
-            <div>
+            <div className="bg-[#F5F5F5] p-10">
               <h2 className="text-2xl lg:text-left text-center mt-6 mb-2">
                 Why Choose City Dental Care for Bespoke Smile Design?
               </h2>
@@ -259,8 +274,8 @@ export default function BespokeSmileDesign() {
                 },
               ].map((item, index) => (
                 <div key={index} className="mb-3">
-                  <h3 className="text-lg text-center lg:text-left">
-                    {item.title}
+                  <h3 className="text-lg text-center lg:text-left inline-flex gap-2">
+                  <MoveRight />{item.title}
                   </h3>
                   <p>{item.desc}</p>
                 </div>
@@ -290,10 +305,9 @@ export default function BespokeSmileDesign() {
             <div className="mt-6">
               <p className="mb-2">Follow Us:</p>
               <div className="flex gap-4 text-[#1D5C5C]">
-                <Facebook className="  cursor-pointer w-5 h-5" />
-                <Twitter className=" cursor-pointer w-5 h-5" />
-                <Instagram className=" cursor-pointer w-5 h-5" />
-                <Youtube className=" cursor-pointer w-5 h-5" />
+              <Link href='https://www.facebook.com/citydentalcareedinburgh'><Facebook className=" cursor-pointer w-5 h-5" /></Link>
+                <Link href='mailto:info@citydentalcare.co.uk'><Mail className=" cursor-pointer w-5 h-5" /></Link>
+                <Link href='https://www.instagram.com/citydentalcare.edin/'><Instagram className=" cursor-pointer w-5 h-5" /></Link>
               </div>
             </div>
           </main>
