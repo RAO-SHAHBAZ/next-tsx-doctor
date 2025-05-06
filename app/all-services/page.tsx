@@ -172,7 +172,7 @@ function AllServices() {
           </div>
 
           {/* Services Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
             {services.map((service, index) => (
               <div key={index} className="group p-8 shadow-2xl rounded-lg">
                 {/* Icon */}
@@ -180,7 +180,7 @@ function AllServices() {
                 {/* Title */}
                 <h4 className="text-xl font-light mb-4">{service.title}</h4>
                 {/* Description */}
-                <p className="text-sm text-gray-600 mb-4">{service.description}</p>
+                <p className="text-[16px] text-gray-600 mb-4">{service.description}</p>
   
                 {/* Arrow Link */}
                 <Link href={service.link} className="inline-flex items-center">
@@ -266,7 +266,7 @@ function AllServices() {
                 {/* Title */}
                 <h4 className="text-xl font-light mb-4">{services2.title}</h4>
                 {/* Description */}
-                <p className="text-sm text-gray-600 mb-4">{services2.description}</p>
+                <p className="text-[16px] text-gray-600 mb-4">{services2.description}</p>
   
                 {/* Arrow Link */}
                 <Link href={services2 .link} className="inline-flex items-center">

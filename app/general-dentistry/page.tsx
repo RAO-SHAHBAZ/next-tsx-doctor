@@ -89,7 +89,7 @@ function GeneralDentistry() {
                 {/* Title */}
                 <h4 className="text-xl font-light mb-4">{service.title}</h4>
                 {/* Description */}
-                <p className="text-sm text-gray-600 mb-4">{service.description}</p>
+                <p className="text-[16px] text-gray-600 mb-4">{service.description}</p>
   
                 {/* Arrow Link */}
                 <Link href={service.link} className="inline-flex items-center">
