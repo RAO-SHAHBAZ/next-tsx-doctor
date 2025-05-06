@@ -12,8 +12,10 @@ import {
   Facebook,
   Twitter,
   Youtube,
+  Instagram,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 function ContactUS() {
   return (
@@ -115,16 +117,16 @@ function ContactUS() {
 
             <h4 className="md:text-lg">Follow Us :</h4>
             <div className="flex gap-4">
-              <a href="#" className="bg-white text-[#1D5C5C] p-2 rounded-full">
+              <Link href="https://www.facebook.com/citydentalcareedinburgh" className="bg-white text-[#1D5C5C] p-2 rounded-full">
                 <Facebook size={16} />
-              </a>
-              <a href="#" className="bg-white text-[#1D5C5C] p-2 rounded-full">
-                <Twitter size={16} />
-              </a>
+              </Link>
+              <Link href="mailto:info@citydentalcare.co.uk" className="bg-white text-[#1D5C5C] p-2 rounded-full">
+                <Mail size={16} />
+              </Link>
 
-              <a href="#" className="bg-white text-[#1D5C5C] p-2 rounded-full">
-                <Youtube size={16} />
-              </a>
+              <Link href="https://www.instagram.com/citydentalcare.edin/" className="bg-white text-[#1D5C5C] p-2 rounded-full">
+                <Instagram size={16} />
+              </Link>
             </div>
           </div>
         </div>
