@@ -1,10 +1,11 @@
 "use client";
 
 import React from "react";
-import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import { Facebook, Instagram, Mail, MoveRight, Twitter, Youtube } from "lucide-react";
 import Link from "next/link";
 import FaqSection from "@/components/faqs";
 import BredCrumbServices from "@/components/BreadCrumbServices";
+import Image from "next/image";
 
 export default function StainRemoval() {
   const faqsStainRemoval = [
@@ -127,6 +128,7 @@ export default function StainRemoval() {
               <h1 className="text-4xl lg:text-5xl text-center mb-3 lg:text-left">
                 Stain Removal for a Fresh Smile in Edinburgh
               </h1>
+              <br />
               <h2 className="text-2xl lg:text-left text-center mb-2">
                 Refresh Your Smile with Professional Stain Removal
               </h2>
@@ -143,6 +145,7 @@ export default function StainRemoval() {
               <h2 className="text-2xl lg:text-left text-center mt-6 mb-2">
                 Why Choose Professional Stain Removal?
               </h2>
+              <br />
 
               {[
                 {
@@ -163,15 +166,20 @@ export default function StainRemoval() {
                 },
               ].map((item, index) => (
                 <div key={index} className="mb-3">
-                  <h3 className="text-lg text-center lg:text-left ">
-                    {item.title}
+                  <h3 className="text-lg text-center lg:text-left inline-flex gap-2 items-center justify-center">
+                  <Image src="/forward-icon.webp"
+                                      alt="Forward Icon"
+                                      width={15}
+                                      height={15}
+                                      className="w-[15px] h-[15px]"
+                                    /> {item.title}
                   </h3>
                   <p>{item.desc}</p>
                 </div>
               ))}
             </div>
 
-            <div>
+            <div className="bg-[#F5F5F5] p-10">
               <h2 className="text-2xl lg:text-left text-center mt-6 mb-2">
                 How Stain Removal Works at City Dental Care?
               </h2>
@@ -199,13 +207,19 @@ export default function StainRemoval() {
                 },
               ].map((step, index) => (
                 <div key={index} className="mb-3">
-                  <h3 className="text-lg lg:text-left text-center ">
-                    {step.title}
+                  <h3 className="text-lg lg:text-left text-center inline-flex gap-2 ">
+                  <MoveRight /> {step.title}
                   </h3>
                   <p>{step.desc}</p>
                 </div>
               ))}
             </div>
+
+            <img
+              src="/A7402954.jpg"
+              alt="Stain Removal"
+              className="rounded-2xl w-full max-h-[500px] object-cover"
+            />
 
             <div>
               <h2 className="text-2xl lg:text-left text-center mt-6 mb-2">
@@ -226,25 +240,33 @@ export default function StainRemoval() {
                 },
               ].map((item, index) => (
                 <div key={index} className="mb-3">
-                  <h3 className="text-lg text-center lg:text-left">
-                    {item.title}
+                  <h3 className="text-lg text-center lg:text-left inline-flex gap-2 items-center justify-center">
+                  <Image src="/forward-icon.webp"
+                                      alt="Forward Icon"
+                                      width={15}
+                                      height={15}
+                                      className="w-[15px] h-[15px]"
+                                    />{item.title}
                   </h3>
                   <p>{item.desc}</p>
                 </div>
               ))}
             </div>
 
-            <div>
+            <div className="bg-[#F5F5F5] p-10">
               <h2 className="text-2xl lg:text-left text-center mt-6 mb-2">
                 Why Choose City Dental Care for Stain Removal?
               </h2>
               <p>
                 Our highest priority is your comfort and satisfaction. Our
                 team's use of advanced technology results in safety,
-                effectiveness, and a personalised stain removal experience. We
+                effectiveness, and a personalised stain removal experience.
+                <br />
+                 We
                 need to spend that time getting to know your goals and come up
                 with a treatment plan centred around you.
               </p>
+              <br />
               {[
                 {
                   title: "Experienced Team:",
@@ -260,7 +282,7 @@ export default function StainRemoval() {
                 },
               ].map((item, index) => (
                 <div key={index} className="mb-3">
-                  <h3 className="text-lg text-center lg:text-left">
+                  <h3 className="text-lg text-center lg:text-left inline-flex gap-2">
                     {item.title}
                   </h3>
                   <p>{item.desc}</p>
@@ -288,10 +310,9 @@ export default function StainRemoval() {
             <div className="mt-6">
               <p className="mb-2">Follow Us:</p>
               <div className="flex gap-4 text-[#1D5C5C]">
-                <Facebook className="  cursor-pointer w-5 h-5" />
-                <Twitter className=" cursor-pointer w-5 h-5" />
-                <Instagram className=" cursor-pointer w-5 h-5" />
-                <Youtube className=" cursor-pointer w-5 h-5" />
+              <Link href='https://www.facebook.com/citydentalcareedinburgh'><Facebook className=" cursor-pointer w-5 h-5" /></Link>
+<Link href='mailto:info@citydentalcare.co.uk'><Mail className=" cursor-pointer w-5 h-5" /></Link>
+<Link href='https://www.instagram.com/citydentalcare.edin/'><Instagram className=" cursor-pointer w-5 h-5" /></Link>
               </div>
             </div>
           </main>

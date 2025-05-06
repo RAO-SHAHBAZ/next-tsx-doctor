@@ -4,12 +4,15 @@ import React from "react";
 import {
   Facebook,
   Instagram,
+  Mail,
+  MoveRight,
   Twitter,
   Youtube,
 } from "lucide-react";
 import Link from "next/link";
 import FaqSection from "@/components/faqs";
 import BredCrumbServices from "@/components/BreadCrumbServices";
+import Image from "next/image";
 
 export default function PorcelainVeneers() {
   const faqs = [
@@ -19,7 +22,8 @@ export default function PorcelainVeneers() {
         "Porcelain veneers are made of high-quality and very durable ceramic material, appearing as much like oral tissue as possible.",
     },
     {
-      question: "For how many years will porcelain veneers retain their condition?",
+      question:
+        "For how many years will porcelain veneers retain their condition?",
       answer:
         "The porcelain veneers give the patients ten to fifteen years, provided they care for it.",
     },
@@ -42,12 +46,17 @@ export default function PorcelainVeneers() {
 
   return (
     <>
-      <BredCrumbServices title="Porcelain Veneers"  subtitle={
-        <span>
-          <Link className="hover:underline" href="/cosmetic-dentistry">Cosmetic Dentistry</Link> -{' '}
-          <span>Porcelain Veneers</span>
-        </span>
-      } />
+      <BredCrumbServices
+        title="Porcelain Veneers"
+        subtitle={
+          <span>
+            <Link className="hover:underline" href="/cosmetic-dentistry">
+              Cosmetic Dentistry
+            </Link>{" "}
+            - <span>Porcelain Veneers</span>
+          </span>
+        }
+      />
 
       <div className="container mx-auto px-4 py-8 mb-20">
         <div className="flex flex-col-reverse lg:flex-row gap-8">
@@ -123,6 +132,7 @@ export default function PorcelainVeneers() {
               <h1 className="text-4xl lg:text-5xl text-center mb-3 lg:text-left">
                 Porcelain Veneers for a Picture-Perfect Smile in Edinburgh
               </h1>
+              <br />
               <h2 className="text-2xl lg:text-left text-center mb-2">
                 Achieve a Flawless, Natural-Looking Smile with Porcelain Veneers
               </h2>
@@ -141,7 +151,7 @@ export default function PorcelainVeneers() {
               <h3 className="text-xl lg:text-left text-center mt-4 mb-1">
                 What Are Porcelain Veneers?
               </h3>
-              <p >
+              <p>
                 Custom-made porcelain shells function as thin coverages which
                 doctors place on teeth surfaces to improve their appearance. The
                 durable, high-quality porcelain material used for veneers allows
@@ -160,7 +170,7 @@ export default function PorcelainVeneers() {
               </p>
             </div>
 
-            <div>
+            <div className="bg-[#F5F5F5] p-10">
               <h2 className="text-2xl lg:text-left text-center mt-6 mb-2">
                 Why Choose Porcelain Veneers?
               </h2>
@@ -184,20 +194,29 @@ export default function PorcelainVeneers() {
                 },
               ].map((item, index) => (
                 <div key={index} className="mb-3">
-                  <h3 className="text-lg text-center lg:text-left ">{item.title}</h3>
-                  <p >{item.desc}</p>
+                  <h3 className="text-lg text-center lg:text-left inline-flex gap-2 ">
+                    {" "}
+                    <MoveRight />
+                    {item.title}
+                  </h3>
+                  <p>{item.desc}</p>
                 </div>
               ))}
             </div>
-
+            <img
+              src="/A7402954.jpg"
+              alt="Porcelain Veneers"
+              className="rounded-2xl w-full max-h-[500px] object-cover"
+            />
             <div>
               <h2 className="text-2xl lg:text-left text-center mt-6 mb-2">
                 The Process of Getting Porcelain Veneers
               </h2>
-              <p >
+              <p>
                 During the porcelain veneer process, we guide you at City Dental
                 Care every step of the way so you feel comfortable.
               </p>
+              <br />
               {[
                 {
                   title: "Consultation:",
@@ -221,17 +240,27 @@ export default function PorcelainVeneers() {
                 },
               ].map((step, index) => (
                 <div key={index} className="mb-3">
-                  <h3 className="text-lg lg:text-left text-center ">{step.title}</h3>
+                  <h3 className="text-lg lg:text-left text-center inline-flex gap-2 items-center justify-center ">
+                    {" "}
+                    <Image
+                      src="/forward-icon.webp"
+                      alt="Forward Icon"
+                      width={15}
+                      height={15}
+                      className="w-[15px] h-[15px]"
+                    />
+                    {step.title}
+                  </h3>
                   <p>{step.desc}</p>
                 </div>
               ))}
             </div>
 
-            <div>
+            <div className="bg-[#F5F5F5] p-10">
               <h2 className="text-2xl lg:text-left text-center mt-6 mb-2">
                 Why Choose City Dental Care for Porcelain Veneers?
               </h2>
-              <p >
+              <p>
                 The staff members at City Dental Care in Edinburgh bring their
                 extensive experience to design aesthetically flawless and
                 organic-focused smiles. Here's why we stand out:
@@ -255,23 +284,26 @@ export default function PorcelainVeneers() {
                 },
               ].map((item, index) => (
                 <div key={index} className="mb-3">
-                  <h3 className="text-lg text-center lg:text-left">{item.title}</h3>
-                  <p >{item.desc}</p>
+                  <h3 className="text-lg text-center lg:text-left inline-flex gap-2">
+                    {" "}
+                    <MoveRight />
+                    {item.title}
+                  </h3>
+                  <p>{item.desc}</p>
                 </div>
               ))}
             </div>
 
-
-              <h2 className="text-2xl text-center lg:text-left  mb-2">
-                Book Your Consultation Today!
-              </h2>
-              <p >
-                Do our teeth require porcelain veneers to improve their
-                appearance? Call City Dental Care now for a free consultation.
-                The welcoming team at Joy Dental will use extra care to make
-                your dream smile a reality.
-              </p>
-              <div className="flex justify-center md:justify-start">
+            <h2 className="text-2xl text-center lg:text-left  mb-2">
+              Book Your Consultation Today!
+            </h2>
+            <p>
+              Do our teeth require porcelain veneers to improve their
+              appearance? Call City Dental Care now for a free consultation. The
+              welcoming team at Joy Dental will use extra care to make your
+              dream smile a reality.
+            </p>
+            <div className="flex justify-center md:justify-start">
               <button className="mt-4 bg-[#1D5C5C] text-white px-6 py-2 rounded  ">
                 Get the Smile You Deserve!
               </button>
@@ -282,10 +314,15 @@ export default function PorcelainVeneers() {
             <div className="mt-6">
               <p className="mb-2">Follow Us:</p>
               <div className="flex gap-4 text-[#1D5C5C]">
-                <Facebook className="  cursor-pointer w-5 h-5" />
-                <Twitter className=" cursor-pointer w-5 h-5" />
-                <Instagram className=" cursor-pointer w-5 h-5" />
-                <Youtube className=" cursor-pointer w-5 h-5" />
+                <Link href="https://www.facebook.com/citydentalcareedinburgh">
+                  <Facebook className=" cursor-pointer w-5 h-5" />
+                </Link>
+                <Link href="mailto:info@citydentalcare.co.uk">
+                  <Mail className=" cursor-pointer w-5 h-5" />
+                </Link>
+                <Link href="https://www.instagram.com/citydentalcare.edin/">
+                  <Instagram className=" cursor-pointer w-5 h-5" />
+                </Link>
               </div>
             </div>
           </main>

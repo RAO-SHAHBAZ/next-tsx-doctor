@@ -4,12 +4,15 @@
  import {
   Facebook,
   Instagram,
+  Mail,
+  MoveRight,
   Twitter,
   Youtube,
  } from "lucide-react";
  import Link from "next/link";
  import FaqSection from "@/components/faqs";
  import BredCrumbServices from "@/components/BreadCrumbServices";
+import Image from "next/image";
 
  export default function TeethWhiteningPage() {
   const faqsTeethWhitening = [
@@ -120,6 +123,7 @@
        <h1 className="text-4xl lg:text-5xl text-center mb-3 mt-4 lg:text-left">
         Teeth Whitening to Brighten Your Smile in Edinburgh
        </h1>
+       <br />
        <h2 className="text-2xl lg:text-left text-center mb-2">
         Achieve a Dazzling, White Smile with Professional Teeth Whitening
        </h2>
@@ -134,7 +138,7 @@
        <h2 className="text-2xl lg:text-left text-center mt-6 mb-2">
         Why Choose Professional Teeth Whitening?
        </h2>
-
+        <br />
        {[
         {
          title: "Safe and Effective:",
@@ -154,19 +158,25 @@
         },
        ].map((item, index) => (
         <div key={index} className="mb-3">
-         <h3 className="text-lg text-center lg:text-left ">{item.title}</h3>
+         <h3 className="text-lg text-center lg:text-left inline-flex gap-2 items-center justify-center "> <Image src="/forward-icon.webp"
+                                      alt="Forward Icon"
+                                      width={15}
+                                      height={15}
+                                      className="w-[15px] h-[15px]"
+                                    />{item.title}</h3>
          <p >{item.desc}</p>
         </div>
        ))}
       </div>
 
-      <div>
+      <div className="bg-[#F5F5F5] p-10">
        <h2 className="text-2xl lg:text-left text-center mt-6 mb-2">
         How Teeth Whitening Works at City Dental Care
        </h2>
        <p >
         Our City Dental Care has the best, advanced whitening technology, and it is safe and effective. Here's how the process works:
        </p>
+       <br />
        {[
         {
          title: "Consultation:",
@@ -186,16 +196,21 @@
         },
        ].map((step, index) => (
         <div key={index} className="mb-3">
-         <h3 className="text-lg lg:text-left text-center ">{step.title}</h3>
+         <h3 className="text-lg lg:text-left text-center inline-flex gap-2">  <MoveRight />{step.title}</h3>
          <p>{step.desc}</p>
         </div>
        ))}
       </div>
-
+      <img
+       src="/A7402954.jpg"
+       alt="Teeth Whitening"
+       className="rounded-2xl w-full max-h-[500px] object-cover"
+      />
       <div>
        <h2 className="text-2xl lg:text-left text-center mt-6 mb-2">
         Benefits of Teeth Whitening at City Dental Care
        </h2>
+       <br />
        {[
         {
          title: "Fast and Reliable Results:",
@@ -215,13 +230,18 @@
         },
        ].map((item, index) => (
         <div key={index} className="mb-3">
-         <h3 className="text-lg text-center lg:text-left">{item.title}</h3>
+         <h3 className="text-lg text-center lg:text-left inline-flex gap-2 items-center justify-center">  <Image src="/forward-icon.webp"
+                                      alt="Forward Icon"
+                                      width={15}
+                                      height={15}
+                                      className="w-[15px] h-[15px]"
+                                    />{item.title}</h3>
          <p >{item.desc}</p>
         </div>
        ))}
       </div>
 
-      <div>
+      <div className="bg-[#F5F5F5] p-10">
        <h2 className="text-2xl lg:text-left text-center mt-6 mb-2">
         Why Choose City Dental Care for Teeth Whitening?
        </h2>
@@ -229,6 +249,7 @@
         The longstanding experience of City Dental Care in cosmetic dentistry makes the clinic Edinburgh's prime choice for secure and effective teeth whitening services.
         Our professional staff employs modern technological equipment with advanced methods to deliver the optimum outcomes.
        </p>
+       <br />
        {[
         {
          title: "Expert Dentists:",
@@ -244,7 +265,7 @@
         },
        ].map((item, index) => (
         <div key={index} className="mb-3">
-         <h3 className="text-lg text-center lg:text-left">{item.title}</h3>
+         <h3 className="text-lg text-center lg:text-left inline-flex gap-2">  <MoveRight />{item.title}</h3>
          <p >{item.desc}</p>
         </div>
        ))}
@@ -271,10 +292,9 @@
       <div className="mt-6">
        <p className="mb-2">Follow Us:</p>
        <div className="flex gap-4 text-[#1D5C5C]">
-        <Facebook className="  cursor-pointer w-5 h-5" />
-        <Twitter className=" cursor-pointer w-5 h-5" />
-        <Instagram className=" cursor-pointer w-5 h-5" />
-        <Youtube className=" cursor-pointer w-5 h-5" />
+       <Link href='https://www.facebook.com/citydentalcareedinburgh'><Facebook className=" cursor-pointer w-5 h-5" /></Link>
+<Link href='mailto:info@citydentalcare.co.uk'><Mail className=" cursor-pointer w-5 h-5" /></Link>
+<Link href='https://www.instagram.com/citydentalcare.edin/'><Instagram className=" cursor-pointer w-5 h-5" /></Link>
        </div>
       </div>
      </main>
