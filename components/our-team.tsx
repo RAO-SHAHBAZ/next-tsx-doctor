@@ -1,28 +1,61 @@
 import Image from "next/image";
-import doc1 from "@/public/doc1.png";
-import doc2 from "@/public/doc2.png";
+import doc1 from "@/public/staff/chris.jpg";
+import doc2 from "@/public/staff/dentist.jpg";
+import doc3 from "@/public/staff/feras.jpg";
+import doc4 from "@/public/staff/hamza-alhadad.jpg";
+import doc5 from "@/public/staff/sanja.jpg";
+import doc6 from "@/public/staff/uzaire.jpg";
+import doc7 from "@/public/staff/zoe.jpg";
 
 const teamMembers = [
   {
-    name: "Stacia McCahan",
-    role: "Registered Mental Health",
+    name: "Christopher Sarafiant",
+    gdc:'310911',
+    role: "Dentist: DMD 2023 (Vilnius University)",
     image: doc1,
   },
   {
-    name: "Katie Stuart",
-    role: "LMHC",
+    name: "Nabila Al Riyami",
+    gdc:'308610 ',
+    role: "Dentist: BDS 2023 (Glasgow)",
     image: doc2,
   },
   {
-    name: "Alyssa Finkelstein",
-    role: "Registered Mental Health",
-    image: doc1,
+    name: "Feras Elbiss ",
+    gdc:'303408',
+    role: "Dentist: MDDr 2022 (Charles University)",
+    image: doc3,
   },
   {
-    name: "Alyssa Finkelstein",
-    role: "Registered Mental Health",
-    image: doc2,
+    name: "Hamza Al Haddad",
+    gdc:'310491',
+    role: "Dentist: DMD 2023 (Vilnius University)",
+    image: doc4,
   },
+  {
+    name: "Sania Jabeen",
+    gdc:'319609',
+    role: "Therapist: BSc (Hons) Oral Health Sciences 2024 (Edinburgh)",
+    image: doc5,
+  },
+  {
+    name: "Uzair Sarwar",
+    gdc:'308854',
+    role: "Dentist: BDS 2023 (Glasgow)",
+    image: doc6,
+  },
+  {
+    name: "Zoe Kemp",
+    gdc:'295494 ',
+    role: "Therapist: BSc (Hons) Oral Health Sciences 2024 (Edinburgh)",
+    image: doc7,
+  },
+  // {
+  //   name: "Usman Ullah ",
+  //   gdc:'113427'
+  //   role: "Dentist: BDS 2007 (Dundee)",
+  //   image: doc2,
+  // },
 ];
 
 const OurTeam = () => {
@@ -53,8 +86,9 @@ const OurTeam = () => {
 
               {/* Team Member Info */}
               <div className="p-6">
-                <h3 className="text-lg font-semibold text-gray-900">{member.name}</h3>
-                <p className="text-gray-600">{member.role}</p>
+              <h3 className="text-xl text-gray-900">{member.name}</h3>
+                      <p className="text-gray-600">GDC Number: {member.gdc}</p>
+                      <p className="text-gray-600 "> {member.role}</p>
               </div>
             </div>
           ))}

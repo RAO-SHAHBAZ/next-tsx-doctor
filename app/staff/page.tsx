@@ -13,43 +13,51 @@ import Link from "next/link";
 
 const teamMembers = [
   {
-    name: "Stacia McCahan",
-    role: "Registered Mental Health",
+    name: "Christopher Sarafiant",
+    gdc:'310911',
+    role: "Dentist: DMD 2023 (Vilnius University)",
     image: doc1,
   },
   {
-    name: "Katie Stuart",
-    role: "LMHC",
+    name: "Nabila Al Riyami",
+    gdc:'308610 ',
+    role: "Dentist: BDS 2023 (Glasgow)",
     image: doc2,
   },
   {
-    name: "Alyssa Finkelstein",
-    role: "Registered Mental Health",
+    name: "Feras Elbiss ",
+    gdc:'303408',
+    role: "Dentist: MDDr 2022 (Charles University)",
     image: doc3,
   },
   {
-    name: "Alyssa Finkelstein",
-    role: "Registered Mental Health",
+    name: "Hamza Al Haddad",
+    gdc:'310491',
+    role: "Dentist: DMD 2023 (Vilnius University)",
     image: doc4,
   },
   {
-    name: "Stacia McCahan",
-    role: "Registered Mental Health",
+    name: "Sania Jabeen",
+    gdc:'319609',
+    role: "Therapist: BSc (Hons) Oral Health Sciences 2024 (Edinburgh)",
     image: doc5,
   },
   {
-    name: "Katie Stuart",
-    role: "LMHC",
+    name: "Uzair Sarwar",
+    gdc:'308854',
+    role: "Dentist: BDS 2023 (Glasgow)",
     image: doc6,
   },
   {
-    name: "Alyssa Finkelstein",
-    role: "Registered Mental Health",
+    name: "Zoe Kemp",
+    gdc:'295494 ',
+    role: "Therapist: BSc (Hons) Oral Health Sciences 2024 (Edinburgh)",
     image: doc7,
   },
   // {
-  //   name: "Alyssa Finkelstein",
-  //   role: "Registered Mental Health",
+  //   name: "Usman Ullah ",
+  //   gdc:'113427'
+  //   role: "Dentist: BDS 2007 (Dundee)",
   //   image: doc2,
   // },
 ];
@@ -88,8 +96,9 @@ function OurStaff() {
       
                     {/* Team Member Info */}
                     <div className="p-6">
-                      <h3 className="text-lg font-semibold text-gray-900">{member.name}</h3>
-                      <p className="text-gray-600">{member.role}</p>
+                      <h3 className="text-xl text-gray-900">{member.name}</h3>
+                      <p className="text-gray-600">GDC Number: {member.gdc}</p>
+                      <p className="text-gray-600 "> {member.role}</p>
                     </div>
                   </div>
                 ))}
