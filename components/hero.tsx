@@ -2,6 +2,7 @@
 
 import { Star, CalendarCheck, Clock1 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -51,7 +52,7 @@ export default function Hero() {
           </div>
 
           {/* Reviews Section */}
-          <div className="flex items-center gap-4">
+          <Link href='https://maps.app.goo.gl/wtqznxrT44FBifxQ6' target="blank" className="flex items-center gap-4">
             <div className="flex -space-x-5">
               <Image
                 src="/profile1.png"
@@ -89,7 +90,7 @@ export default function Hero() {
                 ))}
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
 

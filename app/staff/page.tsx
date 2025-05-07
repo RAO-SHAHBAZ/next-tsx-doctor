@@ -60,14 +60,7 @@ function OurStaff() {
 
 <BredCrumbServices
         title="Our Staff"
-        subtitle={
-          <span>
-            <Link className="hover:underline" href="/about-us">
-              About Us
-            </Link>{" "}
-            - <span>Our Staff</span>
-          </span>
-        }
+        subtitle="Our Staff"
       />
       {/* TEAM SECTION START FROM HERE */}
       <section className="py-5 mb-10 md:py-5 bg-white">

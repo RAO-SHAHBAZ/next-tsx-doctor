@@ -84,7 +84,7 @@ export default function Navbar() {
               </div>
             </div>
 
-            <div className="flex items-center gap-2">
+            <Link href='tel:+921312282442' target="blank" className="flex items-center gap-2">
               <div className="bg-[#1d5c5c] p-2 rounded">
                 <Phone className="text-white h-3 w-3 md:h-5 md:w-5" />
               </div>
@@ -93,9 +93,9 @@ export default function Navbar() {
                 <br />
                 <span className="text-[16px] md:text-sm">01312282442</span>
               </div>
-            </div>
+            </Link>
 
-            <div className="hidden lg:flex items-center gap-2">
+            <Link href='https://maps.app.goo.gl/wtqznxrT44FBifxQ6' target="blank" className="hidden lg:flex items-center gap-2">
               <div className="bg-[#1d5c5c] p-2 rounded">
                 <MapPin className="text-white h-5 w-5" />
               </div>
@@ -106,7 +106,7 @@ export default function Navbar() {
                   9 Earl Grey St, United Kingdom
                 </span>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </div>
@@ -170,7 +170,7 @@ export default function Navbar() {
                 </div>
                 <div className="absolute left-0 top-full w-48 bg-white shadow-lg rounded-md z-50 hidden group-hover:block">
                   <Link
-                    href="/about-us/staff"
+                    href="/staff"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                   >
                     Staff
@@ -182,7 +182,7 @@ export default function Navbar() {
                     Blogs
                   </Link>
                   <Link
-                    href="/about-us/pricing"
+                    href="/pricing"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                   >
                     Pricing
@@ -450,7 +450,7 @@ export default function Navbar() {
                 {mobileDropdownOpen.aboutUs && (
                   <div className="pl-4">
                     <Link
-                      href="/about-us/staff"
+                      href="/staff"
                       onClick={() => setMobileMenuOpen(false)}
                       className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white border-b border-gray-200"
                     >
@@ -464,7 +464,7 @@ export default function Navbar() {
                       Blogs
                     </Link>
                     <Link
-                      href="/about-us/pricing"
+                      href="/pricing"
                       onClick={() => setMobileMenuOpen(false)}
                       className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1D5C5C] hover:text-white"
                     >

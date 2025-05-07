@@ -26,14 +26,7 @@ const page = () => {
     <div>
          <BredCrumbServices
         title="Pricing"
-        subtitle={
-          <span>
-            <Link className="hover:underline" href="/about-us">
-              About Us
-            </Link>{" "}
-            - <span>Pricing</span>
-          </span>
-        }
+        subtitle='Pricing'
       />
 
 <section className="py-16 bg-white px-4 container mx-auto">
@@ -47,9 +40,9 @@ const page = () => {
       <div className="overflow-x-auto">
         <table className="w-full text-left border-collapse">
           <thead>
-            <tr className="bg-gray-100 text-[#1D5C5C] text-sm uppercase">
+            <tr className="bg-gray-100 text-[#1D5C5C]  uppercase">
               <th className="p-4 text-2xl"><h3>Appointment Type</h3></th>
-              <th className="p-4 text-2xl text-right"><h3>Price</h3></th>
+              <th className="pr-4 text-2xl text-right border-l border-gray-300 "><h3>Price</h3></th>
             </tr>
           </thead>
           <tbody>
@@ -59,7 +52,7 @@ const page = () => {
                 className={`${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'} `}
               >
                 <td className="p-4">{item.type}</td>
-                <td className="p-4 text-right">{item.price}</td>
+                <td className="pr-4 text-right border-l border-gray-300">{item.price}</td>
               </tr>
             ))}
           </tbody>

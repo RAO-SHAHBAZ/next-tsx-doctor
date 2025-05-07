@@ -100,16 +100,24 @@ function ContactUS() {
 
           <div className="space-y-3 border-t border-white/30 pt-4">
             <div className="flex justify-between">
-              <span>Monday - Friday :</span>
-              <span>08.00 am - 07.00 pm</span>
+              <span>Monday :</span>
+              <span>08.30 am - 18.00 pm</span>
             </div>
             <div className="flex justify-between border-t border-white/30 pt-3">
-              <span>Saturday:</span>
-              <span>09.00 am - 08.00 pm</span>
+              <span>Tuesday :</span>
+              <span>08.30 am - 20.00 pm</span>
             </div>
             <div className="flex justify-between border-t border-white/30 pt-3">
-              <span>Sunday</span>
-              <span>Closed</span>
+              <span>Wednesday :</span>
+              <span>08.30 am - 18.00 pm</span>
+            </div>
+            <div className="flex justify-between border-t border-white/30 pt-3">
+              <span>Thursday :</span>
+              <span>08.30 am - 20.00 pm</span>
+            </div>
+            <div className="flex justify-between border-t border-white/30 pt-3">
+              <span>Friday :</span>
+              <span>08.30 am - 17.00 pm</span>
             </div>
           </div>
 
