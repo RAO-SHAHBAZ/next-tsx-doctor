@@ -1,26 +1,28 @@
 import BredCrumbServices from '@/components/BreadCrumbServices'
 import ContactUs from '@/components/contact-us';
-import Link from 'next/link'
 
 const page = () => {
   const pricingList = [
-    { type: "New Patient Exam (inc x-rays)", price: "£100.00" },
-    { type: "Dental Health Check", price: "£84.00" },
-    { type: "Hygiene Appointment", price: "£94.50" },
-    { type: "Direct Access Hygiene (non registered patient)", price: "£98.00" },
-    { type: "Emergency Appointment (up to 10 minutes)", price: "No Charge" },
-    { type: "Emergency Appointment (up to 20 minutes)", price: "£85.00" },
-    { type: "Fillings", price: "from £133.00" },
-    { type: "Crowns/Inlays and Onlays Work", price: "from £1070.00" },
-    { type: "Crown Recement", price: "£215.00" },
-    { type: "Porcelain Bridge (per unit)", price: "from £1747.50" },
-    { type: "Extraction", price: "from £202.50" },
-    { type: "Root Canal Therapy (Molars)", price: "from £1092.50" },
-    { type: "Dentures", price: "from £1012.50" },
-    { type: "Six Month Smiles", price: "from £2695 to £3595" },
-    { type: "Invisalign (Lite)", price: "£3550.00" },
-    { type: "Invisalign (Full)", price: "£4495.00" },
-    { type: "EDS Tooth Whitening (at home)", price: "from £450.00" }
+    { type: "New Patient Exam (inc. x-rays)", price: "£130.00" },
+    { type: "General Health Checkup", price: "£55.00" },
+    { type: "Hygiene Appointment", price: "from £65.50" },
+    { type: "GBR-guided biofilm therapy", price: "£140.00" },
+    { type: "On the day, emergency ", price: "£99" },
+    { type: "White Fillings", price: "from £99.00" },
+    { type: "Composite Bonding", price: "from £100 per tooth" },
+    { type: "Veneers", price: "from £750" },
+    { type: "Crowns/Inlays and Onlays Work", price: "from £595.00" },
+    { type: "Crown Recement", price: "£63" },
+    { type: "Porcelain Bridge", price: "(per unit) from £494" },
+    { type: "Extraction ", price: "from £110" },
+    { type: "Surgical Extraction", price: "From £250" },
+    { type: "Root Canal Therapy", price: "from £295" },
+    { type: "Dentures ", price: "from £450" },
+    { type: "Invisalign (Lite)", price: "£3500" },
+    { type: "Invisalign (Full)", price: "£4000" },
+    { type: "Boutique Tooth Whitening (At home)", price: "£350.00" },
+    { type: "Night Guards", price: "from £110" },
+    { type: "Temporary Fillings", price: "from £50" }
   ];
   return (
     <div>
