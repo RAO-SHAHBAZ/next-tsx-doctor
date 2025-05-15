@@ -40,15 +40,15 @@ export default function Hero() {
 
           {/* Buttons */}
           <div className="flex flex-col md:flex-row gap-4 mb-16">
-            <a href="#" className="bg-[#225555] border border-[#225555] text-white px-8 py-4 text-center uppercase">
+            <a href="https://citydentalcare.portal.dental/" target="_blank" className="bg-[#225555] border border-[#225555] text-white px-8 py-4 text-center uppercase">
               Book A Consultation
             </a>
-            <a
-              href="#"
+            <Link
+              href="/all-services"
               className="bg-transparent border-[2px] border-[#319684] text-white px-8 py-4 text-center uppercase hover:bg-white hover:text-[#003B3B] transition"
             >
               Explore Our Services
-            </a>
+            </Link>
           </div>
 
           {/* Reviews Section */}

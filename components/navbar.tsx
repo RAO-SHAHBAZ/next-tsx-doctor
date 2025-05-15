@@ -403,7 +403,7 @@ export default function Navbar() {
 
             {/* Desktop Appointment Button */}
             <Link
-              href="/appointment"
+              href="https://citydentalcare.portal.dental/"
               className="hidden lg:block bg-[#1d5c5c] text-white px-4 py-3 text-sm uppercase text-center"
             >
               Get Appointment

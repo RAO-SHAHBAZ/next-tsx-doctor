@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ContactUs() {
   return (
     <section className="py-1 md:py-16 mt-20 mb-10">
@@ -14,7 +16,10 @@ export default function ContactUs() {
               environment.
             </p>
             <button className="bg-[#1d5c5c] text-white px-4 py-4 text-sm uppercase text-center">
+             <Link href='/contact-us'>
+              
               Have Questions? Contact Us Now!
+              </Link>
             </button>
           </div>
 
@@ -50,7 +55,10 @@ export default function ContactUs() {
             </p>
             <div className="flex justify-center items-center">
             <button className="bg-[#1d5c5c] text-white px-4 py-4 text-sm uppercase text-center">
+              <Link href='/contact-us'>
+              
               Have Questions? Contact Us Now!
+              </Link>
             </button>
             </div>
           </div>

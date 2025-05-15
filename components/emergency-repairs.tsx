@@ -25,7 +25,7 @@ export default function EmergencyRepairs() {
             services. We are available now to assist you in obtaining the gorgeous smile you desire.
           </p>
   
-          <Link href="/" className="bg-[#319684] text-[#FFFFFF] px-4 py-4 inline-block uppercase font-medium">
+          <Link href="https://citydentalcare.portal.dental/" target="_blank" className="bg-[#319684] text-[#FFFFFF] px-4 py-4 inline-block uppercase font-medium">
             Book Your Free Consultation Now
           </Link>
         </div>

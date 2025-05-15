@@ -57,7 +57,7 @@ export default function BespokeSmileDesign() {
           <span>
             <Link className="hover:underline" href="/cosmetic-dentistry">
               Cosmetic Dentistry
-            </Link>{" "}
+            </Link>
             - <span>Bespoke Smile Design</span>
           </span>
         }
@@ -119,6 +119,7 @@ export default function BespokeSmileDesign() {
                   className="bg-[#1D5C5C] text-white px-5 py-2 rounded "
                   onClick={() => console.log("Make Appointment Clicked")}
                 >
+                  <Link href='https://citydentalcare.portal.dental/'></Link>
                   Book Your Appointment Today
                 </button>
               </div>
@@ -303,7 +304,10 @@ export default function BespokeSmileDesign() {
             </p>
             <div className="flex justify-center md:justify-start">
               <button className="mt-4 bg-[#1D5C5C] text-white px-6 py-2 rounded  ">
+                <Link href='https://citydentalcare.portal.dental/'>
                 Get Started on Your Custom Smile
+                
+                 </Link>
               </button>
             </div>
 

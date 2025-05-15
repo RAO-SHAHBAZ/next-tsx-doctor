@@ -1,4 +1,5 @@
 import { PhoneCall, ShieldCheck, Hospital, HeartPulse } from "lucide-react"
+import Link from "next/link"
 
 export default function AboutUs() {
   const features = [
@@ -59,7 +60,9 @@ export default function AboutUs() {
               <div className="flex gap-4 mt-8 ">
                 {/* Book Now! Button */}
                 <button className="bg-[#1d5c5c] text-white px-4 py-4 text-sm uppercase">
+                  <Link href='https://citydentalcare.portal.dental' target="_blank">
                   Pain-Free Dentistry – Book Now!
+                  </Link>
                 </button>
                 {/* Button For Number */}
                 <button className="border border-[#225555] text-[#225555] bg-[#E4F5F5] px-4 py-3 text-sm uppercase flex items-center hover:bg-[#339485] hover:text-white">

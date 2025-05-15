@@ -5,6 +5,7 @@ import BredCrumb from "@/components/BredCrumb";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import GallerySection from "@/components/our-gallery";
 import FaqSection from "@/components/faqs";
+import Link from "next/link";
 
 export default function AboutUsPage() {
   const faqs = [
@@ -159,7 +160,9 @@ export default function AboutUsPage() {
             <div className="flex justify-center lg:justify-start">
               {" "}
               <button className="bg-[#1d5c5c] text-white px-4 py-4 text-sm uppercase text-center">
+                <Link href='https://citydentalcare.portal.dental/' target="_blank">
                 Book Your Appointment Today!
+                </Link>
               </button>
             </div>
           </div>
