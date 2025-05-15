@@ -181,7 +181,7 @@ export default function AboutUsPage() {
           <div className="absolute inset-0 bg-[#1d5c5c]/80 z-10"></div>
           <div
             className="w-full h-[900px] md:h-[750px] bg-cover bg-center"
-            style={{ backgroundImage: `url(/ourapproch.jpg)` }}
+            style={{ backgroundImage: `url(/Gallery/2-Gallery.webp)` }}
           ></div>
 
           <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-white text-center px-4">
