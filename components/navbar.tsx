@@ -402,15 +402,16 @@ export default function Navbar() {
             </nav>
 
             {/* Desktop Appointment Button */}
-            <Link
-              href="https://citydentalcare.portal.dental/"
-              className="hidden lg:block bg-[#1d5c5c] text-white px-4 py-3 text-sm uppercase text-center"
-            >
-               <div className=" inline-flex justify-center items-center">
-                <CalendarCheck className="w-8 h-6" />
-             <span> Get Appointment</span>
-               </div>
-            </Link>
+             <Link
+      href="https://citydentalcare.portal.dental/"
+      target="_blank"
+      className="hidden lg:block bg-[#1d5c5c] text-white px-4 py-3 text-sm uppercase text-center rounded-md hover:bg-[#164b4b] transition duration-300"
+    >
+      <div className="inline-flex items-center justify-center gap-2">
+        <CalendarCheck className="w-5 h-5" />
+        <span className="text-sm md:py-1">Get Appointment</span>
+      </div>
+    </Link>
           </div>
         </div>
 
@@ -710,11 +711,15 @@ export default function Navbar() {
              {/* Desktop Appointment Button */}
             <div className="flex justify-center">
               <Link
-              href="https://citydentalcare.portal.dental/"
-              className=" bg-[#1d5c5c] text-white px-4 py-3 text-sm uppercase text-center"
-            >
-              Get Appointment
-            </Link>
+      href="https://citydentalcare.portal.dental/"
+      target="_blank"
+      className=" w-full bg-[#1d5c5c] text-white  py-3 text-sm uppercase text-center rounded-md hover:bg-[#164b4b] "
+    >
+      <div className="inline-flex items-center justify-center gap-2">
+        <CalendarCheck className="w-5 h-5" />
+        <span className="text-sm md:py-1">Get Appointment</span>
+      </div>
+    </Link>
             </div>
           </div>
         </div>
