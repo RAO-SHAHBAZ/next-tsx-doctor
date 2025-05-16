@@ -103,9 +103,9 @@ export default function DentalConsultation() {
 
                 <button
                   className="bg-[#1D5C5C] text-white px-5 py-2 rounded "
-                  onClick={() => console.log("Make Appointment Clicked")}
                 >
-                  Book Your Appointment Today
+                  <Link href='https://citydentalcare.portal.dental/' target="_blank">
+                  Book Your Appointment Today</Link>
                 </button>
               </div>
             </div>
@@ -114,7 +114,7 @@ export default function DentalConsultation() {
           {/* Main Content */}
           <main className="w-full lg:w-3/4 flex flex-col gap-6">
             <img
-              src="/A7402954.jpg" // Use the same image as requested
+              src="/general-dentistry/Dental Consultation/Dental Consultation.webp" 
               alt="Child Smile Program"
               className="rounded-2xl w-full max-h-[500px] object-cover"
             />
@@ -162,7 +162,7 @@ export default function DentalConsultation() {
 
             </div>
             <img
-              src="/A7402954.jpg" // Use the same image as requested
+              src="/general-dentistry/Dental Consultation/Dental Consultation 1.webp" 
               alt="Child Smile Program"
               className="rounded-2xl w-full max-h-[500px] object-cover"
             />
@@ -254,12 +254,13 @@ export default function DentalConsultation() {
             </div>
 
             <div className="flex justify-center md:justify-start">
+              <Link href='https://citydentalcare.portal.dental/' target="_blank">
               <button
                 className="mt-4 bg-[#1D5C5C] text-white px-6 py-2 rounded "
-                onClick={() => console.log("Book Child Dental Appointment")}
+    
               >
                 Book Your Consultation Today
-              </button>
+              </button></Link>
             </div>
 
             <hr className="text-gray-500 mt-6" />

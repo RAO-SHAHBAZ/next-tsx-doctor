@@ -93,9 +93,9 @@ export default function SameDayEmergency() {
 
                 <button
                   className="bg-[#1D5C5C] text-white px-5 py-2 rounded "
-                  onClick={() => console.log("Make Appointment Clicked")}
                 >
-                  Book Your Appointment Today
+                  <Link href='https://citydentalcare.portal.dental/' target="_blank">
+                  Book Your Appointment Today</Link>
                 </button>
               </div>
             </div>
@@ -104,7 +104,7 @@ export default function SameDayEmergency() {
           {/* Main Content */}
           <main className="w-full lg:w-3/4 flex flex-col gap-6">
             <img
-              src="/A7402954.jpg"
+              src="/general-dentistry/Same Day Emergency Appointments/Same Day Emergency Appointments.webp"
               alt="Emergency Dental Care"
               className="rounded-2xl w-full max-h-[500px] object-cover"
             />
@@ -193,6 +193,11 @@ export default function SameDayEmergency() {
                 </div>
               ))}
             </div>
+             <img
+              src="/general-dentistry/Same Day Emergency Appointments/Same Day Emergency Appointments 1.webp"
+              alt="Composite Bonding"
+              className="rounded-2xl w-full max-h-[500px] object-cover"
+            />
             <div>
               <h3 className="text-2xl lg:text-left text-center mt-6 mb-2">
               Need Emergency Dental Care? Book Today!
@@ -203,9 +208,10 @@ export default function SameDayEmergency() {
             </div>
 
             <div className="flex justify-center md:justify-start">
+              <Link href='https://citydentalcare.portal.dental/' target="_blank">
               <button className="mt-4 bg-[#1D5C5C] text-white px-6 py-2 rounded ">
               Emergency? Get Seen Today!
-              </button>
+              </button></Link>
             </div>
 
             <hr className="text-gray-500 mt-6" />

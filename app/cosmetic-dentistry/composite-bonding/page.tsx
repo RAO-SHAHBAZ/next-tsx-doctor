@@ -374,10 +374,14 @@ inline-flex gap-2 items-center justify-center"
               you’ve always dreamed of!
             </p>
             <div className="flex justify-center md:justify-start">
-              <Link target="_blank" href='https://citydentalcare.portal.dental/'>
-              <button className="mt-4 bg-[#1D5C5C] text-white px-6 py-2 rounded  ">
-                Book Your Consultation Now!
-              </button></Link>
+              <Link
+                target="_blank"
+                href="https://citydentalcare.portal.dental/"
+              >
+                <button className="mt-4 bg-[#1D5C5C] text-white px-6 py-2 rounded  ">
+                  Book Your Consultation Now!
+                </button>
+              </Link>
             </div>
 
             <hr className="text-gray-500 mt-6" />

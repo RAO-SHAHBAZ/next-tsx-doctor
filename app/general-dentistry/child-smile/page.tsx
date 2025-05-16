@@ -91,11 +91,11 @@ export default function ChildSmile() {
                   for emergency services! Book Your Appointment Today!
                 </p>
 
-                <button
+              <button
                   className="bg-[#1D5C5C] text-white px-5 py-2 rounded "
-                  onClick={() => console.log("Make Appointment Clicked")}
                 >
-                  Book Your Appointment Today
+                  <Link href='https://citydentalcare.portal.dental/' target="_blank">
+                  Book Your Appointment Today</Link>
                 </button>
               </div>
             </div>
@@ -104,7 +104,7 @@ export default function ChildSmile() {
           {/* Main Content */}
           <main className="w-full lg:w-3/4 flex flex-col gap-6">
             <img
-              src="/A7402954.jpg" // Use the same image as requested
+              src="/general-dentistry/Child Smile/Child Smile.webp" // Use the same image as requested
               alt="Child Smile Program"
               className="rounded-2xl w-full max-h-[500px] object-cover"
             />
@@ -157,7 +157,7 @@ export default function ChildSmile() {
                 ))}
               </ul>
             </div>
-
+                  
             <div>
               <h2 className="text-2xl lg:text-left text-center mt-6 mb-2">
                 Our Approach to Child Smile Care in Edinburgh
@@ -169,7 +169,11 @@ export default function ChildSmile() {
                 treatment.
               </p>
             </div>
-
+   <img
+              src="/general-dentistry/Child Smile/Child Smile 1.webp"
+              alt="Composite Bonding"
+              className="rounded-2xl w-full max-h-[500px] object-cover"
+            />
             <div className="bg-[#F5F5F5] p-10">
               <h2 className="text-2xl lg:text-left text-center mt-6 mb-2">
                 Benefits of Choosing Us
@@ -201,6 +205,7 @@ export default function ChildSmile() {
                 </div>
               ))}
             </div>
+          
             <div>
               <h2 className="text-2xl lg:text-left text-center mt-6 mb-2">
               Schedule Your Child’s Dental Appointment Today!
@@ -213,12 +218,11 @@ export default function ChildSmile() {
               </div>
 
             <div className="flex justify-center md:justify-start">
+              <Link href='https://citydentalcare.portal.dental/' target="_blank">
               <button
                 className="mt-4 bg-[#1D5C5C] text-white px-6 py-2 rounded "
-                onClick={() => console.log("Book Child Dental Appointment")}
-              >
-                Book Your Smile Today
-              </button>
+              > Book Your Smile Today
+              </button></Link>
             </div>
 
             <hr className="text-gray-500 mt-6" />
