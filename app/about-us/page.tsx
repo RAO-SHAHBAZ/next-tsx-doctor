@@ -158,7 +158,6 @@ export default function AboutUsPage() {
               comfort, trust, and the approach we are compassionate about.
             </p>
             <div className="flex justify-center lg:justify-start">
-              {" "}
               <button className="bg-[#1d5c5c] text-white px-4 py-4 text-sm uppercase text-center">
                 <Link href='https://citydentalcare.portal.dental/' target="_blank">
                 Book Your Appointment Today!

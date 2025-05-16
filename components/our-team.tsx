@@ -6,6 +6,7 @@ import doc4 from "@/public/staff/hamza-alhadad.jpg";
 import doc5 from "@/public/staff/sanja.jpg";
 import doc6 from "@/public/staff/uzaire.jpg";
 import doc7 from "@/public/staff/zoe.jpg";
+import Link from "next/link";
 
 const teamMembers = [
   {
@@ -76,7 +77,17 @@ const OurTeam = () => {
             </div>
           ))}
         </div>
+               <div className="flex justify-center mt-20   " >
+              <button className="bg-[#1d5c5c] text-white px-8 py-4 text-sm uppercase text-center">
+                <Link href='/staff' target="_blank">
+               Visit City Dental Care Staff
+                </Link>
+              </button>
+            </div>
       </div>
+   
+      
+   
     </section>
   );
 };
