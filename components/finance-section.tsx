@@ -22,7 +22,7 @@ export default function FinanceSection() {
     },
     {
       question: "What Are the Finance Term Options?",
-      answer: "Have a choice of 6 to 24 months of interest-free period that is convenient for you.",
+      answer: "Up to 12 Months Finance Available with 0% interest",
     },
   ]
 
