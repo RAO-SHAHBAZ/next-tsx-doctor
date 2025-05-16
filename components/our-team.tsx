@@ -32,24 +32,6 @@ const teamMembers = [
     role: "Therapist: BSc (Hons) Oral Health Sciences 2024 (Edinburgh)",
     image: doc7,
   },
-    {
-    name: "Uzair Sarwar",
-    gdc:'308854',
-    role: "Dentist: BDS 2023 (Glasgow)",
-    image: doc6,
-  },
-    {
-    name: "Sania Jabeen",
-    gdc:'319609',
-    role: "Therapist: BSc (Hons) Oral Health Sciences 2024 (Edinburgh)",
-    image: doc5,
-  },
-  {
-    name: "Christopher Sarafiant",
-    gdc:'310911',
-    role: "Dentist: DMD 2023 (Vilnius University)",
-    image: doc1,
-  },
 
   // {
   //   name: "Usman Ullah ",
