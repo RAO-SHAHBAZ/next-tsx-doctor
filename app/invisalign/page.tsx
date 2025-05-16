@@ -95,9 +95,10 @@ export default function Invisalign() {
 
                 <button
                   className="bg-[#1D5C5C] text-white px-5 py-2 rounded "
-                  onClick={() => console.log("Make Appointment Clicked")}
                 >
+                  <Link href='https://citydentalcare.portal.dental/' target="_blank">
                   Book Your Appointment Today
+                  </Link>
                 </button>
               </div>
             </div>
@@ -453,9 +454,10 @@ export default function Invisalign() {
             <div className="flex justify-center md:justify-start">
               <button
                 className="mt-4 bg-[#1D5C5C] text-white px-6 py-2 rounded "
-                onClick={() => console.log("Book Child Dental Appointment")}
               >
+                <Link href='https://citydentalcare.portal.dental/' target="_blank">
                 Book Your Consultation Now!
+                </Link>
               </button>
             </div>
 

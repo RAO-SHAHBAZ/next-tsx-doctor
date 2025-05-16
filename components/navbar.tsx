@@ -84,7 +84,7 @@ export default function Navbar() {
               </div>
             </div>
 
-            <Link href='tel:+921312282442' target="blank" className="flex items-center gap-2">
+            <Link href='tel:+11312282442' target="blank" className="flex items-center gap-2">
               <div className="bg-[#1d5c5c] p-2 rounded">
                 <Phone className="text-white h-3 w-3 md:h-5 md:w-5" />
               </div>

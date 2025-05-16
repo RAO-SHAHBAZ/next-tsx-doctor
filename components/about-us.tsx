@@ -67,7 +67,12 @@ export default function AboutUs() {
                 {/* Button For Number */}
                 <button className="border border-[#225555] text-[#225555] bg-[#E4F5F5] px-4 py-3 text-sm uppercase flex items-center hover:bg-[#339485] hover:text-white">
                   <PhoneCall />
-                  <span className="font-semibold px-4">01312282442</span>
+                    <Link className="hover:underline" href="tel:+11312282442">
+                  <span className="font-semibold px-4">
+                    
+                  021312282442
+                    </span>
+                    </Link>
                 </button>
               </div>
             </div>
@@ -109,16 +114,17 @@ export default function AboutUs() {
               </div>
               {/* BUTTONS */}
               <div className="flex flex-col gap-4 m-8">
-                <a href="#" className="bg-[#1d5c5c] text-white px-4 py-3 text-sm uppercase text-center">
+                <Link href="https://citydentalcare.portal.dental/" className="bg-[#1d5c5c] text-white px-4 py-3 text-sm uppercase text-center">
                   Pain-Free Dentistry – Book Now!
-                </a>
-                <a
-                  href="#"
+                </Link>
+                <Link
+                  href="tel:+11312282442"
                   className="border border-[#225555] text-[#225555] bg-[#E4F5F5] px-4 py-3 uppercase flex items-center justify-center"
                 >
                   <PhoneCall />
-                  <span className="font-semibold px-2">01312282442</span>
-                </a>
+                  
+                  <span className="font-semibold px-2">1312282442</span>
+                </Link>
               </div>
             </div>
           </div>

@@ -96,8 +96,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="h-5 w-5" />
-                <Link className="hover:underline" href="tel:+921312282442">
-                <span>01312282442</span>
+                <Link className="hover:underline" href="tel:+11312282442">
+                <span>1312282442</span>
                 </Link>
               </li>
               <li className="flex items-center space-x-2">

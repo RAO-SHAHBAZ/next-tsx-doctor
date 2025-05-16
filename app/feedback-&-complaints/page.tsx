@@ -3,7 +3,6 @@
 import React from "react";
 import { Facebook, Instagram, Mail } from "lucide-react";
 import Link from "next/link";
-import FaqSection from "@/components/faqs";
 import BredCrumbServices from "@/components/BreadCrumbServices";
 
 export default function FeedbackComplaints() {
@@ -45,8 +44,8 @@ export default function FeedbackComplaints() {
                 </Link>
                 .
               </li>
-              <li>Call us at <Link className="hover:underline text-[#1D5C5C]" href="tel:+921312282442">
-                <span>01312282442</span>
+              <li>Call us at <Link className="hover:underline text-[#1D5C5C]" href="tel:+11312282442">
+                <span>1312282442</span>
                 </Link></li>
               <li>Please email us at <span className="hover:underline text-[#1D5C5C]"><Link href= "mailto:info@citydentalcare.co.uk">info@citydentalcare.co.uk</Link></span></li>
             </ul>

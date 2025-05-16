@@ -9,47 +9,48 @@ import doc7 from "@/public/staff/zoe.jpg";
 
 const teamMembers = [
   {
-    name: "Christopher Sarafiant",
-    gdc:'310911',
-    role: "Dentist: DMD 2023 (Vilnius University)",
-    image: doc1,
-  },
-  {
-    name: "Nabila Al Riyami",
-    gdc:'308610 ',
-    role: "Dentist: BDS 2023 (Glasgow)",
-    image: doc2,
-  },
-  {
-    name: "Feras Elbiss ",
-    gdc:'303408',
-    role: "Dentist: MDDr 2022 (Charles University)",
-    image: doc3,
-  },
-  {
     name: "Hamza Al Haddad",
     gdc:'310491',
     role: "Dentist: DMD 2023 (Vilnius University)",
     image: doc4,
   },
-  {
+    {
+    name: "Nabila Al Riyami",
+    gdc:'308610 ',
+    role: "Dentist: BDS 2023 (Glasgow)",
+    image: doc2,
+  },
+    {
+    name: "Feras Elbiss ",
+    gdc:'303408',
+    role: "Dentist: MDDr 2022 (Charles University)",
+    image: doc3,
+  },
+    {
+    name: "Zoe Kemp",
+    gdc:'295494 ',
+    role: "Therapist: BSc (Hons) Oral Health Sciences 2024 (Edinburgh)",
+    image: doc7,
+  },
+    {
+    name: "Uzair Sarwar",
+    gdc:'308854',
+    role: "Dentist: BDS 2023 (Glasgow)",
+    image: doc6,
+  },
+    {
     name: "Sania Jabeen",
     gdc:'319609',
     role: "Therapist: BSc (Hons) Oral Health Sciences 2024 (Edinburgh)",
     image: doc5,
   },
   {
-    name: "Uzair Sarwar",
-    gdc:'308854',
-    role: "Dentist: BDS 2023 (Glasgow)",
-    image: doc6,
+    name: "Christopher Sarafiant",
+    gdc:'310911',
+    role: "Dentist: DMD 2023 (Vilnius University)",
+    image: doc1,
   },
-  {
-    name: "Zoe Kemp",
-    gdc:'295494 ',
-    role: "Therapist: BSc (Hons) Oral Health Sciences 2024 (Edinburgh)",
-    image: doc7,
-  },
+
   // {
   //   name: "Usman Ullah ",
   //   gdc:'113427'

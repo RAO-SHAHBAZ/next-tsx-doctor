@@ -10,7 +10,7 @@ function GeneralDentistry() {
       icon: <img src="/general-dentistry/dental-consultation.svg" alt="Dental Consultation" />,
       title: "Dental Consultation",
       description: "Regular appointments include checkups, which are essential for detecting cavities, gum disease, and other oral health problems, and for avoiding severe health complications.",
-     link: "/general-dentistry/Dental-Consultation"
+     link: "/general-dentistry/dental-consultaion"
     },
     {
       icon: <img src="/general-dentistry/same-day-emergency.svg" alt="Same Day Emergency Appointments" />,
