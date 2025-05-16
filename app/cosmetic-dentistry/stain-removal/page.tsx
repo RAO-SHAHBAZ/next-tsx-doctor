@@ -1,7 +1,14 @@
 "use client";
 
 import React from "react";
-import { Facebook, Instagram, Mail, MoveRight, Twitter, Youtube } from "lucide-react";
+import {
+  Facebook,
+  Instagram,
+  Mail,
+  MoveRight,
+  Twitter,
+  Youtube,
+} from "lucide-react";
 import Link from "next/link";
 import FaqSection from "@/components/faqs";
 import BredCrumbServices from "@/components/BreadCrumbServices";
@@ -106,11 +113,13 @@ export default function StainRemoval() {
                   for emergency services! Book Your Appointment Today!
                 </p>
 
-                <button
-                  className="bg-[#1D5C5C] text-white px-5 py-2 rounded "
-                  onClick={() => console.log("Make Appointment Clicked")}
-                >
-                  Book Your Appointment Today
+                <button className="bg-[#1D5C5C] text-white px-5 py-2 rounded ">
+                  <Link
+                    href="https://citydentalcare.portal.dental/"
+                    target="_blank"
+                  >
+                    Book Your Appointment Today
+                  </Link>
                 </button>
               </div>
             </div>
@@ -119,7 +128,7 @@ export default function StainRemoval() {
           {/* Main Content */}
           <main className="w-full lg:w-3/4 flex flex-col gap-6">
             <img
-              src="/A7402954.jpg"
+              src="/cosmetic-dentistry/Stain Removal/Stain Removal.webp"
               alt="Stain Removal"
               className="rounded-2xl w-full max-h-[500px] object-cover"
             />
@@ -167,12 +176,14 @@ export default function StainRemoval() {
               ].map((item, index) => (
                 <div key={index} className="mb-3">
                   <h3 className="text-lg text-center lg:text-left inline-flex gap-2 items-center justify-center">
-                  <Image src="/forward-icon.webp"
-                                      alt="Forward Icon"
-                                      width={15}
-                                      height={15}
-                                      className="w-[15px] h-[15px]"
-                                    /> {item.title}
+                    <Image
+                      src="/forward-icon.webp"
+                      alt="Forward Icon"
+                      width={15}
+                      height={15}
+                      className="w-[15px] h-[15px]"
+                    />{" "}
+                    {item.title}
                   </h3>
                   <p>{item.desc}</p>
                 </div>
@@ -208,7 +219,7 @@ export default function StainRemoval() {
               ].map((step, index) => (
                 <div key={index} className="mb-3">
                   <h3 className="text-lg lg:text-left text-center inline-flex gap-2 ">
-                  <MoveRight /> {step.title}
+                    <MoveRight /> {step.title}
                   </h3>
                   <p>{step.desc}</p>
                 </div>
@@ -216,7 +227,7 @@ export default function StainRemoval() {
             </div>
 
             <img
-              src="/A7402954.jpg"
+              src="/cosmetic-dentistry/Stain Removal/Stain Removal 2.webp"
               alt="Stain Removal"
               className="rounded-2xl w-full max-h-[500px] object-cover"
             />
@@ -241,12 +252,14 @@ export default function StainRemoval() {
               ].map((item, index) => (
                 <div key={index} className="mb-3">
                   <h3 className="text-lg text-center lg:text-left inline-flex gap-2 items-center justify-center">
-                  <Image src="/forward-icon.webp"
-                                      alt="Forward Icon"
-                                      width={15}
-                                      height={15}
-                                      className="w-[15px] h-[15px]"
-                                    />{item.title}
+                    <Image
+                      src="/forward-icon.webp"
+                      alt="Forward Icon"
+                      width={15}
+                      height={15}
+                      className="w-[15px] h-[15px]"
+                    />
+                    {item.title}
                   </h3>
                   <p>{item.desc}</p>
                 </div>
@@ -262,9 +275,8 @@ export default function StainRemoval() {
                 team's use of advanced technology results in safety,
                 effectiveness, and a personalised stain removal experience.
                 <br />
-                 We
-                need to spend that time getting to know your goals and come up
-                with a treatment plan centred around you.
+                We need to spend that time getting to know your goals and come
+                up with a treatment plan centred around you.
               </p>
               <br />
               {[
@@ -300,9 +312,10 @@ export default function StainRemoval() {
               confident smile.
             </p>
             <div className="flex justify-center md:justify-start">
+              <Link target="_blank" href='https://citydentalcare.portal.dental/'>
               <button className="mt-4 bg-[#1D5C5C] text-white px-6 py-2 rounded  ">
                 Brighten Your Smile – Book Now!
-              </button>
+              </button></Link>
             </div>
 
             <hr className="text-gray-500 mt-6" />
@@ -310,9 +323,15 @@ export default function StainRemoval() {
             <div className="mt-6">
               <p className="mb-2">Follow Us:</p>
               <div className="flex gap-4 text-[#1D5C5C]">
-              <Link href='https://www.facebook.com/citydentalcareedinburgh'><Facebook className=" cursor-pointer w-5 h-5" /></Link>
-<Link href='mailto:info@citydentalcare.co.uk'><Mail className=" cursor-pointer w-5 h-5" /></Link>
-<Link href='https://www.instagram.com/citydentalcare.edin/'><Instagram className=" cursor-pointer w-5 h-5" /></Link>
+                <Link href="https://www.facebook.com/citydentalcareedinburgh">
+                  <Facebook className=" cursor-pointer w-5 h-5" />
+                </Link>
+                <Link href="mailto:info@citydentalcare.co.uk">
+                  <Mail className=" cursor-pointer w-5 h-5" />
+                </Link>
+                <Link href="https://www.instagram.com/citydentalcare.edin/">
+                  <Instagram className=" cursor-pointer w-5 h-5" />
+                </Link>
               </div>
             </div>
           </main>

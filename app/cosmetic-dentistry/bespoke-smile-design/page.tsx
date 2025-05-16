@@ -1,14 +1,7 @@
 "use client";
 
 import React from "react";
-import {
-  Facebook,
-  Instagram,
-  Mail,
-  MoveRight,
-  Twitter,
-  Youtube,
-} from "lucide-react";
+import { Facebook, Instagram, Mail, MoveRight } from "lucide-react";
 import Link from "next/link";
 import FaqSection from "@/components/faqs";
 import BredCrumbServices from "@/components/BreadCrumbServices";
@@ -115,12 +108,13 @@ export default function BespokeSmileDesign() {
                   for emergency services! Book Your Appointment Today!
                 </p>
 
-                <button
-                  className="bg-[#1D5C5C] text-white px-5 py-2 rounded "
-                  onClick={() => console.log("Make Appointment Clicked")}
-                >
-                  <Link href='https://citydentalcare.portal.dental/'></Link>
-                  Book Your Appointment Today
+                <button className="bg-[#1D5C5C] text-white px-5 py-2 rounded ">
+                  <Link
+                    href="https://citydentalcare.portal.dental/"
+                    target="_blank"
+                  >
+                    Book Your Appointment Today
+                  </Link>
                 </button>
               </div>
             </div>
@@ -129,7 +123,7 @@ export default function BespokeSmileDesign() {
           {/* Main Content */}
           <main className="w-full lg:w-3/4 flex flex-col gap-6">
             <img
-              src="/A7402954.jpg"
+              src="/cosmetic-dentistry/Bespoke Smile Design/Bespoke Smile Design.webp"
               alt="Bespoke Smile Design"
               className="rounded-2xl w-full max-h-[500px] object-cover"
             />
@@ -137,7 +131,8 @@ export default function BespokeSmileDesign() {
             <div>
               <h1 className="text-4xl lg:text-5xl text-center mb-3 lg:text-left">
                 Bespoke Smile Design for Your Unique Look in Edinburgh
-              </h1><br />
+              </h1>
+              <br />
               <h2 className="text-2xl lg:text-left text-center mb-2">
                 Design The Smile of Your Dreams
               </h2>
@@ -202,7 +197,7 @@ export default function BespokeSmileDesign() {
             </div>
 
             <img
-              src="/A7402954.jpg"
+              src="/cosmetic-dentistry/Bespoke Smile Design/Bespoke Smile Design 2.webp"
               alt="Bespoke Smile Design"
               className="rounded-2xl w-full max-h-[500px] object-cover"
             />
@@ -304,10 +299,9 @@ export default function BespokeSmileDesign() {
             </p>
             <div className="flex justify-center md:justify-start">
               <button className="mt-4 bg-[#1D5C5C] text-white px-6 py-2 rounded  ">
-                <Link href='https://citydentalcare.portal.dental/'>
-                Get Started on Your Custom Smile
-                
-                 </Link>
+                <Link href="https://citydentalcare.portal.dental/">
+                  Get Started on Your Custom Smile
+                </Link>
               </button>
             </div>
 

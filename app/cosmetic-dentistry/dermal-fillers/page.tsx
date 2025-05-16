@@ -1,7 +1,14 @@
 "use client";
 
 import React from "react";
-import { Facebook, Instagram, Mail, MoveRight, Twitter, Youtube } from "lucide-react";
+import {
+  Facebook,
+  Instagram,
+  Mail,
+  MoveRight,
+  Twitter,
+  Youtube,
+} from "lucide-react";
 import Link from "next/link";
 import FaqSection from "@/components/faqs";
 import BredCrumbServices from "@/components/BreadCrumbServices";
@@ -107,11 +114,13 @@ export default function DermalFillers() {
                   for emergency services! Book Your Appointment Today!
                 </p>
 
-                <button
-                  className="bg-[#1D5C5C] text-white px-5 py-2 rounded "
-                  onClick={() => console.log("Make Appointment Clicked")}
-                >
-                  Book Your Appointment Today
+                <button className="bg-[#1D5C5C] text-white px-5 py-2 rounded ">
+                  <Link
+                    href="https://citydentalcare.portal.dental/"
+                    target="_blank"
+                  >
+                    Book Your Appointment Today
+                  </Link>
                 </button>
               </div>
             </div>
@@ -120,7 +129,7 @@ export default function DermalFillers() {
           {/* Main Content */}
           <main className="w-full lg:w-3/4 flex flex-col gap-6">
             <img
-              src="/A7402954.jpg"
+              src="/cosmetic-dentistry/Dermal Fillers/Dermal Fillers.webp"
               alt="Dermal Fillers"
               className="rounded-2xl w-full max-h-[500px] object-cover"
             />
@@ -170,13 +179,14 @@ export default function DermalFillers() {
               ].map((item, index) => (
                 <div key={index} className="mb-3">
                   <h3 className="text-lg text-center lg:text-left inline-flex gap-2 items-center justify-center ">
-                  <Image
-                                      src="/forward-icon.webp"
-                                      alt="Forward Icon"
-                                      width={15}
-                                      height={15}
-                                      className="w-[15px] h-[15px]"
-                                    /> {item.title}
+                    <Image
+                      src="/forward-icon.webp"
+                      alt="Forward Icon"
+                      width={15}
+                      height={15}
+                      className="w-[15px] h-[15px]"
+                    />{" "}
+                    {item.title}
                   </h3>
                   <p>{item.desc}</p>
                 </div>
@@ -215,7 +225,7 @@ export default function DermalFillers() {
               ].map((step, index) => (
                 <div key={index} className="mb-3">
                   <h3 className="text-lg lg:text-left text-center inline-flex gap-2 ">
-                  <MoveRight /> {step.title}
+                    <MoveRight /> {step.title}
                   </h3>
                   <p>{step.desc}</p>
                 </div>
@@ -223,7 +233,7 @@ export default function DermalFillers() {
             </div>
 
             <img
-              src="/A7402954.jpg"
+              src="/cosmetic-dentistry/Dermal Fillers/Dermal Fillers 1.webp"
               alt="Dermal Fillers"
               className="rounded-2xl w-full max-h-[500px] object-cover"
             />
@@ -257,13 +267,14 @@ export default function DermalFillers() {
               ].map((step, index) => (
                 <div key={index} className="mb-3">
                   <h3 className="text-lg lg:text-left text-center inline-flex gap-2 items-center justify-center">
-                  <Image
-                                      src="/forward-icon.webp"
-                                      alt="Forward Icon"
-                                      width={15}
-                                      height={15}
-                                      className="w-[15px] h-[15px]"
-                                    /> {step.title}
+                    <Image
+                      src="/forward-icon.webp"
+                      alt="Forward Icon"
+                      width={15}
+                      height={15}
+                      className="w-[15px] h-[15px]"
+                    />{" "}
+                    {step.title}
                   </h3>
                   <p>{step.desc}</p>
                 </div>
@@ -304,28 +315,28 @@ export default function DermalFillers() {
               ].map((item, index) => (
                 <div key={index} className="mb-3">
                   <h3 className="text-lg text-center lg:text-left inline-flex gap-2">
-                  <MoveRight /> {item.title}
+                    <MoveRight /> {item.title}
                   </h3>
                   <p>{item.desc}</p>
                 </div>
               ))}
             </div>
 
-            
-              <h2 className="text-2xl text-center lg:text-left  mb-2">
-                Ready for a Beautiful, Refreshed Smile?
-              </h2>
-              <p>
-                Dermal fillers are the ideal treatment for enhancing your smile
-                with facial rejuvenation. We offer a range of facial aesthetic
-                treatments for both men and women in Edinburgh. At City Dental
-                Care, we aim to provide a first-class service. Visit our clinic
-                now and book a consultation to improve your looks and smile.
-              </p>
-              <div className="flex justify-center md:justify-start">
+            <h2 className="text-2xl text-center lg:text-left  mb-2">
+              Ready for a Beautiful, Refreshed Smile?
+            </h2>
+            <p>
+              Dermal fillers are the ideal treatment for enhancing your smile
+              with facial rejuvenation. We offer a range of facial aesthetic
+              treatments for both men and women in Edinburgh. At City Dental
+              Care, we aim to provide a first-class service. Visit our clinic
+              now and book a consultation to improve your looks and smile.
+            </p>
+            <div className="flex justify-center md:justify-start">
+              <Link target="_blank" href='https://citydentalcare.portal.dental/'>
               <button className="mt-4 bg-[#1D5C5C] text-white px-6 py-2 rounded  ">
                 Book Your Dermal Filler Session Today!
-              </button>
+              </button></Link>
             </div>
 
             <hr className="text-gray-500 mt-6" />
@@ -333,9 +344,15 @@ export default function DermalFillers() {
             <div className="mt-6">
               <p className="mb-2">Follow Us:</p>
               <div className="flex gap-4 text-[#1D5C5C]">
-              <Link href='https://www.facebook.com/citydentalcareedinburgh'><Facebook className=" cursor-pointer w-5 h-5" /></Link>
-<Link href='mailto:info@citydentalcare.co.uk'><Mail className=" cursor-pointer w-5 h-5" /></Link>
-<Link href='https://www.instagram.com/citydentalcare.edin/'><Instagram className=" cursor-pointer w-5 h-5" /></Link>
+                <Link href="https://www.facebook.com/citydentalcareedinburgh">
+                  <Facebook className=" cursor-pointer w-5 h-5" />
+                </Link>
+                <Link href="mailto:info@citydentalcare.co.uk">
+                  <Mail className=" cursor-pointer w-5 h-5" />
+                </Link>
+                <Link href="https://www.instagram.com/citydentalcare.edin/">
+                  <Instagram className=" cursor-pointer w-5 h-5" />
+                </Link>
               </div>
             </div>
           </main>

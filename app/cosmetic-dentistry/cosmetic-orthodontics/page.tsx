@@ -49,12 +49,17 @@ export default function CosmeticOrthodontics() {
 
   return (
     <>
-      <BredCrumbServices title="Cosmetic Orthodontics" subtitle={(
-        <span>
-          <Link className="hover:underline" href="/cosmetic-dentistry">Cosmetic Dentistry</Link> -{' '}
-          <span>Cosmetic Orthodontics</span>
-        </span>
-      )} />
+      <BredCrumbServices
+        title="Cosmetic Orthodontics"
+        subtitle={
+          <span>
+            <Link className="hover:underline" href="/cosmetic-dentistry">
+              Cosmetic Dentistry
+            </Link>{" "}
+            - <span>Cosmetic Orthodontics</span>
+          </span>
+        }
+      />
 
       <div className="container mx-auto px-4 py-8 mb-20">
         <div className="flex flex-col-reverse lg:flex-row gap-8">
@@ -108,11 +113,13 @@ export default function CosmeticOrthodontics() {
                   for emergency services! Book Your Appointment Today!
                 </p>
 
-                <button
-                  className="bg-[#1D5C5C] text-white px-5 py-2 rounded "
-                  onClick={() => console.log("Make Appointment Clicked")}
-                >
-                  Book Your Appointment Today
+                <button className="bg-[#1D5C5C] text-white px-5 py-2 rounded ">
+                  <Link
+                    href="https://citydentalcare.portal.dental/"
+                    target="_blank"
+                  >
+                    Book Your Appointment Today
+                  </Link>
                 </button>
               </div>
             </div>
@@ -121,7 +128,7 @@ export default function CosmeticOrthodontics() {
           {/* Main Content */}
           <main className="w-full lg:w-3/4 flex flex-col gap-6">
             <img
-              src="/A7402954.jpg"
+              src="/cosmetic-dentistry/Cosmetic Orthodontics/Cosmetic Orthodontics.webp"
               alt="Cosmetic Orthodontics"
               className="rounded-2xl w-full max-h-[500px] object-cover"
             />
@@ -135,19 +142,26 @@ export default function CosmeticOrthodontics() {
                 Cosmetic Orthodontics delivers perfect smiles to patients.
               </h2>
               <p className=" leading-relaxed">
-                Have you ever wanted to obtain a gorgeous, aligned smile that functions without dealing with traditional brace systems?
-                 People seeking cosmetic orthodontic treatment at City Dental Care in Edinburgh discover an excellent method to get perfectly straight teeth that delivers comfort, efficiency, and total concealment.
-                  Our clear and unobtrusive aligner system benefits patients from the teenage to adult ages.
+                Have you ever wanted to obtain a gorgeous, aligned smile that
+                functions without dealing with traditional brace systems? People
+                seeking cosmetic orthodontic treatment at City Dental Care in
+                Edinburgh discover an excellent method to get perfectly straight
+                teeth that delivers comfort, efficiency, and total concealment.
+                Our clear and unobtrusive aligner system benefits patients from
+                the teenage to adult ages.
               </p>
             </div>
 
-            <div >
+            <div>
               <h3 className="text-xl lg:text-left text-center mt-4 mb-1">
                 What is Cosmetic Orthodontics?
               </h3>
-              <p >
-                It is for the appearance and function of your teeth. This treatment involves teeth straightening with clear aligners or transparent braces.
-                 It is not the typical aesthetics of metal braces. This is a nice, discreet, comfortable way of getting your straighter smile.
+              <p>
+                It is for the appearance and function of your teeth. This
+                treatment involves teeth straightening with clear aligners or
+                transparent braces. It is not the typical aesthetics of metal
+                braces. This is a nice, discreet, comfortable way of getting
+                your straighter smile.
               </p>
             </div>
 
@@ -169,26 +183,27 @@ export default function CosmeticOrthodontics() {
                   title: "Faster Results:",
                   desc: "Correcting your teeth's alignment takes fewer days than wearing dental braces.",
                 },
-                 {
+                {
                   title: "Boosted Confidence:",
                   desc: "Cosmetic orthodontics brings you confidence in all settings of your life.",
                 },
               ].map((item, index) => (
                 <div key={index} className="mb-3">
                   <h3 className="text-lg text-center lg:text-left inline-flex gap-2 ">
-                  <MoveRight /> {item.title}</h3>
-                  <p >{item.desc}</p>
+                    <MoveRight /> {item.title}
+                  </h3>
+                  <p>{item.desc}</p>
                 </div>
               ))}
             </div>
 
             <img
-              src="/A7402954.jpg"
+              src="/cosmetic-dentistry/Cosmetic Orthodontics/Cosmetic Orthodontics 2.webp"
               alt="Cosmetic Orthodontics"
               className="rounded-2xl w-full max-h-[500px] object-cover"
             />
 
-             <div>
+            <div>
               <h2 className="text-2xl lg:text-left text-center mt-6 mb-2">
                 How Cosmetic Orthodontics Works?
               </h2>
@@ -215,13 +230,17 @@ export default function CosmeticOrthodontics() {
                 },
               ].map((step, index) => (
                 <div key={index} className="mb-3">
-                  <h3 className="text-lg lg:text-left text-center inline-flex gap-2 items-center justify-center ">     <Image
-                                      src="/forward-icon.webp"
-                                      alt="Forward Icon"
-                                      width={15}
-                                      height={15}
-                                      className="w-[15px] h-[15px]"
-                                    /> {step.title}</h3>
+                  <h3 className="text-lg lg:text-left text-center inline-flex gap-2 items-center justify-center ">
+                    {" "}
+                    <Image
+                      src="/forward-icon.webp"
+                      alt="Forward Icon"
+                      width={15}
+                      height={15}
+                      className="w-[15px] h-[15px]"
+                    />{" "}
+                    {step.title}
+                  </h3>
                   <p>{step.desc}</p>
                 </div>
               ))}
@@ -244,31 +263,38 @@ export default function CosmeticOrthodontics() {
                   title: "Improved Oral Health:",
                   desc: "Straight teeth improve oral hygiene because they are simpler to maintain clean, which reduces cavities and gum diseases.",
                 },
-                 {
+                {
                   title: "Convenient:",
                   desc: "Clear aligners provide better convenience because, unlike traditional braces, they can be removed instead of staying in place permanently.",
                 },
               ].map((item, index) => (
                 <div key={index} className="mb-3">
-                  <h3 className="text-lg text-center lg:text-left inline-flex gap-2"> <MoveRight />{item.title}</h3>
-                  <p >{item.desc}</p>
+                  <h3 className="text-lg text-center lg:text-left inline-flex gap-2">
+                    {" "}
+                    <MoveRight />
+                    {item.title}
+                  </h3>
+                  <p>{item.desc}</p>
                 </div>
               ))}
             </div>
 
-            
-              <h2 className="text-2xl text-center lg:text-left  mb-2">
-                Ready for Straighter Teeth? Book Your Consultation Today!
-              </h2>
-              <p >
-                Cosmetic orthodontics provides you with a beautiful, straight smile.
-                 It can lead to your journey of having a straight and nice-looking smile with cosmetic orthodontics at City Dental Care.
-                  Living in Edinburgh, our team is ready and able to offer you individualised care and the newest orthodontic solutions to change your smile.
-              </p>
-              <div className="flex justify-center md:justify-start">
+            <h2 className="text-2xl text-center lg:text-left  mb-2">
+              Ready for Straighter Teeth? Book Your Consultation Today!
+            </h2>
+            <p>
+              Cosmetic orthodontics provides you with a beautiful, straight
+              smile. It can lead to your journey of having a straight and
+              nice-looking smile with cosmetic orthodontics at City Dental Care.
+              Living in Edinburgh, our team is ready and able to offer you
+              individualised care and the newest orthodontic solutions to change
+              your smile.
+            </p>
+            <div className="flex justify-center md:justify-start">
+              <Link target="_blank" href='https://citydentalcare.portal.dental/'>
               <button className="mt-4 bg-[#1D5C5C] text-white px-6 py-2 rounded  ">
                 Reserve Your Smile Consultation!
-              </button>
+              </button></Link>
             </div>
 
             <hr className="text-gray-500 mt-6" />
@@ -276,9 +302,15 @@ export default function CosmeticOrthodontics() {
             <div className="mt-6">
               <p className="mb-2">Follow Us:</p>
               <div className="flex gap-4 text-[#1D5C5C]">
-              <Link href='https://www.facebook.com/citydentalcareedinburgh'><Facebook className=" cursor-pointer w-5 h-5" /></Link>
-<Link href='mailto:info@citydentalcare.co.uk'><Mail className=" cursor-pointer w-5 h-5" /></Link>
-<Link href='https://www.instagram.com/citydentalcare.edin/'><Instagram className=" cursor-pointer w-5 h-5" /></Link>
+                <Link href="https://www.facebook.com/citydentalcareedinburgh">
+                  <Facebook className=" cursor-pointer w-5 h-5" />
+                </Link>
+                <Link href="mailto:info@citydentalcare.co.uk">
+                  <Mail className=" cursor-pointer w-5 h-5" />
+                </Link>
+                <Link href="https://www.instagram.com/citydentalcare.edin/">
+                  <Instagram className=" cursor-pointer w-5 h-5" />
+                </Link>
               </div>
             </div>
           </main>
@@ -292,7 +324,6 @@ export default function CosmeticOrthodontics() {
     </>
   );
 }
-
 
 // export function TeethWhitening() {
 //   const faqsWhitening = [

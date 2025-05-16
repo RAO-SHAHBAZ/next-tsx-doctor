@@ -110,11 +110,13 @@ export default function PorcelainVeneers() {
                   for emergency services! Book Your Appointment Today!
                 </p>
 
-                <button
-                  className="bg-[#1D5C5C] text-white px-5 py-2 rounded "
-                  onClick={() => console.log("Make Appointment Clicked")}
-                >
-                  Book Your Appointment Today
+                <button className="bg-[#1D5C5C] text-white px-5 py-2 rounded ">
+                  <Link
+                    href="https://citydentalcare.portal.dental/"
+                    target="_blank"
+                  >
+                    Book Your Appointment Today
+                  </Link>
                 </button>
               </div>
             </div>
@@ -123,7 +125,7 @@ export default function PorcelainVeneers() {
           {/* Main Content */}
           <main className="w-full lg:w-3/4 flex flex-col gap-6">
             <img
-              src="/A7402954.jpg"
+              src="/cosmetic-dentistry/Proclein veeners/Proclein veeners.webp"
               alt="Porcelain Veneers"
               className="rounded-2xl w-full max-h-[500px] object-cover"
             />
@@ -204,7 +206,7 @@ export default function PorcelainVeneers() {
               ))}
             </div>
             <img
-              src="/A7402954.jpg"
+              src="/cosmetic-dentistry/Proclein veeners/Proclein veeners 2.webp"
               alt="Porcelain Veneers"
               className="rounded-2xl w-full max-h-[500px] object-cover"
             />
@@ -304,9 +306,10 @@ export default function PorcelainVeneers() {
               dream smile a reality.
             </p>
             <div className="flex justify-center md:justify-start">
+               <Link target="_blank" href='https://citydentalcare.portal.dental/'>
               <button className="mt-4 bg-[#1D5C5C] text-white px-6 py-2 rounded  ">
                 Get the Smile You Deserve!
-              </button>
+              </button></Link>
             </div>
 
             <hr className="text-gray-500 mt-6" />

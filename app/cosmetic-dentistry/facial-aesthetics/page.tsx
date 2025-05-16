@@ -1,7 +1,14 @@
 "use client";
 
 import React from "react";
-import { Facebook, Instagram, Mail, MoveRight, Twitter, Youtube } from "lucide-react";
+import {
+  Facebook,
+  Instagram,
+  Mail,
+  MoveRight,
+  Twitter,
+  Youtube,
+} from "lucide-react";
 import Link from "next/link";
 import FaqSection from "@/components/faqs";
 import BredCrumbServices from "@/components/BreadCrumbServices";
@@ -105,11 +112,13 @@ export default function FacialAesthetics() {
                   for emergency services! Book Your Appointment Today!
                 </p>
 
-                <button
-                  className="bg-[#1D5C5C] text-white px-5 py-2 rounded "
-                  onClick={() => console.log("Make Appointment Clicked")}
-                >
-                  Book Your Appointment Today
+                <button className="bg-[#1D5C5C] text-white px-5 py-2 rounded ">
+                  <Link
+                    href="https://citydentalcare.portal.dental/"
+                    target="_blank"
+                  >
+                    Book Your Appointment Today
+                  </Link>
                 </button>
               </div>
             </div>
@@ -118,7 +127,7 @@ export default function FacialAesthetics() {
           {/* Main Content */}
           <main className="w-full lg:w-3/4 flex flex-col gap-6">
             <img
-              src="/A7402954.jpg"
+              src="/cosmetic-dentistry/Facial Aesthetics/Facial Aesthetics.webp"
               alt="Facial Aesthetics"
               className="rounded-2xl w-full max-h-[500px] object-cover"
             />
@@ -166,7 +175,7 @@ export default function FacialAesthetics() {
             </div>
 
             <div>
-            <h3 className="text-xl lg:text-left text-center mt-4 mb-1 inline-flex gap-2 items-center justify-center">
+              <h3 className="text-xl lg:text-left text-center mt-4 mb-1 inline-flex gap-2 items-center justify-center">
                 <Image
                   src="/forward-icon.webp"
                   alt="Forward Icon"
@@ -174,7 +183,7 @@ export default function FacialAesthetics() {
                   height={15}
                   className="w-[15px] h-[15px]"
                 />
-               Non-Surgical Treatment:
+                Non-Surgical Treatment:
               </h3>
 
               <p>
@@ -185,7 +194,7 @@ export default function FacialAesthetics() {
             </div>
 
             <div>
-            <h3 className="text-xl lg:text-left text-center mt-4 mb-1 inline-flex gap-2 items-center justify-center">
+              <h3 className="text-xl lg:text-left text-center mt-4 mb-1 inline-flex gap-2 items-center justify-center">
                 <Image
                   src="/forward-icon.webp"
                   alt="Forward Icon"
@@ -193,7 +202,7 @@ export default function FacialAesthetics() {
                   height={15}
                   className="w-[15px] h-[15px]"
                 />
-              Long-Lasting Effects:
+                Long-Lasting Effects:
               </h3>
 
               <p>
@@ -204,7 +213,7 @@ export default function FacialAesthetics() {
             </div>
 
             <div>
-            <h3 className="text-xl lg:text-left text-center mt-4 mb-1 inline-flex gap-2 items-center justify-center">
+              <h3 className="text-xl lg:text-left text-center mt-4 mb-1 inline-flex gap-2 items-center justify-center">
                 <Image
                   src="/forward-icon.webp"
                   alt="Forward Icon"
@@ -212,7 +221,7 @@ export default function FacialAesthetics() {
                   height={15}
                   className="w-[15px] h-[15px]"
                 />
-                 Customisable To You:
+                Customisable To You:
               </h3>
               <p>
                 Our procedures at City Dental Care are structured according to
@@ -250,14 +259,14 @@ export default function FacialAesthetics() {
               ].map((item, index) => (
                 <div key={index} className="mb-3">
                   <h3 className="text-lg text-center lg:text-left inline-flex gap-2 ">
-                  <MoveRight /> {item.title}
+                    <MoveRight /> {item.title}
                   </h3>
                   <p>{item.desc}</p>
                 </div>
               ))}
             </div>
             <img
-              src="/A7402954.jpg"
+              src="/cosmetic-dentistry/Facial Aesthetics/Facial Aesthetics 2.webp"
               alt="Facial Aesthetics"
               className="rounded-2xl w-full max-h-[500px] object-cover"
             />
@@ -270,9 +279,9 @@ export default function FacialAesthetics() {
                 To this end, we operate under the premise of ensuring that our
                 patients are as comfortable as possible during the dental
                 procedures that they undergo with us.
-                <br /> All our facial aesthetic
-                treatments are highly effective for the given problem and last
-                long; we provide a relaxing environment.
+                <br /> All our facial aesthetic treatments are highly effective
+                for the given problem and last long; we provide a relaxing
+                environment.
               </p>
               <br />
               {[
@@ -295,12 +304,14 @@ export default function FacialAesthetics() {
               ].map((step, index) => (
                 <div key={index} className="mb-3">
                   <h3 className="text-lg lg:text-left text-center inline-flex gap-2 items-center justify-center ">
-                  <Image src="/forward-icon.webp"
-                                      alt="Forward Icon"
-                                      width={15}
-                                      height={15}
-                                      className="w-[15px] h-[15px]"
-                                    /> {step.title}
+                    <Image
+                      src="/forward-icon.webp"
+                      alt="Forward Icon"
+                      width={15}
+                      height={15}
+                      className="w-[15px] h-[15px]"
+                    />{" "}
+                    {step.title}
                   </h3>
                   <p>{step.desc}</p>
                 </div>
@@ -340,7 +351,7 @@ export default function FacialAesthetics() {
               ].map((item, index) => (
                 <div key={index} className="mb-3">
                   <h3 className="text-lg text-center lg:text-left inline-flex gap-2">
-                  <MoveRight />  {item.title}
+                    <MoveRight /> {item.title}
                   </h3>
                   <p>{item.desc}</p>
                 </div>
@@ -360,9 +371,10 @@ export default function FacialAesthetics() {
               smile with enhanced radiance.
             </p>
             <div className="flex justify-center md:justify-start">
+                     <Link target="_blank" href='https://citydentalcare.portal.dental/'>
               <button className="mt-4 bg-[#1D5C5C] text-white px-6 py-2 rounded  ">
                 Book Your Facial Aesthetic Consultation Today!
-              </button>
+              </button></Link>
             </div>
 
             <hr className="text-gray-500 mt-6" />

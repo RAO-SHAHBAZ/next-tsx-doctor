@@ -15,42 +15,47 @@ import BredCrumbServices from "@/components/BreadCrumbServices";
 import Image from "next/image";
 
 export default function ServicePage() {
-    const faqs = [
-        {
-          question: "What is composite bonding?",
-          answer:
-            "The composite bonding process brings tooth-coloured resin to build cosmetic improvements on teeth.",
-        },
-        {
-          question: "How many years will composite bonding stay effective?",
-          answer:
-            "Under good maintenance, composite bonding stays effective between 5 and 10 years.",
-        },
-        {
-          question: "Is composite bonding painful?",
-          answer:
-            "Composite bonding works without hurting you because anaesthesia is unnecessary during the process.",
-        },
-        {
-          question: "How much does composite bonding treatment cost completely?",
-          answer:
-            "Our final cost depends on how much bonding work needs to be done and remains affordable for our patients.",
-        },
-        {
-          question: "How much time is needed to perform this work?",
-          answer:
-            "The composite treatment lasts thirty minutes to one hour, depending on the number of teeth involved.",
-        },
-      ];
+  const faqs = [
+    {
+      question: "What is composite bonding?",
+      answer:
+        "The composite bonding process brings tooth-coloured resin to build cosmetic improvements on teeth.",
+    },
+    {
+      question: "How many years will composite bonding stay effective?",
+      answer:
+        "Under good maintenance, composite bonding stays effective between 5 and 10 years.",
+    },
+    {
+      question: "Is composite bonding painful?",
+      answer:
+        "Composite bonding works without hurting you because anaesthesia is unnecessary during the process.",
+    },
+    {
+      question: "How much does composite bonding treatment cost completely?",
+      answer:
+        "Our final cost depends on how much bonding work needs to be done and remains affordable for our patients.",
+    },
+    {
+      question: "How much time is needed to perform this work?",
+      answer:
+        "The composite treatment lasts thirty minutes to one hour, depending on the number of teeth involved.",
+    },
+  ];
 
   return (
     <>
-      <BredCrumbServices title="Composite Bonding"   subtitle={
-    <span>
-      <Link className="hover:underline" href="/cosmetic-dentistry">Cosmetic Dentistry</Link> -{' '}
-      <span>Composite Bonding</span>
-    </span>
-  } />
+      <BredCrumbServices
+        title="Composite Bonding"
+        subtitle={
+          <span>
+            <Link className="hover:underline" href="/cosmetic-dentistry">
+              Cosmetic Dentistry
+            </Link>{" "}
+            - <span>Composite Bonding</span>
+          </span>
+        }
+      />
 
       <div className="container mx-auto px-4 py-8 mb-20">
         <div className="flex flex-col-reverse lg:flex-row gap-8">
@@ -85,7 +90,6 @@ export default function ServicePage() {
               </div>
             </div>
 
-
             <div className="md:mx-auto md:sticky md:top-24 md:z-10">
               <br />
               <div className="bg-[#F5F5F5] rounded shadow-md p-6 text-center mx-auto">
@@ -105,11 +109,13 @@ export default function ServicePage() {
                   for emergency services! Book Your Appointment Today!
                 </p>
 
-                <button
-                  className="bg-[#1D5C5C] text-white px-5 py-2 rounded "
-                  onClick={() => console.log("Make Appointment Clicked")}
-                >
-                  Book Your Appointment Today
+                <button className="bg-[#1D5C5C] text-white px-5 py-2 rounded ">
+                  <Link
+                    href="https://citydentalcare.portal.dental/"
+                    target="_blank"
+                  >
+                    Book Your Appointment Today
+                  </Link>
                 </button>
               </div>
             </div>
@@ -118,7 +124,7 @@ export default function ServicePage() {
           {/* Main Content */}
           <main className="w-full lg:w-3/4 flex flex-col gap-6">
             <img
-              src="/A7402954.jpg"
+              src="/cosmetic-dentistry/Composite bonding/Composite bonding.webp"
               alt="Composite Bonding"
               className="rounded-2xl w-full max-h-[500px] object-cover"
             />
@@ -126,7 +132,8 @@ export default function ServicePage() {
             <div>
               <h1 className="text-4xl lg:text-5xl text-center mb-3 lg:text-left">
                 Cosmetic Dentistry Services at City Dental Care
-              </h1><br />
+              </h1>
+              <br />
               <p className=" leading-relaxed">
                 Enjoy a beautiful smile transformation through our high-end
                 cosmetic dentistry at City Dental Care in Edinburgh. Our
@@ -144,15 +151,16 @@ export default function ServicePage() {
               </h2>
               <br />
               <h3 className="text-xl lg:text-left text-center mb-1 inline-flex gap-2 items-center justify-center">
-              <Image
-                                      src="/forward-icon.webp"
-                                      alt="Forward Icon"
-                                      width={15}
-                                      height={15}
-                                      className="w-[15px] h-[15px]"
-                                    /> Achieve Your Dream Smile with Composite Bonding
+                <Image
+                  src="/forward-icon.webp"
+                  alt="Forward Icon"
+                  width={15}
+                  height={15}
+                  className="w-[15px] h-[15px]"
+                />{" "}
+                Achieve Your Dream Smile with Composite Bonding
               </h3>
-              <p >
+              <p>
                 According to the principles at City Dental Care, everyone should
                 have access to an attractive, confident smile. Composite bonding
                 is a quick and budget-friendly treatment that gives patients new
@@ -165,15 +173,16 @@ export default function ServicePage() {
 
             <div>
               <h3 className="text-xl lg:text-left text-center mt-4 mb-1 inline-flex gap-2 items-center justify-center">
-              <Image
-                                      src="/forward-icon.webp"
-                                      alt="Forward Icon"
-                                      width={15}
-                                      height={15}
-                                      className="w-[15px] h-[15px]"
-                                    /> What is Composite Bonding?
+                <Image
+                  src="/forward-icon.webp"
+                  alt="Forward Icon"
+                  width={15}
+                  height={15}
+                  className="w-[15px] h-[15px]"
+                />{" "}
+                What is Composite Bonding?
               </h3>
-              <p >
+              <p>
                 It is a cosmetic dental treatment that directly fixes any
                 blemishes by applying a tooth-coloured resin to the tooth. This
                 resin is fashioned and hardened to harmonise with your natural
@@ -206,14 +215,18 @@ export default function ServicePage() {
                 },
               ].map((item, index) => (
                 <div key={index} className="mb-3">
-                  <h3 className="text-lg text-center lg:text-left inline-flex gap-2 ">  <MoveRight />{item.title}</h3>
-                  <p >{item.desc}</p>
+                  <h3 className="text-lg text-center lg:text-left inline-flex gap-2 ">
+                    {" "}
+                    <MoveRight />
+                    {item.title}
+                  </h3>
+                  <p>{item.desc}</p>
                 </div>
               ))}
             </div>
 
             <img
-              src="/A7402954.jpg"
+              src="/cosmetic-dentistry/Composite bonding/composite bonding 2.webp"
               alt="Composite Bonding"
               className="rounded-2xl w-full max-h-[500px] object-cover"
             />
@@ -242,13 +255,17 @@ export default function ServicePage() {
                 },
               ].map((step, index) => (
                 <div key={index} className="mb-3">
-                  <h3 className="text-lg lg:text-left text-center inline-flex gap-2 items-center justify-center ">          <Image
-                                      src="/forward-icon.webp"
-                                      alt="Forward Icon"
-                                      width={15}
-                                      height={15}
-                                      className="w-[15px] h-[15px]"
-                                    />  {step.title}</h3>
+                  <h3 className="text-lg lg:text-left text-center inline-flex gap-2 items-center justify-center ">
+                    {" "}
+                    <Image
+                      src="/forward-icon.webp"
+                      alt="Forward Icon"
+                      width={15}
+                      height={15}
+                      className="w-[15px] h-[15px]"
+                    />{" "}
+                    {step.title}
+                  </h3>
                   <p>{step.desc}</p>
                 </div>
               ))}
@@ -298,8 +315,12 @@ export default function ServicePage() {
                 },
               ].map((item, index) => (
                 <div key={index} className="mb-3">
-                  <h3 className="text-lg text-center lg:text-left inline-flex gap-2">  <MoveRight />{item.title}</h3>
-                  <p >{item.desc}</p>
+                  <h3 className="text-lg text-center lg:text-left inline-flex gap-2">
+                    {" "}
+                    <MoveRight />
+                    {item.title}
+                  </h3>
+                  <p>{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -323,34 +344,40 @@ export default function ServicePage() {
                 },
               ].map((item, index) => (
                 <div key={index} className="mb-3  ">
-                  <h3 className="text-lg lg:text-left text-center 
-inline-flex gap-2 items-center justify-center">       <Image
-                                      src="/forward-icon.webp"
-                                      alt="Forward Icon"
-                                      width={15}
-                                      height={15}
-                                      className="w-[15px] h-[15px]"
-                                    />{item.title}</h3>
+                  <h3
+                    className="text-lg lg:text-left text-center 
+inline-flex gap-2 items-center justify-center"
+                  >
+                    {" "}
+                    <Image
+                      src="/forward-icon.webp"
+                      alt="Forward Icon"
+                      width={15}
+                      height={15}
+                      className="w-[15px] h-[15px]"
+                    />
+                    {item.title}
+                  </h3>
                   <p className="">{item.desc}</p>
                 </div>
               ))}
             </div>
 
-        
-              <h2 className="text-2xl text-center lg:text-left  mb-2">
-                Get a Composite Bonding appointment today!
-              </h2>
-              <p >
-                Are you considering getting a new veneer to fix that overdue
-                cosmetic work? For a short duration and a very low cost, you can
-                receive top-quality treatment as a patient at City Dental Care.
-                There is no reason to wait longer to receive the beautiful smile
-                you’ve always dreamed of!
-              </p>
-              <div className="flex justify-center md:justify-start">
+            <h2 className="text-2xl text-center lg:text-left  mb-2">
+              Get a Composite Bonding appointment today!
+            </h2>
+            <p>
+              Are you considering getting a new veneer to fix that overdue
+              cosmetic work? For a short duration and a very low cost, you can
+              receive top-quality treatment as a patient at City Dental Care.
+              There is no reason to wait longer to receive the beautiful smile
+              you’ve always dreamed of!
+            </p>
+            <div className="flex justify-center md:justify-start">
+              <Link target="_blank" href='https://citydentalcare.portal.dental/'>
               <button className="mt-4 bg-[#1D5C5C] text-white px-6 py-2 rounded  ">
                 Book Your Consultation Now!
-              </button>
+              </button></Link>
             </div>
 
             <hr className="text-gray-500 mt-6" />
@@ -358,9 +385,15 @@ inline-flex gap-2 items-center justify-center">       <Image
             <div className="mt-6">
               <p className="mb-2">Follow Us:</p>
               <div className="flex gap-4 text-[#1D5C5C]">
-              <Link href='https://www.facebook.com/citydentalcareedinburgh'><Facebook className=" cursor-pointer w-5 h-5" /></Link>
-<Link href='mailto:info@citydentalcare.co.uk'><Mail className=" cursor-pointer w-5 h-5" /></Link>
-<Link href='https://www.instagram.com/citydentalcare.edin/'><Instagram className=" cursor-pointer w-5 h-5" /></Link>
+                <Link href="https://www.facebook.com/citydentalcareedinburgh">
+                  <Facebook className=" cursor-pointer w-5 h-5" />
+                </Link>
+                <Link href="mailto:info@citydentalcare.co.uk">
+                  <Mail className=" cursor-pointer w-5 h-5" />
+                </Link>
+                <Link href="https://www.instagram.com/citydentalcare.edin/">
+                  <Instagram className=" cursor-pointer w-5 h-5" />
+                </Link>
               </div>
             </div>
           </main>
