@@ -79,7 +79,7 @@ const OurTeam = () => {
         </div>
                <div className="flex justify-center mt-20   " >
               <button className="bg-[#1d5c5c] text-white px-8 py-4 text-sm uppercase text-center">
-                <Link href='/staff' target="_blank">
+                <Link href='/staff' >
                Visit City Dental Care Staff
                 </Link>
               </button>
