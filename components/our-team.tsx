@@ -1,10 +1,7 @@
 import Image from "next/image";
-import doc1 from "@/public/staff/chris.jpg";
 import doc2 from "@/public/staff/dentist.jpg";
 import doc3 from "@/public/staff/feras.jpg";
 import doc4 from "@/public/staff/hamza-alhadad.jpg";
-import doc5 from "@/public/staff/sanja.jpg";
-import doc6 from "@/public/staff/uzaire.jpg";
 import doc7 from "@/public/staff/zoe.jpg";
 import Link from "next/link";
 

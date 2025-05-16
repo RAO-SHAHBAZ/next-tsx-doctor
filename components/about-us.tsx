@@ -67,10 +67,10 @@ export default function AboutUs() {
                 {/* Button For Number */}
                 <button className="border border-[#225555] text-[#225555] bg-[#E4F5F5] px-4 py-3 text-sm uppercase flex items-center hover:bg-[#339485] hover:text-white">
                   <PhoneCall />
-                    <Link className="hover:underline" href="tel:+11312282442">
+                    <Link className="hover:underline" href="tel:+441312282442">
                   <span className="font-semibold px-4">
                     
-                  021312282442
+                  1312282442
                     </span>
                     </Link>
                 </button>
@@ -118,7 +118,7 @@ export default function AboutUs() {
                   Pain-Free Dentistry – Book Now!
                 </Link>
                 <Link
-                  href="tel:+11312282442"
+                  href="tel:+441312282442"
                   className="border border-[#225555] text-[#225555] bg-[#E4F5F5] px-4 py-3 uppercase flex items-center justify-center"
                 >
                   <PhoneCall />

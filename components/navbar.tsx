@@ -1,6 +1,6 @@
 "use client";
 
-import { Clock, Phone, MapPin, Menu, ChevronDown, X } from "lucide-react";
+import { Clock, Phone, MapPin, Menu, ChevronDown, X, CalendarCheck } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -79,19 +79,19 @@ export default function Navbar() {
                 <span className="text-[14px] text-gray-500">Opening Time</span>
                 <br />
                 <span className="text-[16px] md:text-sm">
-                  Mon - Fri 8AM - 7PM
+                  Mon - Fri 8:30AM - 6PM
                 </span>
               </div>
             </div>
 
-            <Link href='tel:+11312282442' target="blank" className="flex items-center gap-2">
+            <Link href='tel:+441312282442' target="blank" className="flex items-center gap-2">
               <div className="bg-[#1d5c5c] p-2 rounded">
                 <Phone className="text-white h-3 w-3 md:h-5 md:w-5" />
               </div>
               <div>
                 <span className="text-[14px] text-gray-500">Phone</span>
                 <br />
-                <span className="text-[16px] md:text-sm">01312282442</span>
+                <span className="text-[16px] md:text-sm">1312282442</span>
               </div>
             </Link>
 
@@ -406,7 +406,10 @@ export default function Navbar() {
               href="https://citydentalcare.portal.dental/"
               className="hidden lg:block bg-[#1d5c5c] text-white px-4 py-3 text-sm uppercase text-center"
             >
-              Get Appointment
+               <div className=" inline-flex justify-center items-center">
+                <CalendarCheck className="w-8 h-6" />
+             <span> Get Appointment</span>
+               </div>
             </Link>
           </div>
         </div>
@@ -419,7 +422,7 @@ export default function Navbar() {
           } shadow-lg lg:hidden z-50`}
         >
           <div className="p-4">
-            <nav >
+            <nav className="mb-10" >
               {/* Home */}
               <Link
                 href="/"
@@ -704,6 +707,15 @@ export default function Navbar() {
                 Contact Us
               </Link>
             </nav>
+             {/* Desktop Appointment Button */}
+            <div className="flex justify-center">
+              <Link
+              href="https://citydentalcare.portal.dental/"
+              className=" bg-[#1d5c5c] text-white px-4 py-3 text-sm uppercase text-center"
+            >
+              Get Appointment
+            </Link>
+            </div>
           </div>
         </div>
       </div>

@@ -6,38 +6,38 @@ export default function Services() {
         icon: <img src="dental-consultation.svg"   alt="Dental Consultation" />,
         title: "Dental Consultation",
         description: "Detailed tests provide your dental wellness outcomes.",
-        link: "/dental-consultation"
+        link: "/general-dentistry/dental-consultaion"
       },
       {
         icon: <img src="same-day-emergency.svg"  alt="Same Day Emergency Appointments" />,
         title: "Same-Day Emergency Appointments",
         description:
           "Need urgent care? Our dental practice provides emergency dental appointments on the same day patients need care.",
-          link: "/dental-consultation"
+          link: "/general-dentistry/same-day-emergency"
       },
       {
         icon: <img src="/hygiene-service.svg" alt="Hygiene Services" />,
         title: "Hygiene Services",
         description: "Our services offer routine cleanings that maintain your smile's health and freshness.",
-        link: "/dental-consultation"
+        link: "/general-dentistry/hygiene-services"
       },
       {
         icon: <img src="Implant-consultation.svg" alt="Implant Consultations" />,
         title: "Implant-consultation.svg",
         description: "Take the opportunity to find out about stable alternatives addressing tooth loss.",
-        link: "/dental-consultation"
+        link: "/general-dentistry/implant-consultations"
       },
       {
         icon: <img src="wisdom-tooth.svg" alt="Wisdom Tooth Removal" />,
         title: "Wisdom Tooth Removal",
         description: "A gentle, stress-free approach to wisdom tooth extraction.",
-        link: "/dental-consultation"
+        link: "/general-dentistry/wisdom-tooth-removal"
       },
       {
         icon: <img src="/child-smile.svg" alt="Child Smile Care" />,
         title: "Child Smile Care",
         description: "Children who get early dental visits start their future with strong smiles.",
-        link: "/dental-consultation"
+        link: "/general-dentistry/child-smile"
       },
     ]
   

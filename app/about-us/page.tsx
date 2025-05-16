@@ -67,11 +67,11 @@ export default function AboutUsPage() {
       <section className="py-16 md:py-24 px-4 container mx-auto">
           <div className="flex flex-col lg:grid lg:grid-cols-2 gap-16 items-center">
             {/* Image - On top for mobile, right for desktop */}
-            <div className="relative w-full lg:order-last">
+            <Link href='tel:+441312282442' className="relative w-full lg:order-last">
               <span className="bg-[#1D5C5C] flex space-x-2 text-white px-6 py-4 absolute top-44 right-4 rounded-2xl shadow-lg z-10">
                 <img src="/contct-us.svg" alt="Phone SVG" className="w-12 h-12" />
                 <span>
-                  Contact Us <br /> 0761-8523-398
+                  Contact Us <br /> 1312282442
                 </span>
               </span>
               <img
@@ -79,7 +79,7 @@ export default function AboutUsPage() {
                 alt="About Us"
                 className="w-full h-auto max-h-[800px] rounded-2xl object-cover object-center"
               />
-            </div>
+            </Link>
 
             {/* Content - Below for mobile, left for desktop */}
             <div className="lg:order-first">

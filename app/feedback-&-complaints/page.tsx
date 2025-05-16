@@ -44,7 +44,7 @@ export default function FeedbackComplaints() {
                 </Link>
                 .
               </li>
-              <li>Call us at <Link className="hover:underline text-[#1D5C5C]" href="tel:+11312282442">
+              <li>Call us at <Link className="hover:underline text-[#1D5C5C]" href="tel:+441312282442">
                 <span>1312282442</span>
                 </Link></li>
               <li>Please email us at <span className="hover:underline text-[#1D5C5C]"><Link href= "mailto:info@citydentalcare.co.uk">info@citydentalcare.co.uk</Link></span></li>

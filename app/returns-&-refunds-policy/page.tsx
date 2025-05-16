@@ -58,7 +58,7 @@ export default function ReturnsRefunds() {
             </h2>
             <ol className="list-decimal list-inside mb-4">
               <li>
-                Contact our team at <Link className="hover:underline text-[#1D5C5C]" href="tel:+11312282442">
+                Contact our team at <Link className="hover:underline text-[#1D5C5C]" href="tel:+441312282442">
                 <span>1312282442</span>
                 </Link> or email<span className="hover:underline text-[#1D5C5C]"><Link href= "mailto:info@citydentalcare.co.uk"> info@citydentalcare.co.uk </Link></span>
 

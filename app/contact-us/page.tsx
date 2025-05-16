@@ -47,7 +47,7 @@ function ContactUS() {
                 </div>
                 <div>
                   <h5 className=" text-lg">Phone</h5>
-                  <p className="text-gray-600">01312282442</p>
+                  <Link href='tel:+441312282442' className="text-gray-600">1312282442</Link>
                 </div>
               </div>
 
